@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
@@ -11,13 +11,11 @@ import ModelBenchmark from './pages/ModelBenchmark'
 import Admin from './pages/Admin'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
+  const darkMode = localStorage.getItem('theme') === 'dark'
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode)
   }, [darkMode])
-
-  document.documentElement.classList.toggle('dark', localStorage.getItem('theme') === 'dark')
 
   return (
     <Routes>
