@@ -21,9 +21,6 @@ from app.schemas import (
 from app.routes import accounts, visits, geocode, clusters, metrics, model, real_data, planner
 from app.routes import auth as auth_routes
 from app.routes import compliance as compliance_routes
-from app.auth.dependencies import require_operational_user
-
-
 settings = get_settings()
 
 
@@ -55,15 +52,14 @@ app.add_middleware(
 )
 
 # Include routers
-operational_dependencies = [Depends(require_operational_user)]
-app.include_router(geocode.router, prefix="/api", tags=["geocode"], dependencies=operational_dependencies)
-app.include_router(visits.router, prefix="/api", tags=["visits"], dependencies=operational_dependencies)
-app.include_router(accounts.router, prefix="/api", tags=["accounts"], dependencies=operational_dependencies)
-app.include_router(clusters.router, prefix="/api", tags=["clusters"], dependencies=operational_dependencies)
-app.include_router(metrics.router, prefix="/api", tags=["metrics"], dependencies=operational_dependencies)
+app.include_router(geocode.router, prefix="/api", tags=["geocode"])
+app.include_router(visits.router, prefix="/api", tags=["visits"])
+app.include_router(accounts.router, prefix="/api", tags=["accounts"])
+app.include_router(clusters.router, prefix="/api", tags=["clusters"])
+app.include_router(metrics.router, prefix="/api", tags=["metrics"])
 app.include_router(model.router, prefix="/api", tags=["model"])
-app.include_router(real_data.router, prefix="/api", tags=["real-data"], dependencies=operational_dependencies)
-app.include_router(planner.router, prefix="/api", tags=["planner"], dependencies=operational_dependencies)
+app.include_router(real_data.router, prefix="/api", tags=["real-data"])
+app.include_router(planner.router, prefix="/api", tags=["planner"])
 app.include_router(auth_routes.router, prefix="/api", tags=["auth"])
 app.include_router(compliance_routes.router, prefix="/api", tags=["compliance"])
 
