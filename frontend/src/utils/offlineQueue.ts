@@ -67,7 +67,10 @@ class OfflineQueueManager {
 
   async getPendingVisits(): Promise<QueuedVisit[]> {
     await this.init();
-    return this.db.getAllFromIndex('offline-visits', 'synced', false);
+
+    const visits: QueuedVisit[] = await this.db.getAll('offline-visits');
+
+    return visits.filter((visit) => visit.synced === false);
   }
 
   async getAllVisits(): Promise<QueuedVisit[]> {
