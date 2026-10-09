@@ -1,4 +1,10 @@
 {
-  "src": "**",
-  "dest": "/index.html"
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html",
+      "status": 200,
+      "permanent": false
+    }
+  ]
 }
