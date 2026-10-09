@@ -117,7 +117,7 @@ export default function AddressIntelligence() {
               <div>
                 <p className="text-sm text-gray-500">Predicted Coordinates</p>
                 <p className="text-gray-900 font-mono">
-                  {prediction.predicted_x !== null && prediction.predicted_y !== null
+                  {prediction.predicted_x != null && prediction.predicted_y != null
                     ? `(${prediction.predicted_x.toFixed(1)}, ${prediction.predicted_y.toFixed(1)})`
                     : 'No location candidate found'}
                 </p>
@@ -173,7 +173,7 @@ export default function AddressIntelligence() {
         )}
 
         {/* Baseline Geocode */}
-        {address?.baseline_geocode && (
+        {address?.baseline_geocode?.x != null && address.baseline_geocode.y != null && (
           <div className="card lg:col-span-2">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Baseline Geocode</h3>
             <div className="grid grid-cols-2 gap-4">
@@ -190,7 +190,7 @@ export default function AddressIntelligence() {
         )}
 
         {/* Surveyed Ground Truth */}
-        {address?.surveyed && (
+        {address?.surveyed?.x != null && address.surveyed.y != null && (
           <div className="card lg:col-span-2">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Surveyed Ground Truth</h3>
             <div className="grid grid-cols-2 gap-4">
@@ -202,7 +202,7 @@ export default function AddressIntelligence() {
                 <div>
                   <p className="text-sm text-gray-500">Prediction Error</p>
                   <p className="font-mono text-lg font-bold">
-                    {prediction.error_m?.toFixed(1)}m
+                    {prediction.error_m != null ? `${prediction.error_m.toFixed(1)}m` : 'Unavailable'}
                   </p>
                 </div>
               )}

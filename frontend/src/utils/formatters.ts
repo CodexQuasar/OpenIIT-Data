@@ -6,6 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDistance(meters: number): string {
+  if (!Number.isFinite(meters)) {
+    return 'Unavailable'
+  }
   if (meters < 1000) {
     return `${Math.round(meters)}m`
   }

@@ -153,7 +153,7 @@ export default function MapView() {
             <div>
               <p className="text-sm text-gray-500">Predicted</p>
               <p className="font-mono">
-                {prediction.predicted_x !== null && prediction.predicted_y !== null
+                {prediction.predicted_x != null && prediction.predicted_y != null
                   ? `(${prediction.predicted_x.toFixed(1)}, ${prediction.predicted_y.toFixed(1)})`
                   : 'No location candidate found'}
               </p>

@@ -102,7 +102,7 @@ export default function FieldAgentView() {
         <div className="card mb-4">
           <h3 className="text-sm font-medium text-gray-500 mb-2">Predicted Location</h3>
           <p className="font-mono text-gray-900">
-            {prediction.predicted_x !== null && prediction.predicted_y !== null
+            {prediction.predicted_x != null && prediction.predicted_y != null
               ? `(${prediction.predicted_x.toFixed(1)}, ${prediction.predicted_y.toFixed(1)})`
               : 'No location candidate found'}
           </p>
@@ -139,7 +139,7 @@ export default function FieldAgentView() {
                 2
               </span>
               <p className="text-gray-700 text-sm">
-                Navigate to {prediction.predicted_x !== null && prediction.predicted_y !== null
+                Navigate to {prediction.predicted_x != null && prediction.predicted_y != null
                   ? `(${prediction.predicted_x.toFixed(0)}, ${prediction.predicted_y.toFixed(0)})`
                   : 'the address after verification'}
               </p>
@@ -152,13 +152,15 @@ export default function FieldAgentView() {
                       {i + 3}
                     </span>
                     <p className="text-gray-700 text-sm">
-                      Look for {landmark.name} at ({landmark.x.toFixed(0)}, {landmark.y.toFixed(0)})
+                      Look for {landmark.name} {landmark.x != null && landmark.y != null
+                        ? `at (${landmark.x.toFixed(0)}, ${landmark.y.toFixed(0)})`
+                        : 'near the recorded location'}
                     </p>
                   </div>
                 ))}
               </>
             )}
-            {prediction.error_m && (
+            {prediction.error_m != null && (
               <div className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-warning-100 text-warning-700 flex items-center justify-center text-xs font-medium">
                   !
