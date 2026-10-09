@@ -2,13 +2,6 @@ import { FormEvent, useEffect, useState } from 'react'
 
 export default function Login() {
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
-  const [isRegistering, setIsRegistering] = useState(false)
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [fullName, setFullName] = useState('')
-  const [email, setEmail] = useState('')
-  const [error, setError] = useState<string | null>(null)
-  const [busy, setBusy] = useState(false)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode)
@@ -17,9 +10,6 @@ export default function Login() {
 
   const submit = async (event: FormEvent) => {
     event.preventDefault()
-    setError(null)
-    setBusy(true)
-    setBusy(false)
   }
 
   return (
