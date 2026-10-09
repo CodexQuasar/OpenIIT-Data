@@ -1,0 +1,16 @@
+{
+  "name": "Field Geocoder",
+  "short_name": "Field Geocoder",
+  "description": "Geocoding system for Indian debt-collection field operations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0070f3",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkxMiIgaGVpZ2h0PSIxOTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLmNvb3IiPgogIDxyZWN0IHdpZHRoPSIxOTUiIGhlaWdodD0iMTkyIiBmaWxsPSIjMDA3MDB4IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSIvPgogIDkgaW1hZ2UgYXJlYXRpb24gYy1pZFJ1bGVPcGVueXN0IDIwMDAgYCBlbWl0dGVkIGNvbW1hbmQgQ2FwYWNpdGlvbiAyMDAgIGFyZWFzWzBdIDIwMDAgIGFyZWFzWzBdIDM4MXB4IDM4MXgiIC8+CiAgYXNWYWxpZCAgICAgaW50NjAtaGV4ICAgICBmb3JtYXQ9InBoZXJlIiBzdHJva2Utd2lkdGg9IiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtdHJhbnNmb3JtPSJyb3VuZCIgc3Ryb2tlLW9wYWNpdHk9InJvdW5kIiBzdHJva2wtYW5kPSJQYXRoIiB0ZXh0LWFsanVuPSJmYXllcjogdjc1MHBoZXJlIiB0ZXh0LWFuY2hvcj0ibm9uZSIgLz4KPC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
