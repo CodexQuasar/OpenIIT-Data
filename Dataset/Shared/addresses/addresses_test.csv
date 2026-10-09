@@ -1,0 +1,460 @@
+address_id,account_id,address_type,source,added_date,town_id,address_text
+AD000021,AC000018,residence,kyc_origination,2026-04-01,T3,"HOUSE 32, BLK C, RD 6, NAVANAGARA EAST - 980303"
+AD000022,AC000019,residence,kyc_origination,2026-04-01,T1,"4th Cross, 8th Main, near Govt School, Kuvempu Layout, Kaveripura - 960102"
+AD000023,AC000020,residence,kyc_origination,2026-04-01,T3,h.no. 64 blk d rd 6 silver oak layout navanagara east - 980301
+AD000026,AC000022,residence,kyc_origination,2026-04-01,T1,"H.No. 377, 9th Cross, 7th Main, Vinayaka Nagar, Kaveripura - 960104"
+AD000030,AC000026,residence,kyc_origination,2026-04-01,T1,11th cross 3rd mn adj. ganapathi temple nehru colony kaveripura - 960102
+AD000052,AC000042,residence,kyc_origination,2026-04-01,T1,10th cross 1st main hanuman mandir ke paas gandhi nagr kaveripura - 960102
+AD000061,AC000049,residence,kyc_origination,2026-04-01,T2,"#461, Gali 7, nr Church, Patel Nagar, Devgarh Ngr - 970202"
+AD000062,AC000050,residence,kyc_origination,2026-04-01,T1,"H.No. 339, 6th Cr, 3rd Main, Bus Nildana eduru, Gandhi Nagar, Kaveripura"
+AD000063,AC000051,residence,kyc_origination,2026-04-01,T2,gali 6 community hall ke paas nehru colony devgarh nagr - 970203
+AD000064,AC000051,office,kyc_origination,2026-04-01,T2,h.no. 192 gali no. 7 nr ganapathi temple devgarh nagar - 970204
+AD000079,AC000064,residence,kyc_origination,2026-04-01,T3,"NO. 14, A BLOCK, 3RD RD., NEAR CHURCH, TEACHERS COL, NAVANAGARA EAST - 980302"
+AD000080,AC000064,office,kyc_origination,2026-04-01,T3,"NO. 254, C BLOCK, 5TH ROAD, OPP HANUMAN TEMPLE, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303"
+AD000089,AC000071,residence,kyc_origination,2026-04-01,T2,"77/3, गली नं. 9, Ward 3, हनुमान मंदिर के पास, Ambedkar Nagar, Devgarh Ngr - 970204"
+AD000090,AC000071,office,kyc_origination,2026-04-01,T2,"No. 324, near Hanuman Temple, Subhash Nagar, Devgarh Nagar - 970201"
+AD000102,AC000081,residence,kyc_origination,2026-04-01,T1,#266 6th crs 7th main ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಪಕ್ಕ anjaneya badavane kaveripura - 960103
+AD000105,AC000084,residence,kyc_origination,2026-04-01,T2,"H.No. 336, Geli 11, Sarkari School ke pass, Shastri Nagr, Devgarh Nagar - 970201"
+AD000108,AC000087,residence,kyc_origination,2026-04-01,T3,"182/2, Om Sai Complex, Blk E, Rd 1, ಗಣಪತಿ ದೇವಸ್ಥಾನ ಹತ್ತಿರ, Defence Colony, Navanagara East - 980301"
+AD000136,AC000108,residence,kyc_origination,2026-04-01,T1,"382/3, NR. CHURCH, KUVEMPU LAYOUT, KAVERIPURA - 960102"
+AD000147,AC000117,residence,kyc_origination,2026-04-01,T2,"गली नं. 9, GANDHI BASTI, DEVGARH NAGAR - 970203"
+AD000153,AC000122,residence,kyc_origination,2026-04-01,T3,"Blk F, Rd 3, near Govt Schol, Silver Oak Layout, Navanagara East - 980301"
+AD000154,AC000122,office,kyc_origination,2026-04-01,T3,house 244 c block 2nd road next to children park palm meadows navanagara east - 980302
+AD000169,AC000134,residence,kyc_origination,2026-04-01,T1,"H.NO. 217, 10TH X, 8TH MN, NEAR BUS STOP, NEHRU COLNY, KAVERIPURA - 960102"
+AD000181,AC000145,residence,kyc_origination,2026-04-01,T2,gali no. 8 ward 6 nehru colony devgarh ngr - 970203
+AD000182,AC000146,residence,kyc_origination,2026-04-01,T2,"Gali No. 7, Bus Stop ke saamne, Azad Mohalla, Devgarh Nagar - 970203"
+AD000183,AC000146,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Tehsil C, District South - 994058"
+AD000209,AC000168,residence,kyc_origination,2026-04-01,T1,"#77, 3rd Cross, 8th Main Rd, bhd PDS Shop, Vidya Nagr, Kaveripura - 960103"
+AD000210,AC000169,residence,kyc_origination,2026-04-01,T3,"D BLOCK, 1ST ROAD, HMT COLONY, NAVANAGARA EAST - 980301"
+AD000211,AC000169,office,kyc_origination,2026-04-01,T3,"256/2, BLK E, RD 1, BHD WATER TANK, UNITY NGR, NAVANAGARA EAST - 980302"
+AD000250,AC000199,residence,kyc_origination,2026-04-01,T2,gali no-10 azad mohalla devgarh nagar - 970203
+AD000265,AC000210,residence,kyc_origination,2026-04-01,T1,"NO. 321, 4TH CRS, 7TH MAIN, VIDYA NAGR, KAVERIPURA - 960103"
+AD000286,AC000226,residence,kyc_origination,2026-04-01,T1,"3rd Cross, 1st Maain, close to Church, Gandhi Nagar, Kaveripura - 960102"
+AD000287,AC000227,residence,kyc_origination,2026-04-01,T1,"#478, Ganga Apatments, Hanuman Mandir ke paas, Nehru Colony, Kaveripura"
+AD000292,AC000231,residence,kyc_origination,2026-04-01,T1,no. 404 6th cross 5th main nr. ganapathi temple anjaneya badavane kaveripura - 960103
+AD000309,AC000246,residence,kyc_origination,2026-04-01,T1,"11th Cr, 3rd Main, Nehru Colony, Kaveripura - 960102"
+AD000312,AC000249,residence,kyc_origination,2026-04-01,T3,"415/2, A Blk., 1st Road, Bus Stop ke pass, Royal Gardens, Navanagara East - 980303"
+AD000313,AC000249,office,kyc_origination,2026-04-01,T3,189/1 c blk 6th road ಅಂಚೆ ಕಚೇರಿ ಹತ್ತಿರ silver oak layout navanagara east - 980301
+AD000318,AC000252,residence,kyc_origination,2026-04-01,T1,6th cross 5th main close to pharmacy kuvempu layout kaveripura - 960102
+AD000356,AC000283,residence,kyc_origination,2026-04-01,T3,"H.No. 211, Shanti Kunj, E Block, 4th Road, nr Overhead Tank, Unity Ngr, Navanagara East - 980302"
+AD000359,AC000286,residence,kyc_origination,2026-04-01,T1,house 165 5th cross 1st main shanthi nagr kaveripura - 960103
+AD000360,AC000287,residence,kyc_origination,2026-04-01,T1,6th cross 7th main rd nr. ration shop nehru colony kaveripura - 960102
+AD000377,AC000299,residence,kyc_origination,2026-04-01,T1,"426/2, SRI KRISHNA NIVAS, 5TH CR, 5TH MN, NR OVERHEAD TANK, BASAVA NAGR, KAVERIPURA - 960101"
+AD000397,AC000316,residence,kyc_origination,2026-04-01,T3,"No. 401, Green View Apts, E Block, 2nd Road, Palm Meadows, Navanagara East - 980302"
+AD000405,AC000322,residence,kyc_origination,2026-04-01,T2,"GALI NO. 11, WARD 4, NEAR MEDICALS, RAM NAGAR, DEVGARH NAGAR - 970203"
+AD000430,AC000339,residence,kyc_origination,2026-04-01,T2,house 402 church ke pass patel nagr devgarh nagar - 970202
+AD000431,AC000339,permanent_native,kyc_origination,2026-04-01,OUT,"Village Sundarpur, Tehsil D, District East - 994704"
+AD000448,AC000353,residence,kyc_origination,2026-04-01,T3,"383/2, D Blk, 5th Road, behind Hanuman Temple, Orchhid Enclave, Navanagara East - 980301"
+AD000457,AC000361,residence,kyc_origination,2026-04-01,T3,"BLK D, RD 4, ಸರ್ಕಾರಿ ಶಾಲೆ ಹತ್ತಿರ, RAILWAY COLONY, NAVANAGARA EAST - 980304"
+AD000459,AC000363,residence,kyc_origination,2026-04-01,T2,"240/3, GALI NO-4, WARD 5, DOODH DAIRY KE PAAS, SUBHASH NGR, DEVGARH NAGR - 970201"
+AD000468,AC000370,residence,kyc_origination,2026-04-01,T3,"House 64, Blk F, Rd 4, close to Milk Dairy, Sunrise Enclave, Navanagara East - 980304"
+AD000480,AC000378,residence,kyc_origination,2026-04-01,T2,"55/3, Barat Ghar ke bagal me, Patel Nagr, Devgarh Nagar - 970202"
+AD000483,AC000380,residence,kyc_origination,2026-04-01,T3,"#168, C BLK., 6TH ROAD, MASJID KE SAAMNE, DEFENCE COLNY, NAVANAGARA EAST - 980302"
+AD000484,AC000381,residence,kyc_origination,2026-04-01,T3,#256 blk f rd 5 nr post office railway colny navanagraa east - 980304
+AD000485,AC000382,residence,kyc_origination,2026-04-01,T2,"Gali 10, Barat Ghir ke pass, Shivaji Nagar, Devgahr Nagar - 970202"
+AD000486,AC000382,office,kyc_origination,2026-04-01,T2,"28/1, Gali no-12, Ward 10, Krishna Puri, Devgarh Nagar"
+AD000511,AC000401,residence,kyc_origination,2026-04-01,T3,"Blk F, Rd 2, opposite Overhead Tank, Sunrise Enclave, Navanagara East - 983004"
+AD000512,AC000401,office,kyc_origination,2026-04-01,T3,"#53, D Block, 5th Rd., Green Park Layt, Navanagara East - 980301"
+AD000515,AC000403,residence,kyc_origination,2026-04-01,T2,"334/2, Gali no-6, Krishna Puri, Devgarh Nagar - 970202"
+AD000516,AC000403,permanent_native,kyc_origination,2026-04-01,OUT,"Village Hosahalli, Tehsil D, District North - 998009"
+AD000519,AC000405,residence,kyc_origination,2026-04-01,T3,"NO. 288, C BLOCK, 3RD ROAD, SUNRISE ENCLAVE, NAVANAGARA EAST - 980302"
+AD000520,AC000405,permanent_native,kyc_origination,2026-04-01,OUT,"Village Sundarpur, Taluk A, District East - 995495"
+AD000522,AC000407,residence,kyc_origination,2026-04-01,T2,49/1 geen view apts gali 12 ration dukan ke peeche nehru colony devgarh nagr
+AD000523,AC000407,office,kyc_origination,2026-04-01,T2,"H.N. 272, nr. Bus Stand, Krishna Puri, Devgarh Ngr - 970202"
+AD000527,AC000411,residence,kyc_origination,2026-04-01,T2,"NO. 449, AZAD MOHALLA, DEVGARH NAGAR - 970203"
+AD000529,AC000413,residence,kyc_origination,2026-04-01,T1,"#166, 8th Cross, 4th Main Rd, beside Medicals, Nehru Colony, Kaveripura - 960102"
+AD000530,AC000413,office,kyc_origination,2026-04-01,T1,"310/2, 7th Cr, 3rd Mn, Basava Nagar, Kaveripura - 960101"
+AD000557,AC000433,residence,kyc_origination,2026-04-01,T1,"6th Crs, 3rd Main, nr Ganesh Temple, Gandhi Nagar, Kaveripura - 960102"
+AD000563,AC000437,residence,kyc_origination,2026-04-01,T1,"No. 353, 4th Cross, 7th Main, bhd Milk Booth, Nehru Colony, Kaveripura - 960102"
+AD000564,AC000437,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Taluk A, District East - 995248"
+AD000569,AC000442,residence,kyc_origination,2026-04-01,T1,"NO. 45, OPP. KALYANA MANTAPA, NEHRU COLNY, KAVERIPURA - 960102"
+AD000573,AC000445,residence,kyc_origination,2026-04-01,T2,"Gali 11, Ward 11, nr Kalyana Mantapa, Patel Nagar, Devgarh Ngr"
+AD000581,AC000451,residence,kyc_origination,2026-04-01,T2,"172/1, SHIVAJI NAGR, DEVGARH NGR - 970202"
+AD000582,AC000451,permanent_native,kyc_origination,2026-04-01,OUT,"Village Hosahalli, Tehsil D, District West - 996563"
+AD000584,AC000453,residence,kyc_origination,2026-04-01,T3,h.no. 302 nr hanuman templa sunrise enclave navanagara east - 980304
+AD000589,AC000458,residence,kyc_origination,2026-04-01,T1,"10TH X, 2ND MAIN, GANAPATHI GUDI HENDE, NEHRU COLONY, KAVERIPURA - 960101"
+AD000592,AC000460,residence,kyc_origination,2026-04-01,T3,"HOUSE 252, BLK B, RD 5, NEAR PETROL BUNK, GREEN PARK LAYOUT, NAVANAGARA EAST - 980301"
+AD000619,AC000482,residence,kyc_origination,2026-04-01,T1,ashoka layout kaveripura - 960104
+AD000622,AC000484,residence,kyc_origination,2026-04-01,T1,"House 252, Om Sai Complex, 1st Cross, 3rd Main, Masidi hattira, Nehru Colony, Kaveripura - 960102"
+AD000623,AC000484,office,kyc_origination,2026-04-01,T1,303/2 masidi hattira vidya ngr kaveripura
+AD000624,AC000485,residence,kyc_origination,2026-04-01,T2,29/1 gali no-11 bus stop ke piche devgarh nagar - 970201
+AD000638,AC000496,residence,kyc_origination,2026-04-01,T1,"No. 17, 2nd X, 8th Mn, Hanuman Mandir ke pass, Siddeshwara Colony, Kaveripura - 960102"
+AD000665,AC000515,residence,kyc_origination,2026-04-01,T1,"440/1, 4TH X, 6TH MAIN RD, HAALINA DAIRY HATTIRA, BASAVA NAGAR, KAVERIPURA - 960101"
+AD000666,AC000516,residence,kyc_origination,2026-04-01,T3,"109/1, Blk B, Rd 5, Silvre Oak Layout, Navanagara East - 980301"
+AD000667,AC000517,residence,kyc_origination,2026-04-01,T1,"476/2, 2nd Cross, 1st Main, Nehru Col, Kaveripura - 960102"
+AD000680,AC000527,residence,kyc_origination,2026-04-01,T2,gali no-5 ambedkar nagar devgarh nagr
+AD000689,AC000534,residence,kyc_origination,2026-04-01,T1,#90 nr. medical store nehru colony kaveripura - 960102
+AD000697,AC000540,residence,kyc_origination,2026-04-01,T2,no. 56 gali no-5 dawai ki dukaan ke pass ambedkar nagar devgarh nagr - 970204
+AD000698,AC000540,office,kyc_origination,2026-04-01,T2,"Post Office ke samne, Gandhi Basti, Devgarh Ngr - 970203"
+AD000710,AC000550,residence,kyc_origination,2026-04-01,T2,#177 गली नं. 3 सरकारी स्कूल के पास gandhi basti devgarh nagar - 970204
+AD000713,AC000553,residence,kyc_origination,2026-04-01,T2,house 7 gali no-2 ward 8 nr. children park azad mohalla devgarh nagar - 970203
+AD000714,AC000553,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Tehsil D, District North - 999495"
+AD000720,AC000558,residence,kyc_origination,2026-04-01,T2,"H.No. 115, Gali no-6, Indira Colony, Devgarh Ngr - 97002"
+AD000722,AC000560,residence,kyc_origination,2026-04-01,T3,"C Block, 6th Road, opp. Hanuman Temple, Lakeview Phase 2, Navanagara East - 980303"
+AD000725,AC000562,residence,kyc_origination,2026-04-01,T2,no. 101 gali no-1 मेडिकल स्टोर के पास ambedkar nagar devgarh nagar
+AD000726,AC000562,permanent_native,kyc_origination,2026-04-01,OUT,"Village Hosahalli, Taluk B, District West - 991630"
+AD000730,AC000565,residence,kyc_origination,2026-04-01,T2,"No. 395, Gali no-5, close to Pharmacy, Indira Colony, Devgarh Ngr - 970202"
+AD000733,AC000568,residence,kyc_origination,2026-04-01,T1,"H.No. 187, 6th Cross, 5th Main, opp. Kalyana Mantapa, Nehru Colony, Kaveripura - 960102"
+AD000741,AC000574,residence,kyc_origination,2026-04-01,T3,no. 180 a blk. 3rd road sunrise enclave navanagara east - 980304
+AD000743,AC000576,residence,kyc_origination,2026-04-01,T1,307/1 10th cross 8th mn nr. church shanthi nagar kaveripura - 960101
+AD000760,AC000590,residence,kyc_origination,2026-04-01,T1,#375 3rd cross 5th main nehru colny kaveripura - 960102
+AD000761,AC000590,office,kyc_origination,2026-04-01,T1,"Huse 317, 7th X, 6th Mian, close to Masjid, Vidya Ngr, Kaveripura - 960103"
+AD000764,AC000592,residence,kyc_origination,2026-04-01,T1,"#375, 9TH CROSS, 3RD MAIN, ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಹಿಂದೆ, GANDHI NAGAR, KAVERIPURA - 960102"
+AD000765,AC000593,residence,kyc_origination,2026-04-01,T3,blk b rd 6 opp pds shop hmt colony navanagara east - 980301
+AD000766,AC000593,office,kyc_origination,2026-04-01,T3,h.no. 77 near post office palm meadows navanagara east - 980302
+AD000768,AC000595,residence,kyc_origination,2026-04-01,T2,"H.NO. 113, GALI 3, WARD 10, CLOSE TO PDS SHOP, KRISHNA PURI, DEGVARH NAGAR - 970202"
+AD000784,AC000607,residence,kyc_origination,2026-04-01,T3,"A Block, 1st Rd., Defence Colny, Navanagara East - 980301"
+AD000785,AC000608,residence,kyc_origination,2026-04-01,T1,"No. 46, ಮಸೀದಿ ಹತ್ತಿರ, Kaveripura - 960102"
+AD000786,AC000608,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Taluk B, District North - 997388"
+AD000808,AC000625,residence,kyc_origination,2026-04-01,T3,#264 blk d rd 5 opp children park sunrise enclave navanagara east - 980304
+AD000817,AC000633,residence,kyc_origination,2026-04-01,T2,"Annapoorna Nilaya, bhd Milk Dairy, Patel Nagar, Devgarh Nagar - 970202"
+AD000824,AC000638,residence,kyc_origination,2026-04-01,T3,"H.NO. 284, BLK A, RD 3, NAVANAGARA EAST - 980302"
+AD000831,AC000644,residence,kyc_origination,2026-04-01,T1,"10th Cross, 2nd Main, near Petrol Pump, Ashoka Layt, Kaveripura - 960104"
+AD000833,AC000646,residence,kyc_origination,2026-04-01,T3,"#384, B Blk., 1st Road, nr. Bus Stop, Silver Oak Layout, Navanagara East - 980301"
+AD000852,AC000661,residence,kyc_origination,2026-04-01,T3,"H.No. 115, Om Sai Complex, Blk E, Rd 6, close to Milk Dairy, Green Park Layt, Navanagara East - 980302"
+AD000853,AC000661,office,kyc_origination,2026-04-01,T3,"Blk A, Rd 2, behind Milk Dairy, Green Park Lyt, Navanagara East - 980301"
+AD000861,AC000667,residence,kyc_origination,2026-04-01,T2,"गली नं. 12, Ward 6, मेडिकल स्टोर के पास, Nehru Colony, Devgarh Nagar - 970203"
+AD000873,AC000678,residence,kyc_origination,2026-04-01,T1,h.no. 13 om sai complex 3rd cross 8th mn vinayaka nagr kaveripura - 960104
+AD000881,AC000686,residence,kyc_origination,2026-04-01,T1,"H.No. 192, ಮೆಡಿಕಲ್ ಶಾಪ್ ಹತ್ತಿರ, Anjaneya Badavane, Kaveripura - 960103"
+AD000882,AC000686,office,kyc_origination,2026-04-01,T1,"No. 370, 8th Crs, 5th Mn, opp Ganesh Temple, Anjaneya Badavane, Kaveripura - 960103"
+AD000905,AC000702,residence,kyc_origination,2026-04-01,T3,no. 196 blk d rd 1 ration ki dukkaan ke paas royal gardens navanagara east - 980303
+AD000906,AC000702,office,kyc_origination,2026-04-01,T3,"No. 319, Blk E, Rd 2, Lakeview Phase 2, Navanagara East - 980303"
+AD000907,AC000703,residence,kyc_origination,2026-04-01,T3,"No. 315, Blk C, Rd 4, Bagicha ke samne, Palm Meadowss, Navanagara East - 980302"
+AD000908,AC000704,residence,kyc_origination,2026-04-01,T2,"RAM NAGAR, DEVGARH NAGAR - 970203"
+AD000909,AC000704,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Taluk A, District West - 996162"
+AD000914,AC000708,residence,kyc_origination,2026-04-01,T2,gali no. 4 patel ngr devgarh nagar - 970202
+AD000926,AC000717,residence,kyc_origination,2026-04-01,T3,"#178, F BLOCK, 3RD ROAD, CLOSE TO GANAPATHI TEMPLE, TEACHERS COLNY, NAVANAGARA EAST - 980302"
+AD000933,AC000723,residence,kyc_origination,2026-04-01,T2,#73 gali no-7 ward 11 nr church patel nagar devgarh nagar - 9770202
+AD000937,AC000727,residence,kyc_origination,2026-04-01,T2,"323/1, Ambedkar Ngr, Devgarh Nagr - 970204"
+AD000943,AC000731,residence,kyc_origination,2026-04-01,T3,#42 blk b rd 5 opp church silver oak layout navanagara east - 980301
+AD000945,AC000733,residence,kyc_origination,2026-04-01,T1,"2nd Cross, 7th Mn, opp Ration Shop, Vidya Nagar, Kaveripura - 960103"
+AD000946,AC000733,office,kyc_origination,2026-04-01,T1,"8th Cr, 5th Main, nr Petrol Pump, Vinayaka Nagr, Kaveripura - 960104"
+AD000961,AC000744,residence,kyc_origination,2026-04-01,T2,"Gali 7, पानी की टंकी के पास, Nehru Colony, Devgarh Ngr - 970203"
+AD000965,AC000748,residence,kyc_origination,2026-04-01,T1,3rd crs 5th mn anche kacheri hattira shanthi ngr kaveripura - 960101
+AD000966,AC000748,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Tehsil C, District East - 998245"
+AD000974,AC000755,residence,kyc_origination,2026-04-01,T3,"H.No. 258, F Block, 6th Rd., bhd Ganapathi Temple, Navanagara East - 980302"
+AD000976,AC000757,residence,kyc_origination,2026-04-01,T1,nr. hanuman temple basava nagar kaveripura - 960101
+AD000977,AC000757,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Tehsil D, District North - 997209"
+AD000979,AC000759,residence,kyc_origination,2026-04-01,T2,"No. 80, Gali 7, Ward 8, Azda Mohalla, Devgarh Ngr - 970203"
+AD001004,AC000778,residence,kyc_origination,2026-04-01,T1,"2ND CROSS, 2ND MAIN, CLOSE TO HANUMAN TEMPLE, KUVEMPU LAYT, KAVEIPURA - 960102"
+AD001005,AC000779,residence,kyc_origination,2026-04-01,T1,"nr Milk Dairy, Kaveripura - 960101"
+AD001007,AC000781,residence,kyc_origination,2026-04-01,T1,"114/2, 3RD CR, 3RD MN, SARKARI SHAALE HATTIRA, VINAYAKA NAGR, KAVERIPURA - 960104"
+AD001009,AC000783,residence,kyc_origination,2026-04-01,T2,h.no. 232 gali no. 3 behind medicals devgarh nagar - 970202
+AD001011,AC000785,residence,kyc_origination,2026-04-01,T2,"House 340, Doodh Dairy ke pass, Ambedkar Nagr, Devgarh Nagar - 970204"
+AD001025,AC000796,residence,kyc_origination,2026-04-01,T2,"H.No. 425, Gali No. 4, behind Church, Shastri Nagr, Devgarh Nagar - 970201"
+AD001028,AC000798,residence,kyc_origination,2026-04-01,T2,"GALI NO. 9, SARKARI SCHOOL KE PASS, DEVGARH NAGAR - 970203"
+AD001029,AC000799,residence,kyc_origination,2026-04-01,T2,h.no. 268 gali no. 1 sarkari school ke paas azad mohalla devgarh nagr - 970203
+AD001030,AC000799,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Tehsil C, District South - 999706"
+AD001054,AC000819,residence,kyc_origination,2026-04-01,T3,"#375, OM SAI COMPLEX, BLK C, RD 1, SUNRISE ENCLAVE, NAVANAGARA EAST - 980304"
+AD001066,AC000828,residence,kyc_origination,2026-04-01,T3,"#237, BLK C, RD 2, GREEN PARK LAYOUT, NAVANAGARA EAST"
+AD001073,AC000833,residence,kyc_origination,2026-04-01,T3,c block 2nd rd. close to pharmacy teachers colony navanagara east - 980302
+AD001074,AC000834,residence,kyc_origination,2026-04-01,T1,no. 14 9th cross 1st main nr ganapathi temple nehru colony kaveripura - 960102
+AD001079,AC000838,residence,kyc_origination,2026-04-01,T3,"NO. 63, BLK F, RD 4, OPPOSITE GOVERNMENT SCHHOOL, NAVANAGARA EAST - 980301"
+AD001080,AC000838,office,kyc_origination,2026-04-01,T3,"BLK F, RD 2, SILVR OAK LAYOUT, NAVANAGARA EAST - 980301"
+AD001088,AC000844,residence,kyc_origination,2026-04-01,T1,"#122, 5th Cross, 6th Main, nr Milk Dairy, Kuvempu Layout, Kaveripura - 960102"
+AD001102,AC000855,residence,kyc_origination,2026-04-01,T2,"Sai Residency, Gali No. 2, Ward 8, near Bus Stand, Azad Mohalla, Devgarh Nagar - 970203"
+AD001103,AC000856,residence,kyc_origination,2026-04-01,T1,"268/3, 11th Cross, 8th Main Rd, Bus Nildana hattira, Kaveripura"
+AD001104,AC000856,office,kyc_origination,2026-04-01,T1,"H.No. 114, 7th Cross, 5th Mn, bhd Ganesh Temple, Kaveripura - 960103"
+AD001105,AC000857,residence,kyc_origination,2026-04-01,T1,"#467, SRI KRISHNA NIVAS, 6TH CROSS, 5TH MAIN, ಆಂಜನೇಯ ದೇವಸ್ಥಾನ ಎದುರು, NEHRU COLONY, KAVERIPURA - 960102"
+AD001106,AC000857,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Tehsil D, District South - 999863"
+AD001109,AC000859,residence,kyc_origination,2026-04-01,T3,"Sarkari Shaale edhuru, Silver Oak Layout, Navanagara East - 980301"
+AD001120,AC000867,residence,kyc_origination,2026-04-01,T3,31/2 b block 3rd rd. nr. hanuman temple green park layout navanagara east - 980301
+AD001121,AC000868,residence,kyc_origination,2026-04-01,T3,"Blk E, Rd 5, opposite PDS Shop, Lakeview Phase 2, Navanagara East - 908303"
+AD001127,AC000873,residence,kyc_origination,2026-04-01,T2,"No. 151, Shivaji Nagr, Devgarh Nagr - 970202"
+AD001130,AC000876,residence,kyc_origination,2026-04-01,T1,#311 4th cross 7th main nr. water tank basava ngr kaveripura - 960101
+AD001135,AC000879,residence,kyc_origination,2026-04-01,T2,"House 210, गली नं. 6, सरकारी स्कूल के पास, Ambedkar Nagr, Devgarh Nagar - 970204"
+AD001136,AC000880,residence,kyc_origination,2026-04-01,T2,"Sri Krishna Nivas, Gali 3, Ward 2, nr Children Park, Indira Col, Devgarh Nagar - 970202"
+AD001137,AC000880,office,kyc_origination,2026-04-01,T2,no. 134 गली नं. 5 दूध डेयरी के पास devgarh ngr - 970204
+AD001146,AC000887,residence,kyc_origination,2026-04-01,T3,"No. 122, nr Mosque, Navanagara East"
+AD001152,AC000892,residence,kyc_origination,2026-04-01,T2,"Gali No. 12, near Hanuman Temple, Indira Colony, Devgarh Nagar - 970202"
+AD001153,AC000892,office,kyc_origination,2026-04-01,T2,"Gali no-9, Hanuman Mandir ke passs, Devgarh Nagar - 970204"
+AD001154,AC000893,residence,kyc_origination,2026-04-01,T1,"#467, 12th X, 8th Main, Petrol Bunk hattira, Vinayaka Ngr, Kaveripura - 960104"
+AD001155,AC000894,residence,kyc_origination,2026-04-01,T2,"378/1, Gali No. 4, opp Mosque, Gandhi Basti, Devgarh Nagar - 970203"
+AD001174,AC000909,residence,kyc_origination,2026-04-01,T1,186/1 9th cross 2nd main close to ganesh temple nehru colony kaveripura - 960102
+AD001183,AC000916,residence,kyc_origination,2026-04-01,T3,"H.NO. 19, E BLOCK, 5TH RD, CLOSE TO MASJAD, LAKEVIEW PHASE 2, NAVANAGARA ESAT"
+AD001194,AC000924,residence,kyc_origination,2026-04-01,T2,"Gali no-6, Hanuman Mandir ke peeche, Krishna Puri, Devgarh Nagar - 970202"
+AD001195,AC000924,office,kyc_origination,2026-04-01,T2,"H.No. 423, Gali No. 10, डाकघर के पास, Krishna Puri, Devgarh Nagar - 970202"
+AD001199,AC000928,residence,kyc_origination,2026-04-01,T1,"House 53, 4th Crs, 5th Main, nr Medical Store, Kuvempu Lyt, Kaveripura - 960102"
+AD001212,AC000937,residence,kyc_origination,2026-04-01,T3,"H.No. 250, close to Milk Dairy, Navanagara East - 980304"
+AD001213,AC000937,office,kyc_origination,2026-04-01,T3,"463/3, Om Sai Complex, Blk C, Rd 5, Royal Gardens, Navanagara East - 980304"
+AD001222,AC000943,residence,kyc_origination,2026-04-01,T3,"#251, Lakeview Phase 2, Navanagara East - 980303"
+AD001223,AC000944,residence,kyc_origination,2026-04-01,T1,"NO. 383, 7TH CRS, 4TH MN, GANDHI NAGAR, KAVERIPURA - 960102"
+AD001225,AC000946,residence,kyc_origination,2026-04-01,T2,"#150, Gali No. 6, behind Ganapathi Temple, Shivaji Ngr, Devgarh Nagar - 970202"
+AD001226,AC000947,residence,kyc_origination,2026-04-01,T2,"GALI NO. 1, WARD 6, DEVGARH NAGAR - 970203"
+AD001231,AC000951,residence,kyc_origination,2026-04-01,T1,"H.No. 404, 9th Cross, 6th Main, Nehru Colony, Kaveripura - 960102"
+AD001233,AC000953,residence,kyc_origination,2026-04-01,T1,"428/2, Masidi hattira, Nehru Colny, Kaveripura - 960103"
+AD001247,AC000963,residence,kyc_origination,2026-04-01,T3,"H.No. 279, Blk E, Rd 3, nr Post Office, HMT Colony, Navanagara East - 980301"
+AD001257,AC000972,residence,kyc_origination,2026-04-01,T1,12th cross 3rd main vidya nagar kaveripura - 960103
+AD001258,AC000972,office,kyc_origination,2026-04-01,T1,h.no. 128 1st cross 1st mn anjaneya badavane kaveripura - 960103
+AD001259,AC000973,residence,kyc_origination,2026-04-01,T3,"#241, nr. Post Office, Silver Oak Layout, Navanagara East - 980304"
+AD001276,AC000987,residence,kyc_origination,2026-04-01,T1,"Siddeshwara Colony, Kaveripura - 960102"
+AD001281,AC000992,residence,kyc_origination,2026-04-01,T2,"H.No. 268, Gali No. 3, near Milk Booth, Patel Nagar, Devgarh Nagar - 970202"
+AD001294,AC001002,residence,kyc_origination,2026-04-01,T1,"HOUSE 286, 3RD CROSS, 5TH MAIN, CLOSE TO HANUMAN TEMPLE, KAVERIPURA - 960102"
+AD001296,AC001004,residence,kyc_origination,2026-04-01,T2,gali 7 close to medicals nehru colony devgarh ngr - 970203
+AD001297,AC001004,office,kyc_origination,2026-04-01,T2,"House 371, Gali No. 5, Ration ki Dukaan ke pass, Ram Nagar, Devgarh Nagar - 970203"
+AD001327,AC001027,residence,kyc_origination,2026-04-01,T2,"H.NO. 441, SHANTI KUNJ, GALI 10, WARD 11, PATEL NAGAR, DEVGARH NAGAR - 970202"
+AD001328,AC001027,office,kyc_origination,2026-04-01,T2,"H.NO. 464, DOODH DAIRY KE PAAS, AZAD MOHALLA, DEVGARH NAGR - 970204"
+AD001329,AC001028,residence,kyc_origination,2026-04-01,T3,"Blk E, Rd 3, nr Masjid, Teachers Col, Navangara East - 980302"
+AD001330,AC001029,residence,kyc_origination,2026-04-01,T3,"Blk C, Rd 4, near Church, Green Park Layout, Navanagara East - 980301"
+AD001331,AC001030,residence,kyc_origination,2026-04-01,T3,"#134, Blk D, Rd 5, Silver Oak Layout, Navanagara East - 980301"
+AD001332,AC001030,office,kyc_origination,2026-04-01,T3,"#103, D Block, 6th Rd., nr Masjid, Defence Colony, Navanagara Est - 980301"
+AD001342,AC001039,residence,kyc_origination,2026-04-01,T2,"House 28, Gali 3, Nehru Colny, Devgarh Nagar - 970203"
+AD001346,AC001042,residence,kyc_origination,2026-04-01,T2,"House 161, Gali no-2, मस्जिद के पास, Shastri Nagr, Devgarh Ngr - 970201"
+AD001347,AC001042,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Taluk A, District East - 998926"
+AD001380,AC001068,residence,kyc_origination,2026-04-01,T2,"No. 360, गली नं. 9, Ward 11, चर्च के पीछे, Patel Nagr, Devgarh Nagar - 970202"
+AD001381,AC001068,office,kyc_origination,2026-04-01,T2,"No. 25, Gali No. 1, Park ke samne, Indira Colony, Devgarh Nagr - 970202"
+AD001390,AC001075,residence,kyc_origination,2026-04-01,T3,"#137, D Blk, 5th Road, Orchid Enclave, Navanagara East - 980301"
+AD001416,AC001091,residence,kyc_origination,2026-04-01,T1,"#161, 12TH CROSS, 1ST MAIN RD, CLOSE TO GANAPATHI TEMPLE, NEHRU COLONY, KAVERIPURA - 960102"
+AD001427,AC001098,residence,kyc_origination,2026-04-01,T3,"A Block, 6th Road, close to Church, Teachers Col, Navanagara East - 980302"
+AD001449,AC001116,residence,kyc_origination,2026-04-01,T1,363/3 3rd x 4th main samudaya bhavana hattira kaveripura - 960102
+AD001450,AC001117,residence,kyc_origination,2026-04-01,T2,ganga apartments gali no. 8 krishna puri devgarh nagar - 9702002
+AD001455,AC001121,residence,kyc_origination,2026-04-01,T2,"GALI 7, DOODH DAIRY KE BAGAL ME, PATEL NAGAR, DEVGARH NAGAR - 970202"
+AD001456,AC001121,office,kyc_origination,2026-04-01,T2,"HOUSE 90, सरकारी स्कूल के पास, INDIRA COLONY, DEVGARH NAGAR - 970202"
+AD001457,AC001122,residence,kyc_origination,2026-04-01,T2,"Gali no-6, opposite Government School, Azad Mohalla, Devgarh Nagar - 970203"
+AD001463,AC001127,residence,kyc_origination,2026-04-01,T3,community hall ke pass railway colony navanagara east - 980303
+AD001464,AC001127,permanent_native,kyc_origination,2026-04-01,OUT,"Village Sundarpur, Tehsil C, District West - 996541"
+AD001479,AC001139,residence,kyc_origination,2026-04-01,T1,"MILK DAIRY HATTIRA, NEHRU COLONY, KAVERIPURA - 960102"
+AD001480,AC001140,residence,kyc_origination,2026-04-01,T3,312/1 nr mosque palm meadows navanagara east - 980302
+AD001482,AC001142,residence,kyc_origination,2026-04-01,T3,"293/2, Ganesh Mandir ke peeche, Palm Meadows, Navanagara East - 980302"
+AD001486,AC001145,residence,kyc_origination,2026-04-01,T3,"#214, Blk B, Rd 6, nr Mosque, Navanagara East"
+AD001489,AC001147,residence,kyc_origination,2026-04-01,T2,"गली नं. 11, चर्च के पास, Patel Nagr, Devgarh Nagar - 970202"
+AD001510,AC001164,residence,kyc_origination,2026-04-01,T2,gali no-4 ward 2 indira colony devgarh nagar - 970202
+AD001512,AC001166,residence,kyc_origination,2026-04-01,T3,377/3 blk e rd 3 nr post office hmt colony navanagara east - 980301
+AD001513,AC001166,office,kyc_origination,2026-04-01,T3,3/1 e blk. 5th road royal gardens navanagara east - 980303
+AD001532,AC001179,residence,kyc_origination,2026-04-01,T1,"4th Crs, 1st Main Rd, close to Community Hall, Kaveripura - 960101"
+AD001552,AC001194,residence,kyc_origination,2026-04-01,T1,"#175, 1st X, 6th Main, ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಹತ್ತಿರ, Vidya Ngr, Kaveripura - 960103"
+AD001561,AC001202,residence,kyc_origination,2026-04-01,T1,"House 242, 8th Cross, 5th Mn, Medical Stare ke paas, Kuvempu Layout, Kaveripura - 960104"
+AD001562,AC001202,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Taluk A, District North - 999125"
+AD001584,AC001221,residence,kyc_origination,2026-04-01,T2,"Gali no-7, Patel Naagr, Devgarh Ngr - 970202"
+AD001596,AC001232,residence,kyc_origination,2026-04-01,T1,"4th Cross, 4th Main, behind Community Hall, Gandhi Nagr, Kaveripura"
+AD001598,AC001234,residence,kyc_origination,2026-04-01,T3,"bhd Mosque, Navanagara East - 980302"
+AD001599,AC001234,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Taluk B, District South - 991825"
+AD001612,AC001245,residence,kyc_origination,2026-04-01,T2,"House 26, Gali no-3, Ward 2, Park ke saamne, Devgarh Nagar - 970202"
+AD001613,AC001245,office,kyc_origination,2026-04-01,T2,"Sai Residency, Galli No. 8, Indira Colony, Devgarh Nagar - 970202"
+AD001614,AC001246,residence,kyc_origination,2026-04-01,T2,"No. 202, Gali no-9, Ward 10, Ganesh Mandir ke saamne, Krishna Puri, Devgarh Nagar - 970202"
+AD001615,AC001247,residence,kyc_origination,2026-04-01,T1,"1ST X, 2ND MN, SARKARI SCHOOL KE PAAS, KALYANA NAGAR, KAVERIPURA - 960104"
+AD001621,AC001252,residence,kyc_origination,2026-04-01,T3,"F BLOCK, 2ND ROAD, SUNRISE ENCCLAVE, NAVANAGARA EAST - 980304"
+AD001627,AC001256,residence,kyc_origination,2026-04-01,T2,"HOUSE 330, BESIDE MILK BOOTH, DEVGARH NAGAR - 970202"
+AD001634,AC001261,residence,kyc_origination,2026-04-01,T1,41/2 9th cr 3rd main bhd bus stand gandhi nagr kaveripura - 960102
+AD001645,AC001271,residence,kyc_origination,2026-04-01,T1,"7TH CRS, 1ST MAIN, NEHRU COLONY, KAVERIPURA - 960102"
+AD001646,AC001271,office,kyc_origination,2026-04-01,T1,"NO. 290, 11TH X, 6TH MAIN, NEAR MILK DAIRY, KUVEMPU LYT, KAVERIPURA - 960102"
+AD001655,AC001278,residence,kyc_origination,2026-04-01,T1,"#273, 9TH CROSS, 3RD MN, NR WATER TANK, SHATHI NAGAR, KAVERIPURA - 960101"
+AD001678,AC001291,residence,kyc_origination,2026-04-01,T2,"गली नं. 3, WARD 2, मेडिकल स्टोर के पास, INDIRA COL, DEVGARH NAGR - 970202"
+AD001681,AC001294,residence,kyc_origination,2026-04-01,T3,"Blk C, Rd 5, close to Water Tank, Navanagara East - 980304"
+AD001682,AC001295,residence,kyc_origination,2026-04-01,T2,"#215, Shastri Nagar, Devgarh Nagar - 970201"
+AD001685,AC001297,residence,kyc_origination,2026-04-01,T3,"BLK E, RD 4, NR BUS STOP, ROYAL GARDENS, NAVANAGARA EAST - 980303"
+AD001686,AC001297,office,kyc_origination,2026-04-01,T3,"HOUSE 462, GANGA APARTMENTS, ROYAL GARDENS, NAVANAGARA EAST - 980303"
+AD001689,AC001299,residence,kyc_origination,2026-04-01,T2,"HOUSE 314, गली नं. 4, चर्च के पीछे, SHASTRI NGR, DEVGARH NGR"
+AD001690,AC001300,residence,kyc_origination,2026-04-01,T2,"Shivaji Nagar, Devgarh Nagar - 970202"
+AD001694,AC001304,residence,kyc_origination,2026-04-01,T2,"H.No. 322, Gali no-5, Ward 11, opposite Pharmacy, Patel Nagar, Devgarh Nagar - 970202"
+AD001722,AC001327,residence,kyc_origination,2026-04-01,T3,272/3 blk c rd 5 navanagara east - 980304
+AD001729,AC001333,residence,kyc_origination,2026-04-01,T3,396/3 blk d rd 3 masidi hattira defence colony navanagara east - 980301
+AD001732,AC001336,residence,kyc_origination,2026-04-01,T1,h.no. 323 lakshmi nilaya 1st cross 4th main nyayabele angadi hattira shanthi nagar kaveripura - 960101
+AD001733,AC001337,residence,kyc_origination,2026-04-01,T2,"Gali no-8, Hanuman Mandir ke piche, Subhash Ngr, Devgarh Nagar - 970201"
+AD001736,AC001340,residence,kyc_origination,2026-04-01,T1,"7TH CROSS, 7TH MAIN, NR GOVT SCHOOL, HOSA BADAVANE, KAVERIPURA - 960101"
+AD001737,AC001340,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Taluk A, District West - 991812"
+AD001744,AC001346,residence,kyc_origination,2026-04-01,T3,#28 blk e rd 1 ಪೆಟ್ರೋಲ್ ಬಂಕ್ ಹತ್ತಿರ railway colony navanagara east
+AD001764,AC001362,residence,kyc_origination,2026-04-01,T1,"#123, 10TH CROSS, 6TH MAIN, BEHIND PETROL PUMP, VINAYAKA NAGAR, KAVERIPURA - 960104"
+AD001812,AC001404,residence,kyc_origination,2026-04-01,T3,"#389, close to Bus Stand, Lakeview Phase 2, Navanagara East - 980303"
+AD001833,AC001421,residence,kyc_origination,2026-04-01,T2,"Gali no-2, मस्जिद के पास, Patel Ngr, Devgarh Nagar - 970202"
+AD001835,AC001423,residence,kyc_origination,2026-04-01,T2,"447/2, GALI 2, NR PARK, AZAD MOHALLA, DEVGARH NAGAR - 970230"
+AD001842,AC001428,residence,kyc_origination,2026-04-01,T3,"SAI RESIDENCY, BLK E, RD 4, NEAR BUS STAND, GREEN PARK LYT, NAVANAGARA EAST - 980301"
+AD001843,AC001428,permanent_native,kyc_origination,2026-04-01,OUT,"Village Sundarpur, Tehsil D, District South - 993953"
+AD001845,AC001430,residence,kyc_origination,2026-04-01,T3,no. 329 blk a rd 3 lakeview phase 2 navanagara east - 980303
+AD001846,AC001430,office,kyc_origination,2026-04-01,T3,green park layout navanagara east - 980301
+AD001863,AC001444,residence,kyc_origination,2026-04-01,T2,"407/1, GALI NO-7, WARD 9, NEAR MILK BOOTH, DEVGARH NGAAR - 970201"
+AD001870,AC001449,residence,kyc_origination,2026-04-01,T1,"No. 251, 8th Cross, 2nd Main Rd, opposite Medical Store, Kaveripura - 960103"
+AD001892,AC001467,residence,kyc_origination,2026-04-01,T3,"House 200, Annapoorna Nilaya, E Block, 6th Road, ಮೆಡಿಕಲ್ ಶಾಪ್ ಹತ್ತಿರ, HMT Colony, Navanagara East - 980301"
+AD001893,AC001467,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Tehsil D, District West - 993792"
+AD001903,AC001475,residence,kyc_origination,2026-04-01,T1,house 437 8th cr 3rd main bhd ratoin shop kaveripura - 960103
+AD001905,AC001477,residence,kyc_origination,2026-04-01,T2,h.no. 359 gali no. 2 indira colony devgarh nagar - 970201
+AD001906,AC001478,residence,kyc_origination,2026-04-01,T3,"#433, B Blk., 6th Road, nr. Bus Stop, Navanagara East - 980301"
+AD001907,AC001479,residence,kyc_origination,2026-04-01,T2,house 469 gali no. 3 ward 10 nr. ration shop krishna puri devgarh nagar - 970202
+AD001908,AC001480,residence,kyc_origination,2026-04-01,T3,"No. 173, Blk F, Rd 5, ಸರ್ಕಾರಿ ಶಾಲೆ ಹತ್ತಿರ, Silver Oak Layout, Navanagara East - 980301"
+AD001909,AC001481,residence,kyc_origination,2026-04-01,T1,#448 6th cr 8th mn kaveripura - 960104
+AD001910,AC001481,office,kyc_origination,2026-04-01,T1,"10th X, 4th Main Rd, Bus Stop edhuru, Hosa Badavane, Kaveripura - 960101"
+AD001937,AC001500,residence,kyc_origination,2026-04-01,T2,"HOUSE 342, GALI 10, WARD 8, PETROL PUMP KE PASS, AZAD MOHALLA, DEVGARH NAGAR - 970203"
+AD001940,AC001503,residence,kyc_origination,2026-04-01,T1,no. 445 1st cross 8th main vidya nagar kaveripura - 960103
+AD001941,AC001503,office,kyc_origination,2026-04-01,T1,"H.No. 184, 6th Crs, 1st Main, Haalina Dairy hattira, Anjaneya Badavane, Kaveripura - 960103"
+AD001951,AC001513,residence,kyc_origination,2026-04-01,T2,"Sri Krishna Nivas, Gali no-2, Ward 12, Tilak Nagar, Devgarh Nagar - 970204"
+AD001974,AC001534,residence,kyc_origination,2026-04-01,T2,432/2 gali 9 b/h gvt school gandhi basti devgarh nagar
+AD001975,AC001534,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Taluk A, District East - 992010"
+AD001977,AC001536,residence,kyc_origination,2026-04-01,T3,"E Blk., 2nd Road, Lakeview Phase 2, Navanagara East"
+AD001998,AC001550,residence,kyc_origination,2026-04-01,T2,154/1 gali no-5 bagicha ke paas nehru colony devgahr nagar - 970203
+AD002025,AC001569,residence,kyc_origination,2026-04-01,T3,"428/3, C Block, 1st Road, Railway Col, Navanagara East - 980304"
+AD002026,AC001570,residence,kyc_origination,2026-04-01,T2,subhash ngr devgarh nagar - 970201
+AD002027,AC001571,residence,kyc_origination,2026-04-01,T2,"गली नं. 5, Shastri Ngr, Devgarh Nagar - 970201"
+AD002028,AC001572,residence,kyc_origination,2026-04-01,T2,"House 410, Gali No. 9, Ward 12, Petrol Pump ke pass, Tilak Ngr, Devgarh Ngr - 970204"
+AD002031,AC001575,residence,kyc_origination,2026-04-01,T3,"F Blk., 5th Road, Ration Angadi hattira, Lakeview Phase 2, Navanagara East - 980303"
+AD002032,AC001575,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Taluk A, District South - 994001"
+AD002039,AC001582,residence,kyc_origination,2026-04-01,T1,"#459, 3rd Cross, 5th Main, Haalina Dairy hattira, Nehru Colny, Kaveripura - 960102"
+AD002047,AC001589,residence,kyc_origination,2026-04-01,T3,"H.No. 199, nr. Overhead Tank, Silver Oak Lyt, Navanagara East - 980301"
+AD002056,AC001595,residence,kyc_origination,2026-04-01,T2,#24 gali 7 nehru colny devgarh nagar - 970203
+AD002060,AC001598,residence,kyc_origination,2026-04-01,T1,"No. 110, 5th Cross, 1st Mn, Hanuman Mandir ke paas, Kuvempu Layt, Kaveripura - 960102"
+AD002077,AC001612,residence,kyc_origination,2026-04-01,T3,"B Blk, 2nd Road, Girja Ghar ke pass, Navanagara East - 980302"
+AD002078,AC001612,office,kyc_origination,2026-04-01,T3,"No. 404, B Block, 3rd Rd, nr PDS Shop, Teachers Colony, Navanagara East - 980303"
+AD002088,AC001618,residence,kyc_origination,2026-04-01,T1,no. 61 bhd pds shop nehru colony kaveripura - 960102
+AD002091,AC001621,residence,kyc_origination,2026-04-01,T2,"#397, Gali No. 4, Ward 11, Patel Nagr, Devgarh Nagar - 970202"
+AD002103,AC001630,residence,kyc_origination,2026-04-01,T1,"OPPOSITE CHILDREN PARK, GANDHI NAGAR, KAVERIPURA - 960102"
+AD002105,AC001632,residence,kyc_origination,2026-04-01,T2,"H.No. 243, Gali no-12, Ward 6, Ration ki Dukaan ke paas, Nehru Colony, Devgarh Nagar - 970203"
+AD002106,AC001632,office,kyc_origination,2026-04-01,T2,"Sarkari School ke pass, Krishna Puri, Devgarh Ngr - 970202"
+AD002107,AC001633,residence,kyc_origination,2026-04-01,T1,"10th Cross, 1st Mai,n close to Ration Shop, Hosa Badavane, Kaveripura - 960101"
+AD002112,AC001637,residence,kyc_origination,2026-04-01,T2,"House 249, Gali 12, close to Hanuman Temple, Ambedkar Nagr, Devgarh Nagr - 970204"
+AD002114,AC001639,residence,kyc_origination,2026-04-01,T3,"D Blok, 4th Road, near Govt Scheol, HMT Colony, Navanagara East - 980301"
+AD002115,AC001639,office,kyc_origination,2026-04-01,T3,"C Block, 5th Rd., close to Mosque, Orchid Enclave, Navanagara East - 980301"
+AD002117,AC001641,residence,kyc_origination,2026-04-01,T2,"ANNAPOORNA NILAYA, GALI NO. 1, CLOSE TO MOSQUE, RAM NGR, DEVGARH NAGAR - 970203"
+AD002119,AC001643,residence,kyc_origination,2026-04-01,T2,gali no. 3 bhd masjid devgarh nagar - 970201
+AD002120,AC001643,office,kyc_origination,2026-04-01,T2,gali no-6 ward 8 bhd park azad mohalla devgarh nagar - 970203
+AD002121,AC001644,residence,kyc_origination,2026-04-01,T1,"78/3, 4th Cr, 5th Main Rd, Nehru Collony, Kaveripura - 960102"
+AD002123,AC001646,residence,kyc_origination,2026-04-01,T2,"#300, Gali 11, Indira Colony, Devgarh Ngr - 970202"
+AD002124,AC001647,residence,kyc_origination,2026-04-01,T1,28/2 shanti kunj 3rd x 1st main nehru colony kaveripura
+AD002125,AC001647,office,kyc_origination,2026-04-01,T1,h.no. 44 5th cross 5th main kuvempu lyaout kaveripura - 960102
+AD002134,AC001653,residence,kyc_origination,2026-04-01,T3,"H.No. 78, Blk E, Rd 3, nr Bus Stand, Palm Meadows, Navanagara East - 980302"
+AD002151,AC001665,residence,kyc_origination,2026-04-01,T1,#147 5th crs 8th main close to ganapathi temple gandhi nagar kaveripura - 960102
+AD002152,AC001665,office,kyc_origination,2026-04-01,T1,nr medicals hosa badavane kaveripura - 960104
+AD002155,AC001668,residence,kyc_origination,2026-04-01,T3,b block 4th road nr masjid railay colny navanagara east - 9880304
+AD002156,AC001668,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Tehsil D, District West - 992747"
+AD002159,AC001671,residence,kyc_origination,2026-04-01,T2,"Gali No. 12, nr Haanuman Temple, Ambedkar Nagar, Devgarh Nagar - 970204"
+AD002160,AC001671,office,kyc_origination,2026-04-01,T2,house 135 gali no-11 close to hanuman temple tilak nagar devgarh nagr - 970204
+AD002175,AC001682,residence,kyc_origination,2026-04-01,T3,sri krishna nivas a blk. 2nd road teachers col navanagaa east - 980302
+AD002178,AC001684,residence,kyc_origination,2026-04-01,T3,"A Block, 3rd Road, b/h Milk Booth, Palm Meadows, Navanagara East - 980304"
+AD002183,AC001688,residence,kyc_origination,2026-04-01,T1,house 243 sarkari shaale eduru shanthi nagar kaveripura - 960101
+AD002184,AC001688,office,kyc_origination,2026-04-01,T1,house 183 5th x 5th main sarkari shaale edhuru shanthi nagar kaveripura - 960101
+AD002188,AC001692,residence,kyc_origination,2026-04-01,T3,"H.No. 304, Blk F, Rd 6, close to Community Hall, Orchid Enclave, Navanagara East - 980301"
+AD002190,AC001694,residence,kyc_origination,2026-04-01,T1,"H.No. 83, Ashoka Layout, Kaveripura - 960104"
+AD002191,AC001694,office,kyc_origination,2026-04-01,T1,"10th Cross, 5th Main, Nehru Colony, Kaveripura - 960120"
+AD002211,AC001709,residence,kyc_origination,2026-04-01,T2,"Gali no-3, near Bus Stop, Devgarh Nagar - 970203"
+AD002212,AC001710,residence,kyc_origination,2026-04-01,T1,h.no. 22 10th cross 3rd mn hanuman mandir ke piche ashoka layt kaveripura - 960104
+AD002216,AC001714,residence,kyc_origination,2026-04-01,T2,house 11 gali no-2 ward 6 nehru col devgarh nagar - 970203
+AD002217,AC001715,residence,kyc_origination,2026-04-01,T1,"#223, 8th Cross, 6th Main Rd, opp Overhead Tank, Basava Nagar, Kaveripura - 960101"
+AD002228,AC001723,residence,kyc_origination,2026-04-01,T3,"352/3, B Block, 4th Road, close to Church, Sunrise Enclave, Navanagara East - 980304"
+AD002235,AC001729,residence,kyc_origination,2026-04-01,T2,"गली नं. 11, Nehru Colony, Devgarh Nagar - 9700203"
+AD002237,AC001731,residence,kyc_origination,2026-04-01,T2,"NO. 241, MEDCIAL STORE KE SAMNE, DEVGARH NAGAR - 970202"
+AD002241,AC001734,residence,kyc_origination,2026-04-01,T1,"#287, 8th X, 8th Main Rd, Hosa Badavane, Kaveripura - 960101"
+AD002245,AC001737,residence,kyc_origination,2026-04-01,T1,"NO. 370, 10TH CROSS, 3RD MAIN RD, BHD GANESH TEMPLE, NEHRU COLONY, KAVERIPURA - 960102"
+AD002247,AC001739,residence,kyc_origination,2026-04-01,T1,no. 159 13th x 2nd mn samudaya bhavana hattira siddeshwara colny kaveripura - 960102
+AD002258,AC001749,residence,kyc_origination,2026-04-01,T3,house 133 b blk 6th road sarkari school ke paas teachers colony navanagara east - 980302
+AD002260,AC001751,residence,kyc_origination,2026-04-01,T1,"3rd Cross, 1st Main, nr Hanuman Temple, Siddeshwara Colny, Kaveripura - 960102"
+AD002276,AC001763,residence,kyc_origination,2026-04-01,T1,"215/1, Lakshmi Nilaya, 3rd Cross, 6th Main Rd, Sarkari Shaale pakkadalli, Vinayaka Nagar, Kaveripura - 960104"
+AD002282,AC001767,residence,kyc_origination,2026-04-01,T3,"House 419, HMT Colny, Navanagara East - 980301"
+AD002283,AC001767,office,kyc_origination,2026-04-01,T3,"A Blk., 3rd Road, Orchid Enclave, Navanagara East - 980301"
+AD002296,AC001777,residence,kyc_origination,2026-04-01,T3,"No. 372, Palm Meadows, Naavnagara East - 980302"
+AD002297,AC001778,residence,kyc_origination,2026-04-01,T1,"#361, 2nd Cross, 6th Mn, nr Hanuman Temple, Siddeshwara Colony, Kaveripura - 960102"
+AD002305,AC001786,residence,kyc_origination,2026-04-01,T1,"#358, 9TH CROSS, 2ND MAIN, B/H BUS STOP, VIDYA NAGR, KAVERIPURA - 960103"
+AD002311,AC001792,residence,kyc_origination,2026-04-01,T3,"#55, Palm Meadows, Navanagara East - 980303"
+AD002339,AC001812,residence,kyc_origination,2026-04-01,T2,"No. 414, Gali no-11, Ward 8, bhd Ganapathi Temple, Azad Mohalla, Devgarh Nagar - 970203"
+AD002340,AC001812,office,kyc_origination,2026-04-01,T2,"No. 273, Gali No. 8, close to Bus Stop, Devgarh Nagar - 970203"
+AD002346,AC001818,residence,kyc_origination,2026-04-01,T3,"391/1, D BLOCK, 3RD ROAD, CLOSE TO BUS STAND, TEACHERS COL, NAVANAGARA EAST - 980302"
+AD002347,AC001818,office,kyc_origination,2026-04-01,T3,"H.NO. 277, C BLOCK, 1ST ROAD, NR. GANESH TEMPLE, ORCHID ENCLAVE, NAVANAGARA EAST - 980301"
+AD002357,AC001826,residence,kyc_origination,2026-04-01,T2,#34 ganga apartments gali 11 ward 2 indira col devgarh nagar - 970202
+AD002364,AC001832,residence,kyc_origination,2026-04-01,T2,"297/3, GALI 9, WARD 4, MEDICAL STORE KE PASS, RAM NAGAR, DEVGARH NAGAR - 970203"
+AD002380,AC001846,residence,kyc_origination,2026-04-01,T3,"BLK A, RD 2, PALM MEADOWS, NAVANAGARA EAST - 980302"
+AD002384,AC001850,residence,kyc_origination,2026-04-01,T2,h.no. 191 gali no. 2 girja ghar ke saamne shastri ngr devgarh ngr - 970201
+AD002395,AC001857,residence,kyc_origination,2026-04-01,T3,"19/1, BLK C, RD 2, MASIDI HATTIRA, HMT COLONY, NAVANAGARA EAST"
+AD002396,AC001858,residence,kyc_origination,2026-04-01,T2,"near Ganapathi Temple, Krishna Puri, Devgarh Nagar"
+AD002407,AC001867,residence,kyc_origination,2026-04-01,T3,"Blk C, Rd 6, Lakeview Phase 2, Navanagara East - 980303"
+AD002421,AC001876,residence,kyc_origination,2026-04-01,T2,no. 306 shivaji nagr devgarh nagr - 970203
+AD002424,AC001879,residence,kyc_origination,2026-04-01,T3,e block 4th rd. orchid enclave navanagara east - 980301
+AD002427,AC001881,residence,kyc_origination,2026-04-01,T3,"No. 86, Om Sai Complex, Blk E, Rd 3, opp. Government School, Orchid Enclave, Navanagara East - 980301"
+AD002431,AC001884,residence,kyc_origination,2026-04-01,T2,"गली नं. 9, Ward 10, Krishna Puri, Devgarh Nagar - 970202"
+AD002432,AC001884,office,kyc_origination,2026-04-01,T2,"#285, Gali no-3, Ward 8, Azad Mohalla, Devgarh Ngr - 970203"
+AD002439,AC001889,residence,kyc_origination,2026-04-01,T1,"HOUSE 256, 4TH CR, 8TH MN, RATION ANGADI HINDE, VIDYA NGR, KAVERIPURA - 960103"
+AD002447,AC001894,residence,kyc_origination,2026-04-01,T3,blk e rd 2 teachers col navanagara east - 980302
+AD002448,AC001894,office,kyc_origination,2026-04-01,T3,house 266 e blk 2nd road lakeview phase 2 navanagara east - 980303
+AD002449,AC001895,residence,kyc_origination,2026-04-01,T2,"House 256, Gali no-2, close to Community Hall, Ram Nagar, Devgarh Nagar - 970203"
+AD002450,AC001895,office,kyc_origination,2026-04-01,T2,no. 222 gali no-2 पार्क के पास indira colony devgarh nagar - 90202
+AD002451,AC001896,residence,kyc_origination,2026-04-01,T1,h.no. 269 12th cross 4th main ashoka layout kaveripura - 960104
+AD002452,AC001896,office,kyc_origination,2026-04-01,T1,3rd cross 1st main basava ngr kaveripura - 960101
+AD002458,AC001901,residence,kyc_origination,2026-04-01,T2,"Gali No. 4, next to Hanuman Temple, Shivaji Nagar, Devgarh Nagar - 970202"
+AD002459,AC001902,residence,kyc_origination,2026-04-01,T2,"House 167, Gali 5, near Medical Store, Patel Nagar, Devgarh Nagar - 970202"
+AD002460,AC001902,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Taluk A, District West - 993334"
+AD002463,AC001905,residence,kyc_origination,2026-04-01,T2,gali no. 1 bus stop ke paas shivaji nagar devgarh nagr - 970202
+AD002467,AC001908,residence,kyc_origination,2026-04-01,T3,blk d rd 1 ಹಾಲಿನ ಡೈರಿ ಹತ್ತಿರ palm meadows navanagara east - 980302
+AD002483,AC001921,residence,kyc_origination,2026-04-01,T2,"#440, बारात घर के पीछे, Shivaji Ngr, Devgarh Nagar - 970202"
+AD002501,AC001935,residence,kyc_origination,2026-04-01,T2,"No. 349, near Petrol Pump, Azad Mohalla, Devgarh Nagar - 970203"
+AD002509,AC001941,residence,kyc_origination,2026-04-01,T3,"No. 461, Om Sai Complex, Blk C, Rd 2, near Mosque, Silver Oak Lyt, Navanagara East - 980301"
+AD002522,AC001950,residence,kyc_origination,2026-04-01,T3,"H.NO. 344, F BLOCK, 4TH RD, NEAR GOVERNMENT SCHOOL, SILVER OAK LAYOUT, NAVANAGARA EAST - 980301"
+AD002531,AC001958,residence,kyc_origination,2026-04-01,T2,"H.No. 262, Gali No. 9, Gandhi Basti, Devgarh Nagr - 970202"
+AD002544,AC001969,residence,kyc_origination,2026-04-01,T1,no. 47 ration angadi eduru gandhi nagar kaveripura - 960102
+AD002545,AC001969,office,kyc_origination,2026-04-01,T1,#452 7th cross 8th main kaveripura - 960104
+AD002569,AC001990,residence,kyc_origination,2026-04-01,T1,"H.No. 278, 11th Crs, 6th Main, Anjaneya Badavane, Kaveripura - 960103"
+AD002571,AC001992,residence,kyc_origination,2026-04-01,T1,h.no. 263 annapoorna nilaya 6th cross 5th main sarkari shaale edhuru shanthi nagar kaveripura - 960101
+AD002572,AC001993,residence,kyc_origination,2026-04-01,T2,"GALI NO. 6, WARD 7, NEAR MEDICAL STORE, GANDHI BASTI, DEVGARH NAGAR - 970203"
+AD002586,AC002004,residence,kyc_origination,2026-04-01,T3,"Blk E, Rd 3, close to Church, Teachers Colony, Navanagara East - 980303"
+AD002587,AC002004,office,kyc_origination,2026-04-01,T3,#368 b block 4th road palm meadows navanagara east - 980302
+AD002605,AC002017,residence,kyc_origination,2026-04-01,T3,"Blk D, Rd 2, next to Petrol Pump, Green Park Layout, Navanagara East - 980301"
+AD002611,AC002021,residence,kyc_origination,2026-04-01,T2,"NO. 231, NR. OVERHEAD TANK, NEHRU COLNY, DEVGARH NGR - 970204"
+AD002613,AC002023,residence,kyc_origination,2026-04-01,T2,gali no. 1 near pds shop shivaji nagar devgarh nagar - 970202
+AD002615,AC002025,residence,kyc_origination,2026-04-01,T3,"E Block, 3rd Road, near Overhead Tank, Unity Nagar, Navanagara East - 980302"
+AD002623,AC002033,residence,kyc_origination,2026-04-01,T1,"#398, 12TH CROSS, 4TH MAIN, KAVERIPURA - 960102"
+AD002627,AC002036,residence,kyc_origination,2026-04-01,T3,"No. 170, A Blk., 3rd Rd., Navanagara East"
+AD002640,AC002045,residence,kyc_origination,2026-04-01,T1,8th cross 3rd main opposite bus stand gandhi nagar kaveripura - 960102
+AD002643,AC002048,residence,kyc_origination,2026-04-01,T3,"B Blk, 2nd Road, close to Milk Booth, Defence Colony, Navanagara East - 980301"
+AD002644,AC002048,permanent_native,kyc_origination,2026-04-01,OUT,"Village Mallapura, Tehsil C, District East - 991842"
+AD002651,AC002053,residence,kyc_origination,2026-04-01,T3,"H.No. 267, Blk B, Rd 4, nr Church, Sunrise Enclave, Navanagara East - 980304"
+AD002652,AC002053,office,kyc_origination,2026-04-01,T3,"42/1, A Block, 3rd Road, nr. Milk Booth, HMT Col, Navanagara East - 980301"
+AD002654,AC002055,residence,kyc_origination,2026-04-01,T3,"NO. 418, B BLK, 5TH ROAD, NEAR BUS STOP, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303"
+AD002666,AC002066,residence,kyc_origination,2026-04-01,T3,"#262, D Block, 4th Road, behind Water Tank, Navanagara East - 980301"
+AD002692,AC002087,residence,kyc_origination,2026-04-01,T3,"#28, BLK E, RD 3, OPP GOVT SCHOOL, ORCHID ENCLAVE, NAVANAGARA EAST"
+AD002712,AC002103,residence,kyc_origination,2026-04-01,T3,"House 390, Blk A, Rd 4, Hanuman Mandir ke paas, Orchid Enclave, Navanagara East - 980304"
+AD002713,AC002103,office,kyc_origination,2026-04-01,T3,"No. 94, Blk E, Rd 2, Silver Oak Layt, Navanagara Eat"
+AD002721,AC002110,residence,kyc_origination,2026-04-01,T1,"H.NO. 381, 1ST CR, 8TH MAIN, PETROL BUNK HATTIRA, KALYANA NAGAR, KAVERIPURA - 960104"
+AD002725,AC002114,residence,kyc_origination,2026-04-01,T2,"Gali 10, गणेश मंदिर के सामने, Azad Mohalla, Devgarh Nagar - 970203"
+AD002726,AC002114,office,kyc_origination,2026-04-01,T2,"House 234, Gali No. 2, Ward 7, Gandhi Basti, Devgarh Nagar - 970203"
+AD002743,AC002128,residence,kyc_origination,2026-04-01,T3,"#392, B Block, 6th Roda, near Ganesh Temple, Defence Colony, Navanagara East - 980301"
+AD002744,AC002129,residence,kyc_origination,2026-04-01,T1,"#215, 4th Cross, 1st Main Rd, Vidya Nagar, Kaveripura - 960103"
+AD002745,AC002129,permanent_native,kyc_origination,2026-04-01,OUT,"Village Rampura Kalan, Tehsil D, District West - 993873"
+AD002750,AC002132,residence,kyc_origination,2026-04-01,T2,"465/2, GALI NO-7, PARK KE PAAS, AZAD MOHALLA, DEVGARH NGR - 970203"
+AD002760,AC002139,residence,kyc_origination,2026-04-01,T3,"254/2, Blk B, Rd 6, b/h Mosque, Orchid Enclave, Navaanagara East - 980301"
+AD002761,AC002139,office,kyc_origination,2026-04-01,T3,"House 307, Petrol Bunk hattira, Green Park Layout, Navanagara East - 980301"
+AD002762,AC002140,residence,kyc_origination,2026-04-01,T1,"159/3, 3RD CROS, 2ND MAIN, CLOSE TO MEDICAL STORE, ASHOKA LAYOUT, KAVERIPURA - 960104"
+AD002766,AC002143,residence,kyc_origination,2026-04-01,T1,"#75, 10th Cross, 3rd Main, Ganesh Mandir ke piche, Nehru Colony, Kaveripura - 960102"
+AD002776,AC002151,residence,kyc_origination,2026-04-01,T3,tanki ke pas defence colony navanagara east - 980301
+AD002784,AC002158,residence,kyc_origination,2026-04-01,T2,283/1 gali 2 opposite mosque shastri nagr devgarh nagar - 970201
+AD002787,AC002160,residence,kyc_origination,2026-04-01,T2,"#346, Gali No. 2, Ward 1, behind Hanuman Teemple, Shivaji Ngr, Devgarh Nagar - 970201"
+AD002788,AC002160,office,kyc_origination,2026-04-01,T2,"#211, Gali No. 3, बारात घर के सामने, Azad Mohalla, Devgarh Nagr - 970203"
+AD002796,AC002167,residence,kyc_origination,2026-04-01,T2,#37 gali no-12 devgarh nagar
+AD002797,AC002167,permanent_native,kyc_origination,2026-04-01,OUT,"Village Bilagi, Tehsil C, District West - 996383"
+AD002804,AC002173,residence,kyc_origination,2026-04-01,T3,"House 80, Sunrise Enclave, Navanagara East - 980302"
+AD002805,AC002173,permanent_native,kyc_origination,2026-04-01,OUT,"Village Bilagi, Taluk A, District South - 998311"
+AD002831,AC002194,residence,kyc_origination,2026-04-01,T2,#320 gai 2 ration ki dukaan ke paas azad mohalla devgarh nagar - 970203
+AD002842,AC002202,residence,kyc_origination,2026-04-01,T2,"H.NO. 40,0 GALI 11, SARKARI SCHOOL KE PAAS, SHASTRI NAGAR, DEVGARH NGR - 970201"
+AD002843,AC002203,residence,kyc_origination,2026-04-01,T2,144/1 gali no-5 shastri nagar devgarh nagar - 970201
+AD002844,AC002203,office,kyc_origination,2026-04-01,T2,shivaji nagar devgarh nagar - 970202
+AD002854,AC002212,residence,kyc_origination,2026-04-01,T2,314/2 gali no-5 ward 11 girja ghar ke paas patel nagar devgarh nagar - 970202
+AD002861,AC002219,residence,kyc_origination,2026-04-01,T1,h.no. 62 10th cross 3rd main sarkari school ke pass anjaneya badavane kaveripura - 960103
+AD002866,AC002223,residence,kyc_origination,2026-04-01,T3,house 287 blk f rd 3 nr. hanuman temple lakeview phase 2 navanagara east - 980303
+AD002868,AC002225,residence,kyc_origination,2026-04-01,T1,"9th Cross, 7th Main Rd, Sarkari Shaale hattira, Hosa Badavane, Kaveripura - 960101"
+AD002872,AC002229,residence,kyc_origination,2026-04-01,T2,"H.NO. 187, GALI NO. 2, CLOSE TO MILK DAIRY, NEHRU COLONY, DEVGARH NAGAR - 970203"
+AD002884,AC002240,residence,kyc_origination,2026-04-01,T3,"3/1, E BLK, 5TH RD., ORCHID ENCLAVE, NAVANAGARA EAST - 980301"
+AD002885,AC002240,permanent_native,kyc_origination,2026-04-01,OUT,"Village Bilagi, Taluk A, District East - 994403"
+AD002888,AC002242,residence,kyc_origination,2026-04-01,T2,"GALI NO. 12, WARD 6, CLOSE TO RATION SHOP, NEHRU COL, DEVGARH NAGR - 970203"
+AD002889,AC002243,residence,kyc_origination,2026-04-01,T3,"206/2, BLK C, RD 1, BEHIND CHORCH, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303"
+AD002890,AC002243,office,kyc_origination,2026-04-01,T3,"#298, C BLOCK, 3RD RD., CLOSE TO BUS STAND, NAVANAGARA EAST - 980304"
+AD002920,AC002267,residence,kyc_origination,2026-04-01,T1,"1st Cross, 5th Main, Nehru Colony, Kaveripura - 960102"
+AD002932,AC002278,residence,kyc_origination,2026-04-01,T3,"No. 21, Blk D, Rd 1, Hanuman Mandir ke saamne, Orchid Enclave, Navanagara East - 980301"
+AD002984,AC002319,residence,kyc_origination,2026-04-01,T2,gali no. 8 azad mohalla devgarh nagar - 970203
+AD002985,AC002319,permanent_native,kyc_origination,2026-04-01,OUT,"Village Hosahalli, Taluk A, District South - 993588"
+AD002986,AC002320,residence,kyc_origination,2026-04-01,T3,"#326, B BLOCK, 3RD ROAD, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303"
+AD002987,AC002321,residence,kyc_origination,2026-04-01,T1,3rd cross 4th mn kalyana mantapa hattira gandhi nagr kaveripura - 960102
+AD003002,AC002334,residence,kyc_origination,2026-04-01,T2,"Gali 8, गणेश मंदिर के पास, Patel Nagar, Devgarh Nagar - 970202"
+AD003015,AC002343,residence,kyc_origination,2026-04-01,T2,house 199 ration ki dukaan ke samne azad mohalla devgarh nagar - 970203
+AD003016,AC002344,residence,kyc_origination,2026-04-01,T1,h.no. 74 1st cross 4th main ಮಸೀದಿ ಹತ್ತಿರ vidya nagar kaveripura - 960103
+AD003020,AC002347,residence,kyc_origination,2026-04-01,T1,"465/2, 10TH CROSS, 3RD MAIN, ANJANEYA SWAMY TEMPLE HINDE, HOSA BADAVANE, KAVERIPURA - 960104"
+AD003021,AC002347,permanent_native,kyc_origination,2026-04-01,OUT,"Village Devipur, Taluk B, District North - 996584"
+AD003026,AC002350,residence,kyc_origination,2026-04-01,T1,"#269, 4TH CRSS, 6TH MAIN, NR. PDS SHOP, NEHRU COL, KAVERIPURA - 960102"
+AD003028,AC002352,residence,kyc_origination,2026-04-01,T1,"#447, 6th Crs, 6th Main, Ganapathi Gudi hattira, Ashoka Lyt, Kaveripura - 960104"
+AD003041,AC002362,residence,kyc_origination,2026-04-01,T1,"HOUSE 356, 7TH CR, 1ST MAIN, NR GANAPATHI TEMPLE, KUVEMPU LAYOUT, KAVERIPURA - 960104"
+AD003042,AC002362,office,kyc_origination,2026-04-01,T1,"10TH X, 6TH MAIN, KUVEMPU LAYOUT, KAVERIPURA - 960103"
+AD003048,AC002367,residence,kyc_origination,2026-04-01,T1,"#458, 12th Cross, 2nd Mn, Shanthi Nagar, Kaveripura - 90101"
+AD003049,AC002368,residence,kyc_origination,2026-04-01,T1,"No. 266, 7th Cr, 1st Main, Neerina Tank hattira, Shanthi Nagar, Kaveripura - 960101"
+AD003052,AC002371,residence,kyc_origination,2026-04-01,T2,"Gali 4, Shivaji Nagar, Devgarh Nagar - 970202"
+AD003056,AC002374,residence,kyc_origination,2026-04-01,T1,"#396, 7th Cross, 7th Main Rd, Kaveripura - 960101"
+AD003070,AC002384,residence,kyc_origination,2026-04-01,T2,"No. 368, Gali 3, Ration ki Dukaan ke piche, Ram Nagar, Devgarh Nagar - 970203"
+AD003082,AC002393,residence,kyc_origination,2026-04-01,T2,"H.No. 424, Gali 9, मेडिकल स्टोर के बगल में, Nehru Colny, Devgarh Nagar - 970203"
+AD003086,AC002397,residence,kyc_origination,2026-04-01,T3,"133/1, D Blk., 3rd Rd, Teachers Colony, Navanagara East - 980302"
+AD003090,AC002400,residence,kyc_origination,2026-04-01,T1,"7th Cross, 6th Main, Samudaya Bhavana hattira, Gandhi Nagr, Kaveripura - 960102"
+AD003094,AC002225,residence,skip_trace,2026-04-30,T1,"6th Crs, 2nd Main, beside Ganesh Temple, Kuvempu Layout, Kaveripura - 960102"
+AD003102,AC001232,residence,skip_trace,2026-05-29,T1,"#372, 6th X, 7th Mn, Gandhi Nagar, Kaveripura"
+AD003107,AC001202,residence,skip_trace,2026-06-06,T1,"6th Cross, 3rd Mn, Bus Stop hattira, Kaveripura - 960102"
+AD003113,AC002368,residence,skip_trace,2026-06-20,T1,"3rd Cross, 5th Main, close to Ganesh Temple, Ashoka Layout, Kaveripura - 960104"

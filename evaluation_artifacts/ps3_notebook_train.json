@@ -1,0 +1,230 @@
+{
+  "run": {
+    "artifact_version": "ps3-notebook-v1",
+    "split": "train",
+    "dataset_root": "e:\\OpenIIT Data\\Dataset",
+    "created_at_utc": "2026-10-08T19:31:27.142335+00:00"
+  },
+  "inputs": {
+    "towns": {
+      "rows": 3,
+      "columns": [
+        "town_id",
+        "town_name",
+        "address_style",
+        "approx_radius_m"
+      ]
+    },
+    "localities": {
+      "rows": 36,
+      "columns": [
+        "locality_id",
+        "town_id",
+        "locality_name",
+        "pincode",
+        "centroid_x",
+        "centroid_y"
+      ]
+    },
+    "landmarks": {
+      "rows": 240,
+      "columns": [
+        "poi_id",
+        "town_id",
+        "landmark_type",
+        "name",
+        "x",
+        "y"
+      ]
+    },
+    "gps_points": {
+      "rows": 112080,
+      "columns": [
+        "visit_id",
+        "seq",
+        "point_ts",
+        "x",
+        "y",
+        "accuracy_m"
+      ]
+    },
+    "baseline": {
+      "rows": 2010,
+      "columns": [
+        "address_id",
+        "geocoder_x",
+        "geocoder_y",
+        "precision"
+      ]
+    },
+    "surveyed": {
+      "rows": 66,
+      "columns": [
+        "address_id",
+        "surveyed_x",
+        "surveyed_y"
+      ]
+    },
+    "accounts": {
+      "rows": 1680,
+      "columns": [
+        "account_id",
+        "lender_id",
+        "portfolio",
+        "income_type",
+        "town_id",
+        "preferred_language",
+        "bucket_start",
+        "dpd_start",
+        "emi_amount",
+        "overdue_start",
+        "outstanding",
+        "salary_credit_day",
+        "bureau_score_band",
+        "other_active_loans",
+        "paid_other_lenders_30d",
+        "last_bounce_reason",
+        "ability_to_pay_estimate",
+        "prev_ptp_count",
+        "prev_ptp_broken",
+        "dialling_arm"
+      ]
+    },
+    "addresses": {
+      "rows": 2175,
+      "columns": [
+        "address_id",
+        "account_id",
+        "address_type",
+        "source",
+        "added_date",
+        "town_id",
+        "address_text"
+      ]
+    },
+    "visits": {
+      "rows": 3896,
+      "columns": [
+        "visit_id",
+        "account_id",
+        "address_id",
+        "agent_id",
+        "visit_date",
+        "start_ts",
+        "checkin_ts",
+        "checkin_x",
+        "checkin_y",
+        "gps_accuracy_m",
+        "dwell_s",
+        "outcome",
+        "ptp_id",
+        "remark",
+        "photo_hash"
+      ]
+    },
+    "agents": {
+      "rows": 30,
+      "columns": [
+        "agent_id",
+        "channel",
+        "language_team",
+        "town_id",
+        "tenure_months",
+        "shift"
+      ]
+    }
+  },
+  "baselines": {
+    "commercial_geocoder": {
+      "n_evaluated": 66.0,
+      "median_error_m": 380.75584241560955,
+      "p90_error_m": 745.5896653346301,
+      "p95_error_m": 1176.861491034427,
+      "within_50m": 0.045454545454545456,
+      "within_100m": 0.09090909090909091,
+      "within_250m": 0.2878787878787879,
+      "within_500m": 0.7121212121212122
+    }
+  },
+  "embedded_backend": {
+    "total_evaluated": 66,
+    "median_error_m": 204.43675471017818,
+    "mean_error_m": 319.7210073520773,
+    "p90_error_m": 639.1607804318618,
+    "p95_error_m": 797.1037531182209,
+    "max_error_m": 2201.7186309789904,
+    "within_50m": 0.2727272727272727,
+    "within_100m": 0.3787878787878788,
+    "within_250m": 0.5303030303030303,
+    "within_500m": 0.7878787878787878,
+    "coverage": 0.7272727272727273,
+    "calibration_error": 0.39810946574119127,
+    "latency_ms_per_prediction": 4.429633333336714
+  },
+  "calibration": {
+    "bins": [
+      {
+        "bin": "0.0-0.1",
+        "predicted": 0.05,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.1-0.2",
+        "predicted": 0.15000000000000002,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.2-0.3",
+        "predicted": 0.25,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.3-0.4",
+        "predicted": 0.35,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.4-0.5",
+        "predicted": 0.45,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.5-0.6",
+        "predicted": 0.5,
+        "actual": 0.3023255813953488,
+        "count": 43
+      },
+      {
+        "bin": "0.6-0.7",
+        "predicted": 0.6499999999999999,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.7-0.8",
+        "predicted": 0.75,
+        "actual": 0.0,
+        "count": 0
+      },
+      {
+        "bin": "0.8-0.9",
+        "predicted": 0.8799794827382357,
+        "actual": 0.6666666666666666,
+        "count": 3
+      },
+      {
+        "bin": "0.9-1.0",
+        "predicted": 0.9459917327454864,
+        "actual": 1.0,
+        "count": 20
+      }
+    ],
+    "overall_ece": 0.15485005747431785
+  },
+  "boundary": "Descriptive evaluation only; no treatment assignment or independent outcome supports causal policy estimates."
+}

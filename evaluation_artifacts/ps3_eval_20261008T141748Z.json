@@ -1,0 +1,185 @@
+{
+  "run": {
+    "run_id": "20261008T141748Z",
+    "created_at": "2026-10-08T14:17:48.891049+00:00",
+    "config": {
+      "artifact_version": "ps3-eval-v1",
+      "split": "train",
+      "coordinate_system": "projected_local_xy_m"
+    },
+    "input_sha256": {
+      "addresses": "0449285015fd87ca8528435449e4238e4b2628350cdf170d3551fa5056cb596e",
+      "visits": "3b208476b4b0d2e8c1fc32838eb30473535bc8840dffc91ca127a41430fdd199",
+      "surveyed": "de86cb2a1ee0bbd97711dfc3aa8ed2d7ff60feaddd808ef53699daf6245828fc",
+      "baseline": "bc345f311877f08802d81de185d4d89123864519a85445fe72759fb2e55d4727"
+    }
+  },
+  "baselines": {
+    "commercial_geocoder": {
+      "n": 66,
+      "median_error_m": 380.75584241560955,
+      "p90_error_m": 745.5896653346301,
+      "p95_error_m": 1176.861491034427,
+      "within_50m": 0.045454545454545456,
+      "within_100m": 0.09090909090909091,
+      "within_250m": 0.2878787878787879,
+      "within_500m": 0.7121212121212122,
+      "coverage": 0.7121212121212122,
+      "calibration_error": 0.5,
+      "latency_ms_per_prediction": 3.0303123243026096e-06,
+      "coverage_rate": 1.0
+    },
+    "nearest_visit": {
+      "n": 23,
+      "median_error_m": 31.573406531446743,
+      "p90_error_m": 162.45665360244263,
+      "p95_error_m": 220.5225154257491,
+      "within_50m": 0.7391304347826086,
+      "within_100m": 0.782608695652174,
+      "within_250m": 1.0,
+      "within_500m": 1.0,
+      "coverage": 0.9130434782608695,
+      "calibration_error": 0.2521739130434783,
+      "latency_ms_per_prediction": 8.695639300403064e-06,
+      "coverage_rate": 0.3484848484848485
+    },
+    "weighted_centroid": {
+      "n": 23,
+      "median_error_m": 29.34706118165873,
+      "p90_error_m": 118.2442712339224,
+      "p95_error_m": 182.05816209566703,
+      "within_50m": 0.6956521739130435,
+      "within_100m": 0.8695652173913043,
+      "within_250m": 0.9565217391304348,
+      "within_500m": 1.0,
+      "coverage": 0.8260869565217391,
+      "calibration_error": 0.20761846690950553,
+      "latency_ms_per_prediction": 8.695639300403064e-06,
+      "coverage_rate": 0.3484848484848485
+    }
+  },
+  "ablations": {
+    "address_only": {
+      "n": 66,
+      "median_error_m": 380.75584241560955,
+      "p90_error_m": 745.5896653346301,
+      "p95_error_m": 1176.861491034427,
+      "within_50m": 0.045454545454545456,
+      "within_100m": 0.09090909090909091,
+      "within_250m": 0.2878787878787879,
+      "within_500m": 0.7121212121212122,
+      "coverage": 0.7121212121212122,
+      "calibration_error": 0.5,
+      "latency_ms_per_prediction": 4.5454615963425375e-06,
+      "coverage_rate": 1.0
+    },
+    "address_plus_visits": {
+      "n": 23,
+      "median_error_m": 31.573406531446743,
+      "p90_error_m": 162.45665360244263,
+      "p95_error_m": 220.5225154257491,
+      "within_50m": 0.7391304347826086,
+      "within_100m": 0.782608695652174,
+      "within_250m": 1.0,
+      "within_500m": 1.0,
+      "coverage": 0.9130434782608695,
+      "calibration_error": 0.2521739130434783,
+      "latency_ms_per_prediction": 8.695678843650967e-06,
+      "coverage_rate": 0.3484848484848485
+    },
+    "address_plus_visits_plus_integrity": {
+      "n": 23,
+      "median_error_m": 29.34706118165873,
+      "p90_error_m": 118.2442712339224,
+      "p95_error_m": 182.05816209566703,
+      "within_50m": 0.6956521739130435,
+      "within_100m": 0.8695652173913043,
+      "within_250m": 0.9565217391304348,
+      "within_500m": 1.0,
+      "coverage": 0.8260869565217391,
+      "calibration_error": 0.20761846690950553,
+      "latency_ms_per_prediction": 1.739131814405403e-05,
+      "coverage_rate": 0.3484848484848485
+    },
+    "address_plus_nearby": {
+      "status": "not_estimable",
+      "reason": "PS3 has no independent nearby-account treatment/evidence table; using locality centroid would confound the ablation."
+    }
+  },
+  "splits": {
+    "temporal_split": {
+      "cutoff": "2026-06-02T10:42:20",
+      "train_visits": 2727,
+      "future_visits": 1169,
+      "leakage_rule": "features before cutoff, outcomes after cutoff",
+      "pre_cutoff_weighted_centroid_metrics": {
+        "n": 20,
+        "median_error_m": 24.895553990888295,
+        "p90_error_m": 85.2570610603666,
+        "p95_error_m": 198.27168263277056,
+        "within_50m": 0.75,
+        "within_100m": 0.9,
+        "within_250m": 0.95,
+        "within_500m": 1.0,
+        "coverage": 0.85,
+        "calibration_error": 0.19155142055660096,
+        "latency_ms_per_prediction": 9.999985195463523e-06,
+        "coverage_rate": 0.30303030303030304
+      }
+    },
+    "geography_holdout": {
+      "holdout_towns": [
+        "T3"
+      ],
+      "train_towns": [
+        "OUT",
+        "T1",
+        "T2"
+      ],
+      "status": "defined",
+      "holdout_address_only_metrics": {
+        "n": 66,
+        "median_error_m": 380.75584241560955,
+        "p90_error_m": 745.5896653346301,
+        "p95_error_m": 1176.861491034427,
+        "within_50m": 0.045454545454545456,
+        "within_100m": 0.09090909090909091,
+        "within_250m": 0.2878787878787879,
+        "within_500m": 0.7121212121212122,
+        "coverage": 0.7121212121212122,
+        "calibration_error": 0.5,
+        "latency_ms_per_prediction": 3.0303123243026096e-06,
+        "coverage_rate": 1.0
+      },
+      "note": "The holdout is evaluated without using held-out-town visit evidence; production-model retraining on train towns is required before claiming generalization."
+    }
+  },
+  "counterfactual": {
+    "status": "not_estimable",
+    "estimand": "policy value / treatment effect",
+    "reason": "The supplied PS3 visit table has outcomes but no randomized or policy-assigned treatment/action column and no independent recovery outcome.",
+    "required_columns": [
+      "treatment/action/policy_arm",
+      "recovery outcome",
+      "pre-treatment covariates"
+    ]
+  },
+  "radar": {
+    "status": "baseline_coverage",
+    "metrics": {
+      "accuracy": 0.2878787878787879,
+      "coverage": 1.0,
+      "calibration": 0.5,
+      "robustness": 0.9142867598116097,
+      "explainability": 1.0,
+      "latency": 3.0303123243026096e-06
+    },
+    "note": "Radar is computed for the measured baseline. Add production-model timing and held-out robustness for a production radar."
+  },
+  "dataset_summary": {
+    "addresses": 2175,
+    "visits": 3896,
+    "surveyed_addresses": 66,
+    "baseline_matches": 66
+  }
+}

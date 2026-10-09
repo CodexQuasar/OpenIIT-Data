@@ -1,0 +1,2051 @@
+# PROJECT: AI-NATIVE FIELD ADDRESS GEOCODER
+
+You are a senior ML engineer, geospatial ML researcher, backend engineer, frontend engineer, and competition strategist.
+
+Build a complete, working prototype for the **OpenIIT Data Analytics Competition**, based on CreditNirvana Problem Statement 3:
+
+> **Address Geocoder That Learns from Field Visits**
+
+The objective is to build an AI-powered geocoding and location intelligence system for Indian debt-collection field operations.
+
+The system must take messy Indian borrower addresses, historical field-visit GPS evidence, visit outcomes, GPS trails, dwell time, agent remarks, and nearby confirmed accounts, and produce:
+
+1. Predicted latitude/longitude
+2. Confidence score
+3. Confidence radius in metres
+4. Human-readable landmark-based directions
+5. Evidence supporting the prediction
+6. An indication of whether the address should be visited directly or verified first
+
+The system must continuously improve as trustworthy field visits are added.
+
+The project must be designed as a serious competition submission, not a toy demo.
+
+---
+
+# 1. NON-NEGOTIABLE PROJECT STRUCTURE
+
+Create exactly two major application folders:
+
+```text
+project-root/
+│
+├── backend/
+│   ├── app/
+│   ├── ml/
+│   ├── geospatial/
+│   ├── data/
+│   ├── models/
+│   ├── evaluation/
+│   ├── tests/
+│   ├── scripts/
+│   ├── config/
+│   ├── requirements.txt
+│   └── README.md
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   ├── utils/
+│   ├── types/
+│   ├── assets/
+│   ├── package.json
+│   └── README.md
+│
+├── README.md
+├── .gitignore
+└── docker-compose.yml
+```
+
+Do NOT mix backend and frontend code.
+
+The backend must expose REST APIs.
+
+The frontend must communicate with the backend exclusively through APIs.
+
+Design the architecture so that models can later be replaced without rewriting the frontend.
+
+---
+
+# 2. PRIMARY COMPETITION OBJECTIVE
+
+Optimize for the following priorities, in this order:
+
+1. Correct geospatial predictions
+2. Honest uncertainty estimation
+3. Robustness to noisy GPS evidence
+4. Strong performance on messy Indian addresses
+5. Explainability
+6. Low inference latency
+7. Offline usability
+8. Clean visual demonstration
+9. Easy experimentation with stronger future models
+
+Do NOT optimize only for visual appearance.
+
+The ML system is the core of the project.
+
+---
+
+# 3. IMPORTANT PROBLEM CHARACTERISTICS
+
+The system must explicitly account for the following:
+
+## 3.1 Indian addresses are messy
+
+Addresses may contain:
+
+* English
+* Hindi
+* Bengali
+* Marathi
+* Tamil
+* Telugu
+* Kannada
+* mixed scripts
+* transliterated Indian languages
+* spelling mistakes
+* abbreviations
+* missing house numbers
+* landmarks instead of formal addresses
+* relative directions
+
+Examples:
+
+```text
+Hanuman Mandir ke peeche ration shop ke paas 2nd cross
+```
+
+```text
+हनुमान मंदिर के पीछे राशन दुकान के पास दूसरी गली
+```
+
+```text
+Hanuman mndr piche ration shop 2nd gali
+```
+
+These can refer to essentially the same place.
+
+The system must normalize and semantically represent such expressions.
+
+---
+
+# 4. CRITICAL DATA PRINCIPLE
+
+Historical visit GPS is NOT guaranteed ground truth.
+
+A successful visit GPS can represent:
+
+* borrower home
+* borrower shop
+* roadside meeting
+* nearby meeting point
+* inaccurate GPS
+* agent-selected meeting point
+
+Failed visit GPS represents where the agent searched, not necessarily the actual address.
+
+Therefore:
+
+**NEVER treat every GPS point as an exact label.**
+
+Implement an explicit evidence reliability mechanism.
+
+---
+
+# 5. DATA MODEL
+
+Create clear Pydantic/backend schemas for:
+
+## Account
+
+```text
+account_id
+address
+language
+pincode
+locality
+city
+state
+```
+
+## Visit
+
+```text
+visit_id
+account_id
+agent_id
+timestamp
+latitude
+longitude
+gps_accuracy
+outcome
+dwell_time
+remarks
+trajectory
+```
+
+Possible outcomes:
+
+```text
+SUCCESSFUL_CONTACT
+PARTIAL_CONTACT
+FAILED_SEARCH
+ADDRESS_NOT_TRACEABLE
+WRONG_ADDRESS
+BORROWER_MOVED
+OTHER
+```
+
+## Prediction
+
+```text
+account_id
+latitude
+longitude
+confidence
+confidence_radius_m
+prediction_method
+recommended_action
+directions
+evidence
+model_version
+timestamp
+```
+
+---
+
+# 6. BACKEND ARCHITECTURE
+
+Use:
+
+* Python
+* FastAPI
+* Pydantic
+* pandas
+* NumPy
+* scikit-learn
+* GeoPandas where useful
+* Shapely
+* geopy
+* LightGBM or XGBoost if available
+* sentence-transformers
+* rapidfuzz
+* NetworkX where useful
+* SQLite/PostgreSQL abstraction
+* joblib/ONNX/model-specific serialization
+
+Keep dependencies reasonable.
+
+Do not introduce huge dependencies unless necessary.
+
+The system must work on a normal laptop for demonstration.
+
+---
+
+# 7. BACKEND MODULES
+
+Implement the backend with clear modules.
+
+## 7.1 Address normalization
+
+Create:
+
+```text
+backend/ml/address_normalizer.py
+```
+
+Responsibilities:
+
+* lowercase normalization
+* Unicode normalization
+* punctuation normalization
+* abbreviation expansion
+* whitespace normalization
+* transliteration handling
+* common Indian address abbreviation handling
+* typo tolerance
+* token normalization
+
+Do not destroy useful spatial information.
+
+Keep both:
+
+```text
+raw_address
+normalized_address
+```
+
+---
+
+# 8. ADDRESS ENTITY EXTRACTION
+
+Create an address parser capable of extracting:
+
+```text
+HOUSE_NUMBER
+BUILDING
+STREET
+CROSS
+LANDMARK
+LOCALITY
+VILLAGE
+CITY
+DISTRICT
+STATE
+PINCODE
+RELATION
+DIRECTION
+```
+
+Examples:
+
+```text
+behind Hanuman temple
+near ration shop
+opposite SBI
+2nd cross
+3 gali after mosque
+```
+
+Represent relational information explicitly.
+
+For example:
+
+```json
+{
+  "landmark": "Hanuman Temple",
+  "relation": "BEHIND",
+  "secondary_landmark": "Ration Shop",
+  "relation_2": "NEAR",
+  "road": "2nd Cross"
+}
+```
+
+Use a multilingual embedding model if available.
+
+The system must gracefully fall back to rule-based extraction if the model is unavailable.
+
+---
+
+# 9. GEOCODING PIPELINE
+
+Do NOT directly predict latitude/longitude from raw text.
+
+Implement a candidate-based architecture:
+
+```text
+Address
+   ↓
+Normalization
+   ↓
+Entity extraction
+   ↓
+Candidate generation
+   ↓
+Evidence aggregation
+   ↓
+Candidate ranking
+   ↓
+Best location
+   ↓
+Uncertainty estimation
+```
+
+Candidate locations should come from:
+
+1. Historical successful visits
+2. Nearby confirmed accounts
+3. Shared address/location clusters
+4. Commercial/open geocoder if configured
+5. Known landmarks
+6. Locality/pincode fallback
+7. Spatial interpolation where justified
+
+---
+
+# 10. CANDIDATE GENERATION
+
+Create:
+
+```text
+backend/geospatial/candidate_generator.py
+```
+
+For each account generate a configurable number of candidates.
+
+Example:
+
+```text
+candidate_count = 20
+```
+
+Candidate sources must be labelled:
+
+```text
+HISTORICAL_VISIT
+NEARBY_ACCOUNT
+GEOCODER
+LANDMARK
+LOCALITY
+PINCODE
+```
+
+Do not blindly merge candidates.
+
+Deduplicate geographically.
+
+Use configurable distance thresholds.
+
+---
+
+# 11. HISTORICAL VISIT EVIDENCE
+
+Create:
+
+```text
+backend/ml/visit_evidence.py
+```
+
+Calculate reliability features.
+
+Potential features:
+
+```text
+gps_accuracy
+dwell_time
+visit_outcome
+trajectory_length
+straight_line_distance
+trajectory_efficiency
+number_of_gps_points
+speed_statistics
+stationary_duration
+distance_from_known_account_location
+agent_historical_reliability
+repeat_visit_consistency
+```
+
+Create a visit reliability score:
+
+```text
+0.0 to 1.0
+```
+
+The score must be interpretable.
+
+Example:
+
+```text
+successful borrower contact
++
+good GPS accuracy
++
+reasonable dwell time
++
+consistent trajectory
+=
+high reliability
+```
+
+A suspicious check-in should receive very low weight.
+
+---
+
+# 12. FAKE / LOW-INTEGRITY VISIT DETECTION
+
+Implement a separate module:
+
+```text
+backend/ml/visit_integrity.py
+```
+
+Detect suspicious evidence such as:
+
+* repeated identical coordinates across many unrelated accounts
+* agent home-like location
+* unusually short visits
+* impossible movement speed
+* GPS jumps
+* repeated tea-shop/common-point coordinates
+* suspiciously identical trajectories
+* implausible visit timing
+* poor GPS accuracy
+* abnormal agent-specific patterns
+
+Do NOT automatically delete suspicious visits.
+
+Instead assign:
+
+```text
+integrity_score
+```
+
+and reduce their influence.
+
+Maintain auditability.
+
+---
+
+# 13. AGENT BIAS CONTROL
+
+No single agent should be able to move the predicted location significantly.
+
+Implement safeguards such as:
+
+* cap contribution from one agent
+* aggregate evidence across agents
+* require multiple independent observations for high confidence
+* downweight anomalous agent behaviour
+* avoid overfitting to one agent's GPS pattern
+
+A single GPS point must never dominate a prediction when contradictory evidence exists.
+
+---
+
+# 14. SHARED PLACE / ADDRESS ENTITY RESOLUTION
+
+Create:
+
+```text
+backend/ml/place_resolution.py
+```
+
+Detect when multiple accounts likely refer to the same physical place.
+
+Use:
+
+### Text similarity
+
+* character n-grams
+* fuzzy matching
+* embeddings
+* normalized tokens
+
+### Spatial similarity
+
+* distance between confirmed GPS points
+
+### Landmark similarity
+
+* same landmark
+* same road
+* same locality
+
+### Address structure similarity
+
+* same building
+* same cross
+* same pincode
+
+Produce:
+
+```text
+place_cluster_id
+```
+
+for accounts likely belonging to the same physical location.
+
+Use clustering such as DBSCAN/HDBSCAN where appropriate.
+
+---
+
+# 15. CANDIDATE RANKING MODEL
+
+Build a strong baseline candidate-ranking model.
+
+Start with LightGBM or XGBoost.
+
+Candidate features should include:
+
+```text
+address_similarity
+landmark_similarity
+locality_similarity
+distance_to_successful_visits
+distance_to_failed_visits
+number_of_supporting_visits
+weighted_successful_visit_count
+visit_integrity
+gps_accuracy
+dwell_time
+trajectory_quality
+nearby_account_support
+commercial_geocoder_distance
+candidate_source
+place_cluster_support
+agent_independence
+```
+
+Target:
+
+```text
+candidate is the correct location
+```
+
+Use ranking/classification appropriately.
+
+The architecture must allow replacing LightGBM with a neural ranker later.
+
+---
+
+# 16. AVOID DATA LEAKAGE
+
+This is EXTREMELY important.
+
+When evaluating an account, do not allow the model to use future visits from that same account.
+
+Implement time-aware evaluation.
+
+For example:
+
+```text
+past visits → training
+later visit → evaluation
+```
+
+Never randomly split visit records if this causes future information to leak into the past.
+
+Also test:
+
+* account-level split
+* time-based split
+* geography-based split
+
+Report all relevant metrics.
+
+---
+
+# 17. LOCATION ESTIMATION
+
+Once candidates are scored:
+
+```text
+candidate_score
+      ↓
+probability normalization
+      ↓
+best candidate
+```
+
+Return:
+
+```text
+latitude
+longitude
+```
+
+Optionally calculate a weighted centroid when multiple nearby candidates have strong support.
+
+Avoid averaging geographically unrelated candidates.
+
+---
+
+# 18. UNCERTAINTY ESTIMATION
+
+This is a CORE requirement.
+
+Do not simply output:
+
+```text
+confidence = model_probability
+```
+
+A classification probability is not automatically a spatial confidence radius.
+
+Calculate:
+
+```text
+confidence_radius_m
+```
+
+using empirical spatial errors and calibrated uncertainty.
+
+Implement an initial method such as:
+
+```text
+weighted historical spatial dispersion
++
+candidate probability distribution
++
+validation error distribution
+```
+
+Then calibrate it on held-out data.
+
+Leave a clean interface for future:
+
+```text
+Conformal Prediction
+Quantile Regression
+Bayesian uncertainty
+Deep ensembles
+```
+
+---
+
+# 19. CONFIDENCE CALIBRATION
+
+Create:
+
+```text
+backend/ml/calibration.py
+```
+
+Evaluate whether:
+
+```text
+90% confidence
+```
+
+actually corresponds approximately to:
+
+```text
+90% coverage
+```
+
+Report:
+
+```text
+coverage
+mean radius
+median radius
+P90 radius
+calibration error
+```
+
+Do not claim calibrated confidence unless evaluated.
+
+---
+
+# 20. RECOMMENDED ACTION
+
+The model must return:
+
+```text
+VISIT_DIRECTLY
+VERIFY_FIRST
+LOW_CONFIDENCE
+```
+
+Example:
+
+```text
+confidence >= 0.85
+and radius <= 100m
+→ VISIT_DIRECTLY
+```
+
+```text
+confidence between 0.60 and 0.85
+→ VERIFY_FIRST
+```
+
+```text
+confidence < 0.60
+→ LOW_CONFIDENCE
+```
+
+Make thresholds configurable.
+
+Do NOT hard-code business policy into the ML model.
+
+---
+
+# 21. DIRECTIONS GENERATION
+
+Create:
+
+```text
+backend/geospatial/directions.py
+```
+
+Directions must be grounded in extracted address entities and known landmarks.
+
+Example:
+
+```text
+1. Reach Hanuman Temple.
+2. Take the lane behind the temple.
+3. Continue towards 2nd Cross.
+4. Pass the ration shop.
+5. The predicted location is approximately 70m ahead.
+```
+
+Do not allow an LLM to hallucinate landmarks.
+
+The LLM, if used, should only verbalize structured evidence.
+
+---
+
+# 22. EXPLAINABILITY
+
+Every prediction must contain an evidence explanation.
+
+Example:
+
+```json
+{
+  "prediction": {
+    "latitude": 12.97162,
+    "longitude": 77.59461,
+    "radius_m": 72
+  },
+  "explanation": {
+    "historical_visits": 4,
+    "reliable_visits": 3,
+    "nearby_accounts": 5,
+    "geocoder_support": true,
+    "main_landmark": "Hanuman Temple",
+    "strongest_evidence": [
+      "3 successful visits within 85m",
+      "2 nearby accounts confirmed at same location",
+      "commercial geocoder was 620m away"
+    ]
+  }
+}
+```
+
+The frontend must expose this.
+
+---
+
+# 23. API DESIGN
+
+Implement at minimum:
+
+```text
+GET  /health
+
+POST /api/geocode
+
+POST /api/geocode/batch
+
+POST /api/visits
+
+POST /api/visits/validate
+
+GET  /api/accounts/{account_id}
+
+GET  /api/accounts/{account_id}/evidence
+
+GET  /api/accounts/{account_id}/history
+
+GET  /api/accounts/{account_id}/prediction
+
+GET  /api/place-clusters
+
+GET  /api/metrics
+
+GET  /api/model/info
+```
+
+Add OpenAPI documentation.
+
+Validate every request.
+
+Return useful error messages.
+
+---
+
+# 24. BATCH PROCESSING
+
+The competition may involve many accounts.
+
+Implement efficient batch processing.
+
+Avoid:
+
+```text
+Python loop
+→ model call
+→ model call
+→ model call
+```
+
+where vectorization is possible.
+
+Use:
+
+* batching
+* cached embeddings
+* spatial indexes
+* candidate pre-filtering
+* parallel preprocessing
+* memoization
+
+Do not recompute identical address embeddings.
+
+---
+
+# 25. CACHING
+
+Cache:
+
+* normalized addresses
+* embeddings
+* geocoder responses
+* landmark resolution
+* place clusters
+* candidate locations
+
+The system should not repeatedly call external services for the same address.
+
+---
+
+# 26. OFFLINE-FIRST REQUIREMENT
+
+The frontend must remain useful without network connectivity after prediction data has been synchronized.
+
+Implement a local cache using:
+
+```text
+IndexedDB
+```
+
+or another browser-compatible persistent store.
+
+Cache:
+
+```text
+account
+prediction
+GPS
+confidence radius
+directions
+nearby landmarks
+```
+
+When connection returns, synchronize new visit information.
+
+---
+
+# 27. FRONTEND TECHNOLOGY
+
+Use:
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Leaflet or MapLibre for maps
+* Recharts for analytics
+* modern component architecture
+
+Do not create a generic admin dashboard.
+
+Design the interface around a field-collection workflow.
+
+---
+
+# 28. FRONTEND PAGES
+
+Create:
+
+## Dashboard
+
+Show:
+
+```text
+Total accounts
+High-confidence addresses
+Low-confidence addresses
+Predictions improved
+Address-not-traceable rate
+Median geocoding error
+P90 error
+Productive visits
+```
+
+---
+
+## Account Search
+
+Search by:
+
+```text
+account ID
+address
+locality
+pincode
+place cluster
+```
+
+---
+
+## Address Intelligence Page
+
+Display:
+
+```text
+Original address
+Normalized address
+Extracted landmarks
+Predicted location
+Confidence
+Confidence radius
+Recommended action
+Evidence
+```
+
+---
+
+## Map View
+
+Display:
+
+```text
+Predicted location
+Confidence circle
+Historical visits
+Successful visits
+Failed searches
+Nearby confirmed accounts
+Landmarks
+```
+
+Use different visual styles for different evidence types.
+
+The map should immediately communicate uncertainty.
+
+---
+
+# 29. FIELD AGENT VIEW
+
+Create a dedicated mobile-friendly page.
+
+Show:
+
+```text
+Borrower address
+Predicted pin
+Confidence radius
+Directions
+Nearest landmark
+Distance
+Recommended action
+```
+
+Example:
+
+```text
+HIGH CONFIDENCE
+
+📍 72m confidence radius
+
+Recommended:
+VISIT DIRECTLY
+
+Directions:
+
+1. Reach Hanuman Temple
+2. Take lane behind temple
+3. Continue to 2nd Cross
+4. Look near ration shop
+```
+
+The agent should not need to understand ML.
+
+---
+
+# 30. MODEL EXPLANATION UI
+
+Include an "Why this location?" panel.
+
+Example:
+
+```text
+WHY THIS PIN?
+
+✓ 3 reliable successful visits
+✓ 2 nearby accounts confirm the location
+✓ GPS evidence is consistent
+✓ Address matches Hanuman Temple + 2nd Cross
+
+⚠ Commercial geocoder was 620m away
+
+Confidence: 91%
+Radius: 72m
+```
+
+This is important for judges.
+
+---
+
+# 31. ANALYTICS PAGE
+
+Create visualizations for:
+
+### Distance error
+
+```text
+median
+P75
+P90
+P95
+```
+
+### Before vs after
+
+```text
+commercial geocoder
+vs
+our model
+```
+
+### Confidence calibration
+
+Plot:
+
+```text
+predicted confidence
+vs
+empirical accuracy
+```
+
+### Territory performance
+
+Show:
+
+```text
+city
+district
+pincode
+locality
+```
+
+performance.
+
+### Not-traceable reduction
+
+Show trend over time.
+
+---
+
+# 32. MODEL BENCHMARK PAGE
+
+The frontend should allow comparing:
+
+```text
+Commercial/Open geocoder
+Our baseline
+Our ML model
+```
+
+Show:
+
+```text
+Median error
+P90 error
+Coverage
+Confidence calibration
+Inference time
+```
+
+This makes the competition story very clear.
+
+---
+
+# 33. DATA SIMULATOR
+
+Because real CreditNirvana data may not be available during development, create:
+
+```text
+backend/scripts/generate_demo_data.py
+```
+
+Generate realistic synthetic Indian addresses and visits.
+
+The simulator should include:
+
+### Clean addresses
+
+```text
+Flat 201, ABC Apartments, MG Road
+```
+
+### Messy addresses
+
+```text
+hanuman mndr ke piche 2 gali ration shop ke pas
+```
+
+### Mixed-language addresses
+
+```text
+हनुमान मंदिर के पीछे, 2nd cross
+```
+
+### Noisy GPS
+
+Generate:
+
+* accurate visits
+* 50m error
+* 200m error
+* 1km error
+
+### Failed searches
+
+Generate realistic search trails.
+
+### Suspicious visits
+
+Generate repeated tea-shop/home coordinates.
+
+### Shared places
+
+Generate multiple address variants referring to one location.
+
+This allows the entire pipeline to run end-to-end without proprietary data.
+
+---
+
+# 34. EXPERIMENTAL MODE
+
+Create configuration-driven experiments.
+
+Example:
+
+```yaml
+candidate_count: 20
+
+embedding_model: multilingual
+
+ranking_model: lightgbm
+
+use_geocoder: true
+
+use_visit_history: true
+
+use_place_clusters: true
+
+confidence_threshold: 0.85
+
+direct_visit_radius_m: 100
+
+verification_radius_m: 500
+```
+
+The goal is to make experiments easy.
+
+Do NOT scatter magic constants throughout the code.
+
+---
+
+# 35. MODEL VERSIONING
+
+Every prediction must contain:
+
+```text
+model_name
+model_version
+feature_version
+timestamp
+```
+
+This allows reproducibility.
+
+Example:
+
+```text
+geocoder-v1.3
+features-v2
+```
+
+---
+
+# 36. AUDITABILITY
+
+Store:
+
+```text
+prediction
+input version
+model version
+candidate list
+candidate scores
+evidence used
+confidence calculation
+```
+
+The system must be able to answer:
+
+> "Why did you predict this location?"
+
+without requiring a developer to inspect source code.
+
+---
+
+# 37. PRIVACY AND REGULATORY CONSTRAINTS
+
+Treat the following as strict requirements:
+
+### DPDP
+
+Use location data only for collections-related functionality.
+
+Do not create unrelated profiling.
+
+Implement configurable retention.
+
+Do not expose raw agent tracking data unnecessarily.
+
+### RBI/Fair Practices
+
+The system must not recommend illegal contact behaviour.
+
+Do not create contact-frequency optimization outside the scope of geocoding.
+
+### Employment/privacy
+
+Agent GPS should be used only for relevant operational evidence.
+
+Do not expose an agent's complete personal movement history in the UI.
+
+### Security
+
+Never hard-code:
+
+* API keys
+* database passwords
+* secrets
+
+Use environment variables.
+
+Provide:
+
+```text
+.env.example
+```
+
+---
+
+# 38. NO FABRICATED EXTERNAL DATA
+
+If an external geocoder is unavailable:
+
+DO NOT pretend it worked.
+
+Use a provider abstraction:
+
+```text
+GeocoderProvider
+├── OpenStreetMap/Nominatim
+├── Google/other provider
+└── Offline fallback
+```
+
+The system must clearly identify which provider generated a candidate.
+
+Respect API rate limits.
+
+Cache external results.
+
+---
+
+# 39. TESTING
+
+Create tests for:
+
+### Address normalization
+
+```text
+Hanuman Mandir
+हनुमान मंदिर
+Hanuman mndr
+```
+
+### Coordinate calculations
+
+Test Haversine distance.
+
+### Candidate ranking
+
+Known correct candidate must rank highly.
+
+### Confidence radius
+
+Test calibration logic.
+
+### Visit integrity
+
+Suspicious repeated coordinates should receive lower scores.
+
+### Data leakage
+
+Ensure future visits cannot enter training features for historical prediction.
+
+### API
+
+Test every major endpoint.
+
+### Frontend
+
+At minimum verify critical pages render and API errors are handled.
+
+---
+
+# 40. EVALUATION PIPELINE
+
+Create:
+
+```text
+backend/evaluation/
+```
+
+Implement:
+
+```text
+evaluate.py
+```
+
+Metrics:
+
+```text
+median distance error
+mean distance error
+P75
+P90
+P95
+% within 50m
+% within 100m
+% within 250m
+% within 500m
+confidence coverage
+calibration error
+```
+
+Also compare against:
+
+```text
+baseline geocoder
+```
+
+and:
+
+```text
+historical-visit-only baseline
+```
+
+The model must demonstrate actual improvement.
+
+---
+
+# 41. BASELINES
+
+Implement at least these:
+
+## Baseline 1
+
+Commercial/open geocoder only.
+
+## Baseline 2
+
+Nearest reliable historical successful visit.
+
+## Baseline 3
+
+Weighted historical visit centroid.
+
+## Proposed
+
+Candidate ranking + evidence fusion + uncertainty.
+
+This allows judges to see whether ML genuinely improves performance.
+
+---
+
+# 42. ABLATION STUDY
+
+Implement an experiment that can measure:
+
+```text
+Address only
+Address + historical visits
+Address + visits + nearby accounts
+Address + visits + nearby accounts + integrity
+Full system
+```
+
+Report:
+
+```text
+Median error
+P90 error
+Coverage
+```
+
+This is extremely valuable for the competition presentation.
+
+---
+
+# 43. IMPORTANT MODEL DESIGN PRINCIPLE
+
+Do not build an unnecessarily huge deep-learning model.
+
+The data is heterogeneous and noisy.
+
+A strong architecture should initially be:
+
+```text
+Multilingual address embeddings
++
+Rule-based spatial entity extraction
++
+Geospatial candidate generation
++
+Reliable evidence weighting
++
+LightGBM ranking
++
+Calibrated uncertainty
+```
+
+This should be the baseline.
+
+Create extension interfaces for:
+
+```text
+Transformer ranker
+Graph neural network
+Neural geocoder
+Conformal prediction
+Online learning
+```
+
+---
+
+# 44. FUTURE IMPROVEMENT HOOKS
+
+Leave clean interfaces for:
+
+### Graph-based place learning
+
+```text
+Account ↔ Landmark ↔ Road ↔ Place
+```
+
+### Graph neural networks
+
+### Contrastive address embeddings
+
+### Learned geocoder
+
+### Active learning
+
+Prioritize addresses where new visits would provide maximum information.
+
+### Online learning
+
+Update the model as reliable visits arrive.
+
+### Conformal prediction
+
+Improve confidence-radius guarantees.
+
+### Multimodal evidence
+
+Later incorporate map imagery or other permitted geospatial information if available.
+
+Do not implement every advanced idea in v1.
+
+Build clean extension points.
+
+---
+
+# 45. PERFORMANCE REQUIREMENTS
+
+The system should:
+
+* batch embeddings
+* cache expensive operations
+* use spatial indexing
+* avoid O(N²) comparisons where possible
+* use candidate blocking
+* avoid repeatedly scanning every account
+* support batch geocoding
+
+For place matching, use blocking such as:
+
+```text
+pincode
+locality
+landmark
+character n-gram
+spatial grid
+```
+
+before expensive similarity calculations.
+
+---
+
+# 46. COMPETITION DEMO FLOW
+
+The application must support this demo:
+
+### Step 1
+
+Enter:
+
+```text
+"Hanuman mandir ke piche ration shop ke pas 2nd gali"
+```
+
+### Step 2
+
+System displays extracted entities.
+
+### Step 3
+
+Show candidate locations.
+
+### Step 4
+
+Show historical visit evidence.
+
+### Step 5
+
+Show predicted location.
+
+### Step 6
+
+Show confidence circle.
+
+### Step 7
+
+Show explanation.
+
+### Step 8
+
+Show directions.
+
+### Step 9
+
+Simulate a new successful visit.
+
+### Step 10
+
+Re-run prediction.
+
+Demonstrate that:
+
+```text
+NEW FIELD EVIDENCE
+       ↓
+MODEL KNOWLEDGE
+       ↓
+IMPROVED LOCATION
+```
+
+This feedback loop should be visually obvious.
+
+---
+
+# 47. UI DESIGN
+
+Use a professional fintech/enterprise aesthetic.
+
+Prioritize:
+
+* clarity
+* maps
+* evidence
+* metrics
+* confidence
+* operational usefulness
+
+Avoid:
+
+* excessive animations
+* decorative dashboards
+* fake AI effects
+* unnecessary gradients
+* meaningless charts
+
+The UI should look like a product a bank could actually use.
+
+---
+
+# 48. README
+
+The root README must contain:
+
+## Problem
+
+What is being solved.
+
+## Key insight
+
+Historical field visits provide noisy but valuable spatial supervision.
+
+## Architecture
+
+Include an ASCII architecture diagram.
+
+## ML approach
+
+Explain:
+
+```text
+NLP
+→ candidate generation
+→ evidence fusion
+→ ranking
+→ uncertainty
+```
+
+## Data leakage prevention
+
+Explain time-aware evaluation.
+
+## Metrics
+
+Explain all metrics.
+
+## Demo
+
+Explain how to run.
+
+## Limitations
+
+Be honest.
+
+## Future work
+
+Explain advanced improvements.
+
+---
+
+# 49. DO NOT CHEAT
+
+Do not:
+
+* fabricate accuracy numbers
+* fabricate real-world data
+* pretend an API returned data when it did not
+* claim regulatory compliance without qualification
+* use future visit information during evaluation
+* hard-code expected test answers
+* create fake "AI confidence" numbers
+* hide model failures
+* silently fall back to random coordinates
+
+If synthetic data is being used, label it clearly.
+
+---
+
+# 50. DEVELOPMENT ORDER
+
+Do NOT try to implement everything at once.
+
+Build in this exact order:
+
+### Phase 1
+
+Project skeleton.
+
+### Phase 2
+
+Synthetic data generator.
+
+### Phase 3
+
+Baseline geocoder.
+
+### Phase 4
+
+Historical visit evidence.
+
+### Phase 5
+
+Address normalization + entity extraction.
+
+### Phase 6
+
+Candidate generation.
+
+### Phase 7
+
+Candidate-ranking ML model.
+
+### Phase 8
+
+Visit integrity scoring.
+
+### Phase 9
+
+Place clustering.
+
+### Phase 10
+
+Confidence-radius calibration.
+
+### Phase 11
+
+Evaluation framework.
+
+### Phase 12
+
+FastAPI.
+
+### Phase 13
+
+React frontend.
+
+### Phase 14
+
+Offline cache.
+
+### Phase 15
+
+Demo workflow.
+
+### Phase 16
+
+Optimization.
+
+### Phase 17
+
+Tests.
+
+---
+
+# 51. CODING QUALITY
+
+Use:
+
+* type hints
+* docstrings for important functions
+* modular classes
+* configuration files
+* logging
+* structured error handling
+* deterministic random seeds
+* reproducible experiments
+
+Do not create one giant Python file.
+
+Do not put ML logic inside FastAPI routes.
+
+Do not put business logic inside React components.
+
+---
+
+# 52. ERROR HANDLING
+
+The application must gracefully handle:
+
+* missing GPS
+* malformed coordinates
+* missing address
+* no historical visits
+* no geocoder result
+* conflicting visits
+* unavailable embedding model
+* unavailable external API
+* malformed trajectory
+* empty candidate set
+
+If no reliable prediction exists, return:
+
+```text
+LOW_CONFIDENCE
+```
+
+rather than inventing one.
+
+---
+
+# 53. FINAL DELIVERABLE
+
+At the end, the repository must contain:
+
+```text
+backend/
+frontend/
+README.md
+docker-compose.yml
+.env.example
+```
+
+The following command should work:
+
+```bash
+docker compose up --build
+```
+
+And launch:
+
+```text
+Frontend
+http://localhost:3000
+
+Backend
+http://localhost:8000
+
+API docs
+http://localhost:8000/docs
+```
+
+Also provide local-development commands.
+
+---
+
+# 54. FINAL ACCEPTANCE TEST
+
+Before declaring the project complete, run an end-to-end test:
+
+```text
+messy Indian address
+        ↓
+address normalization
+        ↓
+entity extraction
+        ↓
+candidate generation
+        ↓
+historical visit evidence
+        ↓
+visit integrity
+        ↓
+candidate ranking
+        ↓
+location
+        ↓
+confidence radius
+        ↓
+directions
+        ↓
+frontend map
+```
+
+Then add a simulated reliable visit.
+
+Verify:
+
+```text
+new evidence
+        ↓
+prediction changes appropriately
+        ↓
+confidence improves
+```
+
+Then add a simulated suspicious visit.
+
+Verify:
+
+```text
+suspicious evidence
+        ↓
+low integrity score
+        ↓
+minimal effect on prediction
+```
+
+---
+
+# 55. VERY IMPORTANT: THINK LIKE A COMPETITION TEAM
+
+Do not stop after creating a working CRUD application.
+
+After the baseline works, inspect the evaluation results and identify the largest sources of error.
+
+Then improve the system iteratively.
+
+Prioritize improvements according to measurable impact.
+
+For every improvement:
+
+```text
+Hypothesis
+→ Experiment
+→ Metric
+→ Result
+→ Keep/reject
+```
+
+Maintain an experiment log.
+
+The objective is to produce the strongest empirical system possible, not the most complicated architecture.
+
+---
+
+# 56. FIRST TASK
+
+Start by inspecting the current repository.
+
+If files already exist:
+
+* do not overwrite useful work
+* understand the current architecture
+* preserve working components
+* refactor only where necessary
+
+If the repository is empty:
+
+create the complete structure.
+
+Then implement Phase 1 through Phase 3 first.
+
+After implementing each major phase:
+
+1. Run tests.
+2. Run the application.
+3. Generate sample data.
+4. Verify outputs.
+5. Fix errors.
+6. Only then move to the next phase.
+
+Do not claim something works unless you actually executed it.
+
+---
+
+# 57. FINAL SUCCESS CRITERIA
+
+The final system should demonstrate that it can:
+
+### INPUT
+
+```text
+Messy Indian address
++
+historical field visits
++
+GPS trails
++
+visit outcomes
++
+agent remarks
+```
+
+### OUTPUT
+
+```text
+Predicted GPS
++
+confidence radius
++
+calibrated confidence
++
+directions
++
+recommended action
++
+explainable evidence
+```
+
+### CORE DIFFERENTIATOR
+
+The system must visibly demonstrate:
+
+> **Every reliable field visit improves the geocoder.**
+
+That learning loop is the central product and ML story.
+
+Build for measurable accuracy, operational usefulness, explainability, robustness, and future extensibility.

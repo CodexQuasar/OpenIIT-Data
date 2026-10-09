@@ -1,0 +1,789 @@
+visit_id,account_id,address_id,agent_id,visit_date,start_ts,checkin_ts,checkin_x,checkin_y,gps_accuracy_m,dwell_s,outcome,ptp_id,remark,photo_hash
+VS000002,AC000953,AD001233,FA003,2026-04-01,2026-04-01 11:03:48,2026-04-01 11:26:18,2517.3,-2363.0,21.1,1168,cash_collected,,"1,77,600 cash collect",bf97dd9bc787
+VS000004,AC000608,AD000785,FA003,2026-04-01,2026-04-01 12:11:54,2026-04-01 12:34:04,1617.3,-1579.5,6.9,51,address_not_traceable,,"address sikkilla, tumba hudukide",3b8f582aed8f
+VS000006,AC000590,AD000761,FA003,2026-04-01,2026-04-01 13:00:17,2026-04-01 13:17:34,2690.3,1062.0,8.5,1117,met_borrower,,"customer maneli sikkidru; nija mane Masidi hinde ide, 2 cross munde",160f5687bc6e
+VS000012,AC000442,AD000569,FA001,2026-04-01,2026-04-01 10:40:11,2026-04-01 10:49:33,2865.5,-2126.9,6.3,1147,met_borrower,,met customer at shop,0e0037445e99
+VS000020,AC001091,AD001416,FA002,2026-04-01,2026-04-01 11:23:42,2026-04-01 11:41:32,2598.5,-1657.4,12.9,534,met_family,,avara appa jothe maataadide,2423f1556eca
+VS000027,AC001256,AD001627,FA004,2026-04-01,2026-04-01 10:41:57,2026-04-01 10:55:57,1301.6,-2074.9,11.7,428,met_family,,"ghar pe beta tha, customer bahar",54290ff40186
+VS000040,AC001421,AD001833,FA005,2026-04-01,2026-04-01 12:10:39,2026-04-01 12:21:01,1534.0,-2417.4,4.0,79,locked_premises,,"ghar band tha; blue gate wala ghar, Dawai ki Dukaan se right side",0c5cc90a2e8e
+VS000041,AC001068,AD001381,FA005,2026-04-01,2026-04-01 12:25:21,2026-04-01 12:42:05,1029.7,-440.2,13.3,189,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi; blue gate wala ghar, Park se right side",752bb499b0bc
+VS000043,AC002343,AD003015,FA006,2026-04-01,2026-04-01 09:44:52,2026-04-01 10:11:10,1158.2,2844.1,7.8,95,address_not_traceable,,is address pe ghar nahi mila,b6250c6fadc4
+VS000050,AC000838,AD001080,FA007,2026-04-01,2026-04-01 10:07:57,2026-04-01 10:46:28,-2166.7,-144.4,4.2,722,met_borrower,PTP000047,"customer sikkidru, 08/04 olage kodtini andru",6f56a38e4ca8
+VS000073,AC001792,AD002311,FA008,2026-04-01,2026-04-01 12:30:59,2026-04-01 13:23:13,2911.6,-1792.4,17.1,91,address_not_traceable,,"address trace nahi hua, kaafi dhunda",c867d8428aac
+VS000074,AC000517,AD000667,FA002,2026-04-02,2026-04-02 09:43:22,2026-04-02 10:19:47,2276.3,-2358.2,17.1,361,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu; address tappu, mane Masidi hattira ide",513420711c65
+VS000082,AC000227,AD000287,FA002,2026-04-02,2026-04-02 13:10:35,2026-04-02 13:49:52,2876.1,-2282.3,72.8,1466,met_borrower,,"customer sikkidru,  olage kodtini andru",bda3eea9fbda
+VS000087,AC000026,AD000030,FA003,2026-04-02,2026-04-02 11:46:47,2026-04-02 12:07:27,2813.1,-1821.6,16.2,1363,met_borrower,,customer angadi nalli sikkidru; mane Ganapathi Gudi eduru road nalli ide,b834b1d6c793
+VS000090,AC000857,AD001105,FA003,2026-04-02,2026-04-02 13:12:19,2026-04-02 13:22:52,2892.8,-2525.9,7.3,1285,met_borrower,PTP000124,customer angadi nalli sikkidru,da5df69b6b5e
+VS000092,AC001002,AD001294,FA003,2026-04-02,2026-04-02 14:06:02,2026-04-02 14:51:17,2665.4,-2386.6,9.2,391,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",99238425c854
+VS000096,AC001969,AD002544,FA001,2026-04-02,2026-04-02 11:23:47,2026-04-02 11:29:35,662.7,-2761.4,23.0,554,met_family,,"met spouse, customer at work; actual house behind PDS Shop, 2 lanes ahead",fb78b13215e2
+VS000110,AC001812,AD002339,FA005,2026-04-02,2026-04-02 12:10:33,2026-04-02 12:25:04,966.2,2814.3,5.3,103,address_not_traceable,,address nahi mila,7d6f297a7b5f
+VS000122,AC000064,AD000079,FA009,2026-04-02,2026-04-02 11:07:31,2026-04-02 11:26:53,-3731.6,-771.0,16.9,235,met_borrower,PTP000129,house locked,5851b2ade948
+VS000124,AC001894,AD002448,FA009,2026-04-02,2026-04-02 11:48:25,2026-04-02 11:55:20,-3748.3,-772.2,16.5,166,locked_premises,,mane lock agide,228e3c27e6f2
+VS000132,AC000020,AD000023,FA008,2026-04-02,2026-04-02 11:43:21,2026-04-02 11:57:36,-2507.4,-69.9,7.6,77,address_not_traceable,,address nahi mila,70faf60a68a2
+VS000140,AC000316,AD000397,FA007,2026-04-02,2026-04-02 12:01:56,2026-04-02 12:19:54,3472.4,-1976.0,36.7,51,address_not_traceable,,address sikkilla,3e65636fcd8d
+VS000143,AC001140,AD001480,FA007,2026-04-02,2026-04-02 12:58:37,2026-04-02 13:17:25,3291.1,-1669.3,8.3,33,address_not_traceable,,address sikkilla,07ffae49e17a
+VS000145,AC000246,AD000309,FA003,2026-04-03,2026-04-03 10:06:04,2026-04-03 10:22:34,2779.1,-1817.0,16.1,149,locked_premises,,"yaaru illa, beega haakide; mane Ganapathi Gudi eduru road nalli ide",ee9a0cc62dcf
+VS000147,AC000484,AD000622,FA003,2026-04-03,2026-04-03 10:43:15,2026-04-03 10:50:30,2498.0,-2485.5,17.9,84,locked_premises,,"yaaru illa, beega haakide",f3404d23dae1
+VS000164,AC000834,AD001074,FA002,2026-04-03,2026-04-03 10:29:46,2026-04-03 10:40:12,2533.3,-1888.0,4.8,214,locked_premises,,"mane lock agide; address tappu, mane Ganapathi Gudi hattira ide",7ed45c805342
+VS000166,AC001139,AD001479,FA002,2026-04-03,2026-04-03 11:10:37,2026-04-03 11:26:30,2865.7,-1833.4,6.3,78,address_not_traceable,,address sikkilla,2cab807672ec
+VS000176,AC000595,AD000768,FA005,2026-04-03,2026-04-03 11:38:28,2026-04-03 11:46:58,2639.4,-1588.2,20.3,207,locked_premises,,"koi nahi mila, taala laga tha; blue gate wala ghar, Ration ki Dukaan se right side",e40417dde13e
+VS000194,AC000880,AD001137,FA004,2026-04-03,2026-04-03 11:21:18,2026-04-03 11:59:00,571.7,1757.0,6.4,117,address_not_traceable,,address nahi mila,e4ac32387ccc
+VS000196,AC001958,AD002531,FA004,2026-04-03,2026-04-03 12:32:32,2026-04-03 12:53:23,813.1,1132.8,17.6,66,address_not_traceable,,is address pe ghar nahi mila,4e0aeaade2c8
+VS000197,AC001826,AD002357,FA004,2026-04-03,2026-04-03 12:57:58,2026-04-03 13:09:10,1061.4,292.4,18.2,142,locked_premises,,"koi nahi mila, taala laga tha",463990762642
+VS000198,AC000892,AD001152,FA004,2026-04-03,2026-04-03 13:18:12,2026-04-03 13:25:20,1503.1,361.7,11.9,1274,met_borrower,,"customer mila, bola  tak karega; address galat likha hai, ghar Hanuman Mandir ke paas hai",34ed3920094d
+VS000200,AC002278,AD002932,FA008,2026-04-03,2026-04-03 09:37:56,2026-04-03 10:01:46,-239.1,-3689.5,11.4,50,address_not_traceable,,"address trace nahi hua, kaafi dhunda",2b8deb10a1e3
+VS000215,AC000868,AD001121,FA009,2026-04-03,2026-04-03 10:46:42,2026-04-03 11:02:56,2324.6,-800.1,35.5,70,met_borrower,PTP000190,house locked,ph0084
+VS000220,AC002400,AD003090,FA002,2026-04-04,2026-04-04 10:08:26,2026-04-04 10:29:16,982.2,-2913.5,4.0,414,met_family,,avara appa jothe maataadide; mane Ganapathi Gudi eduru road nalli ide,9f005e5f59c6
+VS000237,AC001630,AD002103,FA001,2026-04-04,2026-04-04 10:41:10,2026-04-04 10:57:36,967.5,-3196.6,28.7,119,address_not_traceable,,address not traceable,29948b50bd6d
+VS000240,AC000226,AD000286,FA001,2026-04-04,2026-04-04 12:05:23,2026-04-04 12:23:53,513.9,-2849.3,5.9,106,address_not_traceable,,could not trace address after search,bceed920fcdf
+VS000251,AC000759,AD000979,FA005,2026-04-04,2026-04-04 13:35:05,2026-04-04 13:48:31,643.9,2686.1,11.6,60,address_not_traceable,,"address trace nahi hua, kaafi dhunda",aa4c59c1c0a3
+VS000260,AC000873,AD001127,FA006,2026-04-04,2026-04-04 13:17:00,2026-04-04 13:29:45,308.1,-3031.9,19.4,76,address_not_traceable,,address nahi mila,744b982b4da2
+VS000263,AC001121,AD001456,FA004,2026-04-04,2026-04-04 10:25:00,2026-04-04 10:39:20,991.2,297.2,4.6,40,address_not_traceable,,is address pe ghar nahi mila,6b16016e435b
+VS000289,AC002243,AD002890,FA007,2026-04-04,2026-04-04 10:52:46,2026-04-04 11:33:21,-1526.3,2828.1,18.0,55,address_not_traceable,,"address sikkilla, tumba hudukide",6548c89ecf03
+VS000293,AC000560,AD000722,FA007,2026-04-04,2026-04-04 12:55:01,2026-04-04 13:17:40,4043.5,83.7,6.1,398,met_family,,"avara appa jothe maataadide; address tappu, mane Anjaneya Gudi hattira ide",a47430909f13
+VS000296,AC000413,AD000530,FA002,2026-04-06,2026-04-06 11:33:36,2026-04-06 11:55:06,-1137.4,-3087.3,5.5,91,locked_premises,,mane lock agide; mane Neerina Tank eduru road nalli ide,76b3107524aa
+VS000301,AC000458,AD000589,FA002,2026-04-06,2026-04-06 13:41:06,2026-04-06 14:08:55,3031.3,-1493.9,5.7,520,met_borrower,,"customer sikkidru,  olage kodtini andru",d67283df8c1a
+VS000310,AC002362,AD003042,FA003,2026-04-06,2026-04-06 12:29:28,2026-04-06 13:12:08,895.9,60.4,7.9,96,address_not_traceable,,"address sikkilla, tumba hudukide",a340a89b2616
+VS000321,AC001990,AD002569,FA001,2026-04-06,2026-04-06 13:21:30,2026-04-06 13:56:10,562.7,2959.4,8.1,1342,met_borrower,PTP000328,"met customer, promised by 15/04; address wrong, house near Church",55e276ba616b
+VS000336,AC002167,AD002796,FA006,2026-04-06,2026-04-06 09:31:42,2026-04-06 10:19:42,389.4,-129.9,4.8,38,address_not_traceable,,address nahi mila,1097e1f8a8df
+VS000338,AC001500,AD001937,FA006,2026-04-06,2026-04-06 10:45:00,2026-04-06 10:47:27,754.0,3062.4,9.3,460,met_family,,"father se baat hui, message de denge",b1de7493f021
+VS000349,AC001653,AD002134,FA009,2026-04-06,2026-04-06 12:21:42,2026-04-06 12:30:48,-3740.5,-786.2,13.2,218,locked_premises,,lock laga hai,ph0084
+VS000354,AC000122,AD000153,FA008,2026-04-06,2026-04-06 10:23:01,2026-04-06 10:38:25,-2714.9,-260.7,4.0,34,address_not_traceable,,"address trace nahi hua, kaafi dhunda",c585c11edac1
+VS000360,AC002066,AD002666,FA008,2026-04-06,2026-04-06 13:04:31,2026-04-06 13:42:01,-1117.9,-2136.5,4.0,42,address_not_traceable,,"address trace nahi hua, kaafi dhunda",98b80b6716c7
+VS000363,AC001327,AD001722,FA007,2026-04-06,2026-04-06 10:39:22,2026-04-06 11:25:29,-2161.5,1528.2,10.5,167,locked_premises,,mane lock agide,96fdf92e7c58
+VS000370,AC001232,AD001596,FA003,2026-04-07,2026-04-07 10:37:43,2026-04-07 10:45:03,733.3,-3228.3,7.3,1328,met_borrower,,"customer sikkidru, maataadide; mane Kalyana Mantapa eduru road nalli ide",e48392be6f2d
+VS000375,AC000050,AD000062,FA003,2026-04-07,2026-04-07 12:27:19,2026-04-07 12:34:43,595.8,-3084.5,4.0,794,met_borrower,,"customer sikkidru, maataadide; address tappu, mane Bus Stop hattira ide",78b349da069b
+VS000382,AC002350,AD003026,FA002,2026-04-07,2026-04-07 11:36:18,2026-04-07 11:53:35,2469.3,-2303.8,10.6,117,address_not_traceable,,address sikkilla,02b8ad84dfe2
+VS000386,AC000893,AD001154,FA001,2026-04-07,2026-04-07 10:57:04,2026-04-07 11:12:01,-3149.1,1121.3,4.8,63,address_not_traceable,,could not trace address after search,3987906aa3d8
+VS000387,AC000022,AD000026,FA001,2026-04-07,2026-04-07 11:15:09,2026-04-07 11:33:17,-2743.1,1025.4,6.4,102,address_not_traceable,,could not trace address after search,87cb521925b2
+VS000397,AC001646,AD002123,FA006,2026-04-07,2026-04-07 10:57:20,2026-04-07 11:04:52,1113.4,175.3,7.2,445,met_family,,"ghar pe beta tha, customer bahar",80e7c0e749b8
+VS000405,AC001571,AD002027,FA004,2026-04-07,2026-04-07 11:37:08,2026-04-07 11:45:35,-385.9,-634.1,6.4,526,met_family,,"wife mili, bola kaam pe gaye hain; asli ghar Church ke peeche hai, 2 gali aage",bd028123a66d
+VS000406,AC001295,AD001682,FA004,2026-04-07,2026-04-07 11:59:04,2026-04-07 12:06:40,-699.3,-271.3,17.3,216,no_such_person,,ghar wale bole yeh insaan yahan nahi rehta; ghar Sarkari School ke saamne wali gali mein hai,3a0c5db183e6
+VS000419,AC000963,AD001247,FA009,2026-04-07,2026-04-07 11:18:58,2026-04-07 11:24:36,-825.3,-399.5,8.9,255,met_family,,"met father, will pass message",c8be1c75ee32
+VS000430,AC001428,AD001842,FA008,2026-04-07,2026-04-07 12:22:53,2026-04-07 12:31:59,-3668.1,-725.5,8.1,145,locked_premises,,"ghar band tha; blue gate wala ghar, Bus Adda se right side",9e7ce4fc485b
+VS000438,AC000168,AD000209,FA002,2026-04-08,2026-04-08 10:20:58,2026-04-08 10:35:22,2647.6,833.1,7.0,108,address_not_traceable,,address sikkilla,9a5dd9237315
+VS000448,AC000568,AD000733,FA001,2026-04-08,2026-04-08 10:44:04,2026-04-08 11:02:40,2921.6,-2436.8,24.4,373,met_family,,"met spouse, customer at work",c2d9f9aa5e8a
+VS000451,AC001582,AD002039,FA001,2026-04-08,2026-04-08 11:42:28,2026-04-08 11:50:08,2780.6,-2484.4,10.8,739,met_borrower,PTP000433,"met customer, promised by 01/05",c45fc74e7556
+VS000466,AC001221,AD001584,FA006,2026-04-08,2026-04-08 11:24:05,2026-04-08 11:34:47,1235.5,-2253.9,8.5,67,address_not_traceable,,"address trace nahi hua, kaafi dhunda",6773c44d48e8
+VS000467,AC000633,AD000817,FA006,2026-04-08,2026-04-08 11:38:19,2026-04-08 11:58:18,1534.2,-1855.6,8.9,68,address_not_traceable,,is address pe ghar nahi mila,b8cc9030e2fa
+VS000470,AC000146,AD000182,FA004,2026-04-08,2026-04-08 10:32:49,2026-04-08 10:47:49,829.2,2848.1,16.3,119,address_not_traceable,,is address pe ghar nahi mila,45f142038c03
+VS000480,AC001901,AD002458,FA005,2026-04-08,2026-04-08 10:00:03,2026-04-08 10:19:31,1858.0,-2053.5,5.8,66,met_family,,house locked,ph0042
+VS000481,AC001921,AD002483,FA005,2026-04-08,2026-04-08 10:27:13,2026-04-08 10:53:03,626.6,-2663.8,9.2,142,no_such_person,,is naam ka koi nahi rehta,5ab8537993d3
+VS000483,AC000451,AD000581,FA005,2026-04-08,2026-04-08 11:14:50,2026-04-08 11:26:54,749.9,-3004.6,8.1,116,address_not_traceable,,is address pe ghar nahi mila,272a6272e840
+VS000489,AC000625,AD000808,FA008,2026-04-08,2026-04-08 11:10:33,2026-04-08 11:23:42,-714.7,3379.4,17.8,220,met_family,,"ghar pe beta tha, customer bahar",221824a9c4e4
+VS000492,AC000574,AD000741,FA008,2026-04-08,2026-04-08 12:14:05,2026-04-08 12:19:45,-845.7,2860.3,8.1,360,met_family,,"ghar pe beta tha, customer bahar",ebc1bdd3d2d8
+VS000494,AC001692,AD002188,FA007,2026-04-08,2026-04-08 10:17:56,2026-04-08 10:25:11,-159.0,-3053.6,14.5,67,locked_premises,,"yaaru illa, beega haakide",f6933d4adc2f
+VS000496,AC002103,AD002712,FA007,2026-04-08,2026-04-08 10:55:47,2026-04-08 11:14:41,-354.2,-3269.7,24.3,60,address_not_traceable,,address sikkilla,456cb82bcaaf
+VS000503,AC001430,AD001845,FA009,2026-04-08,2026-04-08 10:03:45,2026-04-08 10:23:45,3597.6,23.8,8.2,274,met_family,,"met father, will pass message",2744f4c15fb4
+VS000510,AC001598,AD002060,FA003,2026-04-09,2026-04-09 10:50:46,2026-04-09 10:59:50,683.4,-353.0,7.9,1346,met_borrower,PTP000479,"customer sikkidru, 16/04 olage kodtini andru",6c552985d8ef
+VS000513,AC000778,AD001004,FA003,2026-04-09,2026-04-09 12:18:38,2026-04-09 12:36:41,1313.2,137.7,7.9,65,address_not_traceable,,"address sikkilla, tumba hudukide",8acad3648dac
+VS000521,AC000496,AD000638,FA002,2026-04-09,2026-04-09 12:01:40,2026-04-09 12:18:09,2407.4,-1305.2,9.1,534,met_family,,avara appa jothe maataadide,21634b5b9cd1
+VS000522,AC001751,AD002260,FA002,2026-04-09,2026-04-09 12:32:50,2026-04-09 12:52:40,1602.9,-1230.7,10.0,231,locked_premises,,"yaaru illa, beega haakide; address tappu, mane Masidi hattira ide",2ac24769d019
+VS000525,AC000286,AD000359,FA001,2026-04-09,2026-04-09 09:40:03,2026-04-09 09:59:33,-2435.0,-2645.9,8.2,136,locked_premises,,house locked,5a78c57f0872
+VS000532,AC001688,AD002184,FA001,2026-04-09,2026-04-09 12:15:34,2026-04-09 12:20:50,-2051.8,-2466.5,10.8,222,locked_premises,,"house locked; address wrong, house near Government School",99550246a455
+VS000543,AC001637,AD002112,FA005,2026-04-09,2026-04-09 11:15:37,2026-04-09 11:20:22,-334.0,3272.2,14.9,493,met_family,,"wife mili, bola kaam pe gaye hain",5509de69ff75
+VS000547,AC000879,AD001135,FA005,2026-04-09,2026-04-09 12:26:37,2026-04-09 12:43:11,-749.7,2879.2,6.2,392,met_family,,"father se baat hui, message de denge",a689f8577582
+VS000549,AC000527,AD000680,FA005,2026-04-09,2026-04-09 13:09:51,2026-04-09 13:19:14,-649.7,2784.3,4.0,182,locked_premises,,ghar band tha,f60940806771
+VS000561,AC001029,AD001330,FA009,2026-04-09,2026-04-09 12:06:15,2026-04-09 12:18:13,2318.0,-765.6,8.4,139,locked_premises,,house locked,ph0082
+VS000585,AC000576,AD000743,FA003,2026-04-10,2026-04-10 10:28:33,2026-04-10 11:08:54,-655.4,-2890.4,4.0,154,no_such_person,,"ee hesarina yaaru illa illi; address tappu, mane Church hattira ide",4b169bafebaa
+VS000588,AC001715,AD002217,FA003,2026-04-10,2026-04-10 11:59:36,2026-04-10 12:14:16,-1292.7,-3182.0,5.1,85,address_not_traceable,,address sikkilla,93052444ec96
+VS000597,AC002347,AD003020,FA001,2026-04-10,2026-04-10 13:47:47,2026-04-10 14:38:07,-602.7,-1185.3,9.2,81,address_not_traceable,,address not traceable,76dc93c94ddd
+VS000602,AC000534,AD000689,FA002,2026-04-10,2026-04-10 11:45:48,2026-04-10 11:56:18,2618.9,-2118.0,10.1,41,address_not_traceable,,"address sikkilla, tumba hudukide",cef5b8eefb33
+VS000610,AC002229,AD002872,FA004,2026-04-10,2026-04-10 11:46:14,2026-04-10 12:01:29,2863.5,698.7,6.7,58,address_not_traceable,,is address pe ghar nahi mila,c34d2cc2134d
+VS000620,AC001117,AD001450,FA005,2026-04-10,2026-04-10 12:24:23,2026-04-10 12:29:04,2487.0,-1059.1,8.7,285,no_such_person,,is naam ka koi nahi rehta,0b98a8c8c9e8
+VS000621,AC001993,AD002572,FA006,2026-04-10,2026-04-10 09:50:32,2026-04-10 10:05:56,1250.7,923.5,14.6,117,address_not_traceable,,is address pe ghar nahi mila,56ba89a96a49
+VS000624,AC000550,AD000710,FA006,2026-04-10,2026-04-10 10:49:17,2026-04-10 11:04:55,1179.5,1091.4,13.8,476,cash_collected,,"customer ne cash diya, receipt di; blue gate wala ghar, Bus Adda se right side",e408f9083132
+VS000643,AC001857,AD002395,FA009,2026-04-10,2026-04-10 11:38:38,2026-04-10 11:57:40,-3747.7,-786.6,8.6,205,locked_premises,,ghar band tha,0e957f44ceea
+VS000649,AC001404,AD001812,FA007,2026-04-10,2026-04-10 11:22:43,2026-04-10 11:34:51,3406.4,522.8,8.0,49,address_not_traceable,,address sikkilla,d3880f17b473
+VS000657,AC000953,AD001233,FA002,2026-04-11,2026-04-11 11:33:56,2026-04-11 11:48:37,2785.4,-2055.6,16.5,59,address_not_traceable,,"address sikkilla, tumba hudukide",573e8207f7b3
+VS000658,AC000608,AD000785,FA002,2026-04-11,2026-04-11 11:53:28,2026-04-11 12:18:49,1657.1,-1726.8,10.1,117,address_not_traceable,,address sikkilla,71481724c0c3
+VS000663,AC000442,AD000569,FA001,2026-04-11,2026-04-11 11:12:23,2026-04-11 11:21:59,2771.8,-1933.1,6.4,347,met_family,,"met spouse, customer at work",abf6e8cd202e
+VS000673,AC001091,AD001416,FA003,2026-04-11,2026-04-11 12:20:45,2026-04-11 12:27:45,2603.8,-1655.6,9.5,205,met_family,,avara appa jothe maataadide,937c47990f6f
+VS000674,AC000590,AD000760,FA003,2026-04-11,2026-04-11 12:36:01,2026-04-11 12:53:30,2775.2,-1612.2,4.0,50,address_not_traceable,,address sikkilla,7da94c3201f2
+VS000677,AC001256,AD001627,FA004,2026-04-11,2026-04-11 09:52:27,2026-04-11 10:04:27,1319.9,-2072.8,11.4,237,locked_premises,,"koi nahi mila, taala laga tha",baf4cc88bfa1
+VS000690,AC001068,AD001380,FA005,2026-04-11,2026-04-11 09:40:28,2026-04-11 09:48:28,1414.9,-1895.9,4.0,1149,cash_collected,,"18,700 cash collect kiya",22aece18c751
+VS000692,AC001421,AD001833,FA005,2026-04-11,2026-04-11 10:36:10,2026-04-11 10:38:16,1538.1,-2406.1,5.2,194,locked_premises,,ghar band tha,c88e448c2a3d
+VS000695,AC001621,AD002091,FA005,2026-04-11,2026-04-11 11:26:36,2026-04-11 11:33:24,1591.3,-2148.0,6.9,37,address_not_traceable,,address nahi mila,d512089626dc
+VS000696,AC002334,AD003002,FA005,2026-04-11,2026-04-11 11:38:51,2026-04-11 11:46:59,1749.4,-1897.5,7.7,210,met_family,,"ghar pe beta tha, customer bahar",3199dd6bfda2
+VS000700,AC000838,AD001079,FA007,2026-04-11,2026-04-11 10:01:09,2026-04-11 10:11:47,-2411.7,-249.3,6.9,108,address_not_traceable,,address sikkilla,5028445a7e13
+VS000706,AC001950,AD002522,FA007,2026-04-11,2026-04-11 12:17:47,2026-04-11 12:25:26,-2334.7,-106.6,8.4,219,neighbour_says_shifted,,"mane khaali maadidaare; address tappu, mane Sarkari Shaale hattira ide",76b6adda4d68
+VS000722,AC001792,AD002311,FA009,2026-04-11,2026-04-11 11:39:35,2026-04-11 12:13:19,3262.6,-1255.7,4.5,98,address_not_traceable,,could not trace address after search,cfcde262dbd9
+VS000724,AC000517,AD000667,FA002,2026-04-13,2026-04-13 10:03:04,2026-04-13 10:42:38,2199.3,-2177.7,6.9,1205,met_borrower,PTP000652,"customer sikkidru, maataadide",a0f3a06c390e
+VS000731,AC000227,AD000287,FA001,2026-04-13,2026-04-13 10:14:55,2026-04-13 10:39:25,2779.7,-2406.0,9.0,314,met_family,,"met father, will pass message; address wrong, house near Hanuman Temple",5a71a7c9a435
+VS000737,AC000026,AD000030,FA001,2026-04-13,2026-04-13 12:17:32,2026-04-13 12:33:57,2760.5,-1652.4,7.9,85,address_not_traceable,,could not trace address after search,0154fb85b735
+VS000741,AC001002,AD001294,FA003,2026-04-13,2026-04-13 10:20:29,2026-04-13 10:23:15,2704.4,-2473.8,12.9,554,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",d37bcfe86286
+VS000745,AC000246,AD000309,FA003,2026-04-13,2026-04-13 11:41:04,2026-04-13 11:43:07,2778.0,-1821.1,18.5,627,met_borrower,,customer angadi nalli sikkidru,22e11bf14e2a
+VS000756,AC002343,AD003015,FA005,2026-04-13,2026-04-13 09:56:47,2026-04-13 10:20:17,975.6,2455.4,7.2,208,locked_premises,,ghar band tha,47fc2fc5f608
+VS000775,AC000145,AD000181,FA004,2026-04-13,2026-04-13 12:54:03,2026-04-13 13:00:12,2949.1,651.6,9.4,511,met_family,,"wife mili, bola kaam pe gaye hain",d407475753b2
+VS000777,AC000064,AD000079,FA009,2026-04-13,2026-04-13 09:51:50,2026-04-13 10:01:32,2333.5,-781.9,7.6,81,locked_premises,,house locked,ph0085
+VS000786,AC000020,AD000023,FA008,2026-04-13,2026-04-13 10:44:12,2026-04-13 10:53:44,-2951.8,-19.7,5.9,1169,met_borrower,PTP000659,"customer dukaan pe mila; blue gate wala ghar, Tanki se right side",41734c40d2ab
+VS000789,AC001941,AD002509,FA008,2026-04-13,2026-04-13 12:11:02,2026-04-13 12:18:53,-2418.4,-592.0,12.7,163,locked_premises,,ghar band tha,70ecd409fed0
+VS000794,AC000316,AD000397,FA007,2026-04-13,2026-04-13 10:31:31,2026-04-13 10:39:17,3101.8,-1913.2,13.4,185,locked_premises,,"yaaru illa, beega haakide; address tappu, mane Anche Kacheri hattira ide",d3fa399c02cd
+VS000797,AC001140,AD001480,FA007,2026-04-13,2026-04-13 11:16:19,2026-04-13 11:35:17,3628.2,-2240.7,5.9,180,neighbour_says_shifted,,pakkadavaru shift aagidaare antharu; mane Udyanavana eduru road nalli ide,e04f306e0249
+VS000798,AC001846,AD002380,FA007,2026-04-13,2026-04-13 11:41:23,2026-04-13 11:56:53,2918.6,-2588.8,6.2,56,address_not_traceable,,"address sikkilla, tumba hudukide",d6d70bb2dc01
+VS000803,AC001969,AD002544,FA003,2026-04-14,2026-04-14 10:56:46,2026-04-14 11:08:33,536.1,-2751.3,12.8,169,locked_premises,,"yaaru illa, beega haakide; nija mane Nyayabele Angadi hinde ide, 2 cross munde",5479eb95005a
+VS000811,AC002400,AD003090,FA001,2026-04-14,2026-04-14 11:18:07,2026-04-14 11:24:11,953.8,-2970.2,6.7,971,met_borrower,PTP000699,"met customer, promised by 09/05",b115e0d6a53b
+VS000814,AC000484,AD000622,FA002,2026-04-14,2026-04-14 10:12:54,2026-04-14 10:41:31,2529.3,-2709.5,15.8,233,locked_premises,,"yaaru illa, beega haakide",acaac59b791f
+VS000816,AC001139,AD001479,FA002,2026-04-14,2026-04-14 11:12:16,2026-04-14 11:26:22,2972.4,-2491.7,4.2,594,met_family,PTP000701,"avara hendathi sikkidru, kelsakke hogidaare antharu; mane Milk Dairy eduru road nalli ide",813d61e5b7c8
+VS000832,AC001812,AD002339,FA004,2026-04-14,2026-04-14 09:40:28,2026-04-14 09:54:40,734.5,2652.6,13.5,46,address_not_traceable,,address nahi mila,ec63ac48e09f
+VS000844,AC000873,AD001127,FA006,2026-04-14,2026-04-14 11:37:07,2026-04-14 11:48:34,619.4,-3376.7,18.7,581,met_family,,"wife mili, bola kaam pe gaye hain",e07224790556
+VS000849,AC002278,AD002932,FA007,2026-04-14,2026-04-14 10:19:14,2026-04-14 10:34:48,-625.4,-3685.8,29.1,447,met_borrower,,"customer sikkidru,  olage kodtini andru",2a123c682d1e
+VS000856,AC000868,AD001121,FA009,2026-04-14,2026-04-14 10:31:05,2026-04-14 10:50:50,3863.3,917.1,12.5,96,address_not_traceable,,address not traceable,7cd16184e9ad
+VS000860,AC002243,AD002889,FA009,2026-04-14,2026-04-14 11:45:30,2026-04-14 12:04:55,-3754.2,-781.5,17.3,200,address_not_traceable,,lock laga hai,ph0080
+VS000866,AC001879,AD002424,FA008,2026-04-14,2026-04-14 10:51:34,2026-04-14 10:54:16,-513.7,-3305.8,5.6,989,cash_collected,,"customer ne cash diya, receipt di",00704abb354b
+VS000876,AC001630,AD002103,FA003,2026-04-15,2026-04-15 13:02:38,2026-04-15 13:15:16,290.3,-2696.4,9.4,747,met_borrower,,"customer sikkidru, maataadide",006f1cf286d2
+VS000883,AC000134,AD000169,FA002,2026-04-15,2026-04-15 13:35:49,2026-04-15 13:49:54,2622.5,-2207.1,12.9,50,address_not_traceable,,"address sikkilla, tumba hudukide",5d60335023e0
+VS000884,AC000287,AD000360,FA002,2026-04-15,2026-04-15 13:55:59,2026-04-15 14:13:30,2823.6,-2388.9,6.1,217,locked_premises,,"yaaru illa, beega haakide",e8ffcbe5e793
+VS000890,AC002219,AD002861,FA001,2026-04-15,2026-04-15 11:32:28,2026-04-15 11:41:48,140.0,2571.7,15.9,598,met_family,,"met father, will pass message",e978842f439c
+VS000896,AC000595,AD000768,FA006,2026-04-15,2026-04-15 11:43:28,2026-04-15 11:53:28,2647.8,-1552.5,6.0,286,met_family,,"ghar pe beta tha, customer bahar; address galat likha hai, ghar Ration Dukan ke paas hai",36e76fce0283
+VS000902,AC000084,AD000105,FA004,2026-04-15,2026-04-15 11:09:51,2026-04-15 11:26:07,-528.7,-606.9,17.4,57,address_not_traceable,,address nahi mila,683da4180eef
+VS000905,AC000485,AD000624,FA004,2026-04-15,2026-04-15 12:09:52,2026-04-15 12:42:22,-129.2,-247.7,6.5,399,met_borrower,,customer dukaan pe mila,88cd435fcde6
+VS000907,AC002158,AD002784,FA004,2026-04-15,2026-04-15 13:09:51,2026-04-15 13:27:45,-572.6,-300.7,12.3,134,no_such_person,,is naam ka koi nahi rehta,9a10c2cbb783
+VS000911,AC000880,AD001136,FA005,2026-04-15,2026-04-15 11:16:02,2026-04-15 11:32:20,1402.7,-33.6,7.8,35,address_not_traceable,,"address trace nahi hua, kaafi dhunda",dce36cae73d5
+VS000912,AC001826,AD002357,FA005,2026-04-15,2026-04-15 11:35:57,2026-04-15 11:56:15,888.5,545.7,9.7,443,met_family,,"ghar pe beta tha, customer bahar; ghar Dak Ghar ke saamne wali gali mein hai",49ce243c3576
+VS000913,AC000892,AD001152,FA005,2026-04-15,2026-04-15 12:02:33,2026-04-15 12:20:40,1309.3,337.0,5.8,470,met_family,,"wife mili, bola kaam pe gaye hain",346dc8015b48
+VS000944,AC000413,AD000529,FA003,2026-04-16,2026-04-16 12:15:58,2026-04-16 12:31:49,2952.4,-1877.9,12.2,341,met_family,,avara appa jothe maataadide,8bd9037d3753
+VS000947,AC000458,AD000589,FA003,2026-04-16,2026-04-16 13:29:02,2026-04-16 13:40:30,2660.5,-1848.1,18.1,1323,met_borrower,,customer maneli sikkidru,cb8c98279b5e
+VS000956,AC002362,AD003041,FA001,2026-04-16,2026-04-16 11:48:41,2026-04-16 11:54:02,735.8,-220.2,22.7,1090,met_borrower,PTP000786,met customer at shop; house is on the road opposite Ganapathi Temple,08d48aec6552
+VS000961,AC000226,AD000286,FA002,2026-04-16,2026-04-16 11:02:08,2026-04-16 11:19:56,329.8,-3171.0,6.1,289,met_family,,avara appa jothe maataadide,4cec9b42b741
+VS000967,AC002321,AD002987,FA002,2026-04-16,2026-04-16 13:29:17,2026-04-16 13:50:35,849.3,-3448.1,5.8,563,met_family,,"avara appa jothe maataadide; nija mane Kalyana Mantapa hinde ide, 2 cross munde",db825aac8d04
+VS000971,AC002167,AD002796,FA005,2026-04-16,2026-04-16 11:00:28,2026-04-16 11:52:11,844.6,216.2,6.8,83,address_not_traceable,,is address pe ghar nahi mila,7e548433df97
+VS000978,AC001935,AD002501,FA005,2026-04-16,2026-04-16 13:45:58,2026-04-16 13:56:48,632.7,3037.8,29.0,418,met_family,,"wife mili, bola kaam pe gaye hain",2f063142071a
+VS000994,AC000122,AD000153,FA009,2026-04-16,2026-04-16 09:38:43,2026-04-16 10:04:13,-2294.5,-154.5,5.7,109,locked_premises,,house locked,a85a12888252
+VS001008,AC001327,AD001722,FA008,2026-04-16,2026-04-16 12:09:49,2026-04-16 12:39:31,-2288.6,1271.9,6.1,533,met_family,,"ghar pe beta tha, customer bahar",e682b625122e
+VS001010,AC000937,AD001212,FA008,2026-04-16,2026-04-16 13:03:05,2026-04-16 13:50:12,-2997.2,1380.8,6.8,942,met_borrower,,"customer se mila, baat hui",7ce1e48e0e13
+VS001017,AC001653,AD002134,FA007,2026-04-16,2026-04-16 12:54:38,2026-04-16 13:00:31,3132.2,-1902.1,6.1,153,locked_premises,,"yaaru illa, beega haakide",82863398cd8f
+VS001018,AC000893,AD001154,FA001,2026-04-17,2026-04-17 09:36:31,2026-04-17 10:09:01,-2619.4,1725.2,23.7,223,locked_premises,,"premises locked, nobody home; address wrong, house near Petrol Bunk",8c925f02ed63
+VS001021,AC000022,AD000026,FA001,2026-04-17,2026-04-17 11:05:32,2026-04-17 11:19:42,-2889.6,868.5,7.5,74,address_not_traceable,,could not trace address after search,a5e25db4a24b
+VS001027,AC002350,AD003026,FA002,2026-04-17,2026-04-17 10:17:41,2026-04-17 10:45:16,2736.1,-2412.2,4.0,110,address_not_traceable,,"address sikkilla, tumba hudukide",cefeef7a8195
+VS001043,AC000876,AD001130,FA003,2026-04-17,2026-04-17 12:26:02,2026-04-17 12:32:18,-784.8,-3314.6,4.6,405,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",a8b3bae95761
+VS001049,AC001295,AD001682,FA005,2026-04-17,2026-04-17 11:56:39,2026-04-17 12:13:30,-630.0,-457.9,12.9,396,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi; asli ghar Sarkari School ke peeche hai, 2 gali aage",7e3cc6bd50df
+VS001051,AC001571,AD002027,FA005,2026-04-17,2026-04-17 12:41:14,2026-04-17 13:03:40,-393.9,-423.0,8.5,648,cash_collected,,"59,200 cash collect kiya",275ac38a99ad
+VS001063,AC001646,AD002123,FA006,2026-04-17,2026-04-17 10:50:53,2026-04-17 10:51:48,1115.5,212.5,26.2,953,met_borrower,,customer ghar pe mila,ef38015a4fa7
+VS001068,AC000560,AD000722,FA008,2026-04-17,2026-04-17 10:27:09,2026-04-17 10:41:27,3878.3,325.3,11.1,75,address_not_traceable,,"address trace nahi hua, kaafi dhunda",e02f3a48c586
+VS001095,AC000168,AD000209,FA002,2026-04-18,2026-04-18 10:02:32,2026-04-18 10:11:32,2685.8,1032.4,6.0,223,no_such_person,,ee hesarina yaaru illa illi,fa93c86eac02
+VS001103,AC000568,AD000733,FA001,2026-04-18,2026-04-18 10:46:59,2026-04-18 10:48:53,2865.7,-2273.3,12.9,803,met_borrower,,met customer at shop,266673eac07e
+VS001106,AC002267,AD002920,FA001,2026-04-18,2026-04-18 11:38:02,2026-04-18 11:51:14,2745.4,-2558.5,6.0,548,met_family,,"met spouse, customer at work",bee0bae8fbc5
+VS001121,AC001500,AD001937,FA006,2026-04-18,2026-04-18 11:36:13,2026-04-18 11:38:19,740.4,3085.7,4.0,1432,met_borrower,PTP000875,"customer se mila, baat hui",af9eead868e2
+VS001125,AC000146,AD000182,FA006,2026-04-18,2026-04-18 14:04:42,2026-04-18 14:21:05,1009.9,2912.7,19.3,115,address_not_traceable,,address nahi mila,fd52c8e8f4e5
+VS001132,AC000633,AD000817,FA005,2026-04-18,2026-04-18 12:44:31,2026-04-18 13:07:08,1480.7,-1962.5,19.8,568,met_family,,"father se baat hui, message de denge",08d97ca91c91
+VS001136,AC001901,AD002458,FA004,2026-04-18,2026-04-18 09:35:33,2026-04-18 10:03:13,718.0,-3040.5,4.9,99,address_not_traceable,,is address pe ghar nahi mila,1b28c3c64ed6
+VS001139,AC000451,AD000581,FA004,2026-04-18,2026-04-18 11:04:43,2026-04-18 11:15:16,720.1,-3426.2,8.1,1298,met_borrower,PTP000876,"customer ghar pe mila; asli ghar Bus Adda ke peeche hai, 2 gali aage",17f2e51f26e5
+VS001142,AC001921,AD002483,FA004,2026-04-18,2026-04-18 12:31:51,2026-04-18 12:45:09,783.1,-2773.5,6.6,220,neighbour_says_shifted,,"padosi ne bola shift ho gaye; asli ghar Community Hall ke peeche hai, 2 gali aage",a8bee384b840
+VS001147,AC002103,AD002713,FA007,2026-04-18,2026-04-18 11:41:31,2026-04-18 12:19:01,-2499.0,-24.5,8.7,96,address_not_traceable,,address sikkilla,0956bbb80917
+VS001157,AC000625,AD000808,FA008,2026-04-18,2026-04-18 10:44:57,2026-04-18 11:00:04,-704.1,3095.5,5.6,554,met_family,,"ghar pe beta tha, customer bahar",e72bcaa99f37
+VS001174,AC000844,AD001088,FA002,2026-04-20,2026-04-20 12:12:20,2026-04-20 12:38:43,1478.1,-298.4,11.7,234,locked_premises,,mane lock agide,b0beb77226c1
+VS001176,AC001598,AD002060,FA002,2026-04-20,2026-04-20 13:30:03,2026-04-20 13:38:18,771.7,-348.7,7.2,429,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu; mane Ganapathi Gudi eduru road nalli ide",9153985d14e5
+VS001178,AC000286,AD000359,FA001,2026-04-20,2026-04-20 10:47:44,2026-04-20 11:00:29,-2600.0,-2558.8,5.7,528,met_family,,"met father, will pass message",63ad97383d92
+VS001189,AC002129,AD002744,FA003,2026-04-20,2026-04-20 11:34:11,2026-04-20 11:47:38,2393.1,1008.6,8.9,104,address_not_traceable,,address sikkilla,0022b5dc7d30
+VS001191,AC002344,AD003016,FA003,2026-04-20,2026-04-20 12:15:47,2026-04-20 12:42:56,2596.8,379.7,15.1,363,met_family,,avara appa jothe maataadide,0b5e96bd51b7
+VS001201,AC001637,AD002112,FA005,2026-04-20,2026-04-20 10:13:17,2026-04-20 10:14:32,-356.3,3278.7,7.1,587,met_family,,"wife mili, bola kaam pe gaye hain",5c567e63e228
+VS001217,AC001029,AD001330,FA007,2026-04-20,2026-04-20 10:24:55,2026-04-20 11:05:10,-3797.9,-367.4,14.5,43,address_not_traceable,,address sikkilla,9a2d08146c6d
+VS001219,AC002066,AD002666,FA007,2026-04-20,2026-04-20 11:29:46,2026-04-20 12:22:00,-1688.5,-1639.1,20.2,67,address_not_traceable,,address sikkilla,aa16f5930582
+VS001232,AC001430,AD001845,FA009,2026-04-20,2026-04-20 10:02:52,2026-04-20 10:07:46,3662.4,-45.7,14.0,523,met_borrower,,met customer at shop,ab27d28c8a10
+VS001234,AC001404,AD001812,FA009,2026-04-20,2026-04-20 10:46:12,2026-04-20 10:59:10,3882.8,575.4,11.3,505,met_borrower,,"met customer, promised by ",bc96efa1e1ed
+VS001240,AC000953,AD001233,FA003,2026-04-21,2026-04-21 09:54:41,2026-04-21 10:06:11,2537.5,-2373.4,29.5,1194,met_borrower,,"customer sikkidru, maataadide",a1e56f14b804
+VS001244,AC000608,AD000785,FA003,2026-04-21,2026-04-21 11:31:56,2026-04-21 12:01:02,2437.1,-2255.4,4.8,623,met_borrower,PTP000997,customer maneli sikkidru,d7b0e96aed40
+VS001247,AC000442,AD000569,FA003,2026-04-21,2026-04-21 12:44:43,2026-04-21 12:54:55,2851.7,-2377.5,19.6,73,address_not_traceable,,"address sikkilla, tumba hudukide",4a6168982b14
+VS001251,AC001091,AD001416,FA001,2026-04-21,2026-04-21 10:38:08,2026-04-21 10:44:16,2641.6,-1712.4,7.6,1380,met_borrower,PTP000998,met customer,6a7262a44086
+VS001264,AC001475,AD001903,FA002,2026-04-21,2026-04-21 13:00:47,2026-04-21 14:00:47,1688.4,2445.0,14.8,94,address_not_traceable,,"address sikkilla, tumba hudukide",2fa7f7c725e8
+VS001282,AC000879,AD001135,FA004,2026-04-21,2026-04-21 10:53:16,2026-04-21 11:16:31,-893.8,2960.0,12.6,627,met_borrower,,customer ghar pe mila; ghar Doodh Dairy ke saamne wali gali mein hai,39710c155cce
+VS001289,AC000838,AD001079,FA008,2026-04-21,2026-04-21 10:55:09,2026-04-21 10:56:11,-2447.0,-88.5,24.2,144,locked_premises,,lock laga hai,3fd75060e275
+VS001306,AC000963,AD001247,FA009,2026-04-21,2026-04-21 09:38:04,2026-04-21 09:49:16,2327.5,-763.0,7.3,136,address_not_traceable,,mane lock agide,ph0085
+VS001318,AC001739,AD002247,FA002,2026-04-22,2026-04-22 11:40:49,2026-04-22 12:09:29,1795.2,-697.0,4.0,68,address_not_traceable,,"address sikkilla, tumba hudukide",86a24d731903
+VS001321,AC000857,AD001105,FA002,2026-04-22,2026-04-22 13:07:56,2026-04-22 13:20:16,2911.7,-2515.3,10.2,480,met_borrower,,"customer sikkidru,  olage kodtini andru; address tappu, mane Anjaneya Gudi hattira ide",10d97059fe5f
+VS001339,AC000231,AD000292,FA003,2026-04-22,2026-04-22 14:01:44,2026-04-22 14:13:14,197.4,2196.1,4.0,111,address_not_traceable,,address sikkilla,c65b90ad8f50
+VS001346,AC001337,AD001733,FA005,2026-04-22,2026-04-22 12:10:18,2026-04-22 12:17:33,-1712.3,-2820.2,8.7,68,address_not_traceable,,"address trace nahi hua, kaafi dhunda",b72e1548c07c
+VS001353,AC002229,AD002872,FA004,2026-04-22,2026-04-22 11:54:02,2026-04-22 12:07:24,2993.2,893.4,14.7,79,address_not_traceable,,"address trace nahi hua, kaafi dhunda",99750e0eeea2
+VS001355,AC001993,AD002572,FA006,2026-04-22,2026-04-22 10:00:54,2026-04-22 10:23:18,1451.5,701.2,11.3,70,address_not_traceable,,is address pe ghar nahi mila,4ff28aa5dea4
+VS001358,AC000550,AD000710,FA006,2026-04-22,2026-04-22 11:04:48,2026-04-22 11:09:09,1193.1,1046.1,6.1,1189,met_borrower,,"customer se mila, baat hui",fd02c0abb16d
+VS001367,AC000381,AD000484,FA007,2026-04-22,2026-04-22 11:35:10,2026-04-22 11:53:56,-1933.0,1493.0,8.1,213,met_family,,"avara appa jothe maataadide; nija mane Anche Kacheri hinde ide, 2 cross munde",30ade02dc417
+VS001378,AC001792,AD002311,FA008,2026-04-22,2026-04-22 11:43:13,2026-04-22 12:24:39,3271.7,-1927.0,15.1,64,address_not_traceable,,is address pe ghar nahi mila,ce7aec7ca0da
+VS001382,AC002053,AD002652,FA009,2026-04-22,2026-04-22 09:59:38,2026-04-22 10:15:38,-1004.7,-802.6,6.8,169,locked_premises,,"premises locked, nobody home",8f409ca0c2b9
+VS001387,AC000819,AD001054,FA009,2026-04-22,2026-04-22 12:07:46,2026-04-22 12:17:43,-439.4,2887.9,10.5,75,address_not_traceable,,address not traceable,a5a78d431743
+VS001389,AC000517,AD000667,FA003,2026-04-23,2026-04-23 09:57:12,2026-04-23 10:25:12,2326.8,-2371.3,5.1,1274,met_borrower,PTP001107,customer maneli sikkidru,d9b1f1f1f4c5
+VS001394,AC000227,AD000287,FA003,2026-04-23,2026-04-23 12:36:00,2026-04-23 12:47:58,2895.6,-2027.9,5.7,112,address_not_traceable,,address sikkilla,35571e0df816
+VS001402,AC000026,AD000030,FA002,2026-04-23,2026-04-23 12:51:17,2026-04-23 13:02:29,2944.0,-1697.5,9.2,130,locked_premises,,mane lock agide,f129b4b63c6d
+VS001405,AC000050,AD000062,FA001,2026-04-23,2026-04-23 10:27:10,2026-04-23 10:41:07,326.4,-3067.1,13.8,199,locked_premises,,house locked,32da1a48891e
+VS001406,AC001232,AD001596,FA001,2026-04-23,2026-04-23 10:45:30,2026-04-23 10:57:52,588.9,-3107.7,11.4,85,address_not_traceable,,address not traceable,b1d4d0cb0878
+VS001412,AC001256,AD001627,FA004,2026-04-23,2026-04-23 09:42:46,2026-04-23 09:54:46,1321.6,-2078.0,4.0,1044,met_borrower,,customer ghar pe mila,f6fcd19e3082
+VS001415,AC001068,AD001380,FA004,2026-04-23,2026-04-23 11:06:03,2026-04-23 11:21:33,1386.2,-1884.8,8.9,400,met_borrower,PTP001111,"customer mila, bola 24/04 tak karega",19eb6473d139
+VS001417,AC001421,AD001833,FA004,2026-04-23,2026-04-23 11:44:47,2026-04-23 11:56:35,1874.7,-2222.4,18.7,107,address_not_traceable,,is address pe ghar nahi mila,718da4b5be8d
+VS001419,AC002343,AD003015,FA006,2026-04-23,2026-04-23 09:54:17,2026-04-23 10:13:35,967.5,2438.2,18.6,116,locked_premises,,ghar band tha,36682e4bd857
+VS001442,AC000316,AD000397,FA009,2026-04-23,2026-04-23 12:12:48,2026-04-23 12:23:05,3105.3,-1958.1,16.3,534,met_borrower,,"met customer at home; actual house behind Post Office, 2 lanes ahead",24fef7b79f9f
+VS001443,AC001140,AD001480,FA009,2026-04-23,2026-04-23 12:36:39,2026-04-23 12:50:43,-3732.5,-762.3,11.6,71,locked_premises,,house locked,ph0084
+VS001445,AC001846,AD002380,FA009,2026-04-23,2026-04-23 13:59:08,2026-04-23 14:09:41,-3725.4,-802.0,14.0,230,locked_premises,,lock laga hai,ph0085
+VS001448,AC000064,AD000079,FA008,2026-04-23,2026-04-23 10:36:32,2026-04-23 10:57:32,1029.0,-1094.0,10.3,354,met_family,,"ghar pe beta tha, customer bahar; asli ghar Church ke peeche hai, 2 gali aage",31074f85c628
+VS001458,AC001941,AD002509,FA007,2026-04-23,2026-04-23 11:21:31,2026-04-23 11:27:57,-2435.6,-620.9,7.4,513,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu; address tappu, mane Masidi hattira ide",1971b1f59c7d
+VS001462,AC001002,AD001294,FA001,2026-04-24,2026-04-24 10:40:21,2026-04-24 11:22:33,2744.8,-2494.6,16.2,1194,met_borrower,,"met customer, promised by ; house is on the road opposite Hanuman Temple",eaf112ff5551
+VS001468,AC001139,AD001479,FA001,2026-04-24,2026-04-24 14:20:19,2026-04-24 14:38:05,2940.0,-2668.9,19.5,970,met_borrower,,"met customer, promised by ",4aefda7582f2
+VS001472,AC001969,AD002545,FA003,2026-04-24,2026-04-24 10:58:40,2026-04-24 11:44:00,-2557.1,1436.8,12.3,1302,met_borrower,,"customer sikkidru, maataadide; address tappu, mane Bus Nildana hattira ide",a5ca137b1718
+VS001477,AC000484,AD000623,FA002,2026-04-24,2026-04-24 10:10:58,2026-04-24 10:29:58,2280.6,1285.2,4.7,1393,met_borrower,,"customer sikkidru,  olage kodtini andru",7e315a04a3eb
+VS001479,AC000246,AD000309,FA002,2026-04-24,2026-04-24 11:23:54,2026-04-24 11:43:06,2636.0,-2125.5,7.2,90,address_not_traceable,,address sikkilla,00d97eba4dae
+VS001483,AC001812,AD002339,FA004,2026-04-24,2026-04-24 09:35:28,2026-04-24 09:58:10,602.7,2773.5,8.2,75,address_not_traceable,,address nahi mila,b5958f026340
+VS001499,AC001221,AD001584,FA005,2026-04-24,2026-04-24 12:02:48,2026-04-24 12:11:17,1311.6,-2013.8,24.4,335,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi; ghar Doodh Dairy ke saamne wali gali mein hai",2145b16b2ac7
+VS001510,AC002278,AD002932,FA008,2026-04-24,2026-04-24 10:10:26,2026-04-24 10:22:40,-337.5,-3376.9,13.1,74,address_not_traceable,,"address trace nahi hua, kaafi dhunda",942e3ff76715
+VS001518,AC000868,AD001121,FA009,2026-04-24,2026-04-24 10:41:38,2026-04-24 10:50:00,3743.3,657.4,18.5,673,met_borrower,,"met customer, promised by ",b8c46f3dc37b
+VS001522,AC002243,AD002889,FA009,2026-04-24,2026-04-24 12:32:02,2026-04-24 12:48:27,-3748.6,-805.2,50.0,181,met_borrower,PTP001162,ghar band tha,b1c31f90cf84
+VS001525,AC001879,AD002424,FA007,2026-04-24,2026-04-24 09:55:46,2026-04-24 10:14:11,-516.2,-3331.9,8.5,971,met_borrower,PTP001163,"customer sikkidru, maataadide",cc24ca8c4f99
+VS001533,AC001692,AD002188,FA007,2026-04-24,2026-04-24 14:32:19,2026-04-24 14:33:17,-185.4,-3272.1,11.0,139,locked_premises,,mane lock agide,d0d9e9c23def
+VS001540,AC000134,AD000169,FA002,2026-04-25,2026-04-25 12:23:34,2026-04-25 12:43:17,3294.1,-2167.3,21.9,1040,met_borrower,PTP001203,"customer sikkidru, 05/05 olage kodtini andru",acd52f76a469
+VS001550,AC001630,AD002103,FA003,2026-04-25,2026-04-25 13:51:13,2026-04-25 14:08:46,504.9,-2678.9,4.2,104,address_not_traceable,,address sikkilla,6cca0774372c
+VS001557,AC002347,AD003020,FA001,2026-04-25,2026-04-25 12:12:56,2026-04-25 13:04:56,-222.7,-1323.3,19.5,110,address_not_traceable,,address not traceable,28ed3ed4e941
+VS001560,AC002140,AD002762,FA001,2026-04-25,2026-04-25 13:49:00,2026-04-25 13:54:47,-1243.8,57.2,10.6,1481,met_borrower,,"met customer; actual house behind Medical Store, 2 lanes ahead",42fe5fc4cd22
+VS001564,AC000880,AD001136,FA004,2026-04-25,2026-04-25 10:55:57,2026-04-25 11:11:25,836.6,-250.5,28.3,399,met_family,PTP001210,"father se baat hui, message de denge",df63470a8c2a
+VS001565,AC001826,AD002357,FA004,2026-04-25,2026-04-25 11:24:46,2026-04-25 11:26:58,1018.2,333.6,14.1,1278,met_borrower,,customer dukaan pe mila,955609d298f7
+VS001566,AC000892,AD001153,FA004,2026-04-25,2026-04-25 11:50:44,2026-04-25 12:17:27,-883.0,2119.7,8.8,41,address_not_traceable,,is address pe ghar nahi mila,370f9773eb78
+VS001572,AC000084,AD000105,FA005,2026-04-25,2026-04-25 10:42:58,2026-04-25 11:01:05,-690.5,-40.8,7.1,861,met_borrower,,"customer mila, bola  tak karega; blue gate wala ghar, Sarkari School se right side",d6402e6058ce
+VS001580,AC000873,AD001127,FA006,2026-04-25,2026-04-25 11:04:58,2026-04-25 11:07:28,578.5,-3373.0,21.9,1386,cash_collected,,"10,100 cash collect kiya",196729df00c8
+VS001589,AC001749,AD002258,FA009,2026-04-25,2026-04-25 12:13:09,2026-04-25 12:27:38,-3717.8,-771.8,4.0,109,locked_premises,,mane lock agide,ph0081
+VS001614,AC000458,AD000589,FA001,2026-04-27,2026-04-27 10:57:10,2026-04-27 11:08:01,2665.7,-1860.8,15.9,587,met_borrower,,met customer,bab06461bd21
+VS001630,AC000576,AD000743,FA002,2026-04-27,2026-04-27 09:42:49,2026-04-27 10:25:12,-1992.1,-2499.9,8.0,35,address_not_traceable,,address sikkilla,345f26f6b41a
+VS001635,AC001715,AD002217,FA002,2026-04-27,2026-04-27 12:13:44,2026-04-27 12:28:43,-683.9,-3074.4,7.0,292,met_family,,avara appa jothe maataadide,3521424f48cf
+VS001637,AC000876,AD001130,FA002,2026-04-27,2026-04-27 12:56:42,2026-04-27 13:04:32,-746.0,-3327.0,5.7,231,locked_premises,,mane lock agide,32e77df12105
+VS001652,AC002167,AD002796,FA006,2026-04-27,2026-04-27 12:02:35,2026-04-27 13:16:23,848.7,3205.0,8.7,564,met_borrower,,"customer mila, bola  tak karega",4f29aee20d0a
+VS001657,AC001571,AD002027,FA004,2026-04-27,2026-04-27 10:38:30,2026-04-27 10:39:49,-375.9,-636.7,9.3,150,locked_premises,,"koi nahi mila, taala laga tha",a5f102cb3de1
+VS001658,AC001295,AD001682,FA004,2026-04-27,2026-04-27 10:45:52,2026-04-27 10:47:34,-606.1,-262.2,6.6,348,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,0b0481baf549
+VS001661,AC002158,AD002784,FA004,2026-04-27,2026-04-27 11:30:32,2026-04-27 11:49:29,-509.0,-517.2,8.3,80,address_not_traceable,,address nahi mila,7ef06c35fb55
+VS001667,AC000122,AD000153,FA008,2026-04-27,2026-04-27 11:25:48,2026-04-27 11:43:59,-2226.0,-145.1,16.1,424,met_family,,"wife mili, bola kaam pe gaye hain",9e75edba4591
+VS001677,AC000560,AD000722,FA007,2026-04-27,2026-04-27 11:10:41,2026-04-27 11:12:23,4025.7,325.7,4.0,311,met_borrower,PTP001279,customer maneli sikkidru,627cbd40d451
+VS001683,AC001653,AD002134,FA009,2026-04-27,2026-04-27 12:17:35,2026-04-27 12:23:31,3095.7,-1836.8,8.3,363,met_family,,"met father, will pass message",d192e50d4af7
+VS001695,AC000226,AD000286,FA003,2026-04-28,2026-04-28 13:27:34,2026-04-28 13:42:06,729.0,-3141.9,4.0,38,address_not_traceable,,address sikkilla,37f1b98cc1bd
+VS001700,AC000568,AD000733,FA001,2026-04-28,2026-04-28 11:07:04,2026-04-28 11:08:29,2828.0,-2258.2,10.4,150,locked_premises,,house locked,c77234fcf53c
+VS001702,AC002033,AD002623,FA001,2026-04-28,2026-04-28 11:25:25,2026-04-28 11:57:46,1466.1,-1468.3,4.4,34,address_not_traceable,,could not trace address after search,a64381c5456d
+VS001704,AC000893,AD001154,FA002,2026-04-28,2026-04-28 09:39:38,2026-04-28 10:04:38,-2603.5,1717.8,14.2,420,met_family,,avara appa jothe maataadide,0f8874099507
+VS001710,AC000633,AD000817,FA004,2026-04-28,2026-04-28 10:12:09,2026-04-28 10:30:39,1465.0,-1855.5,12.0,41,address_not_traceable,,address nahi mila,19db132024df
+VS001721,AC000146,AD000182,FA005,2026-04-28,2026-04-28 11:05:22,2026-04-28 11:27:16,712.7,2675.0,5.1,45,address_not_traceable,,address nahi mila,e75ba2a8d386
+VS001738,AC000625,AD000808,FA008,2026-04-28,2026-04-28 10:49:36,2026-04-28 10:52:00,-720.8,3385.8,4.5,593,met_family,,"wife mili, bola kaam pe gaye hain",1e0749d2b9e8
+VS001749,AC000638,AD000824,FA007,2026-04-28,2026-04-28 11:18:12,2026-04-28 11:46:50,1566.8,-2133.4,15.9,94,address_not_traceable,,"address sikkilla, tumba hudukide",30001214e848
+VS001754,AC002103,AD002712,FA009,2026-04-28,2026-04-28 12:20:22,2026-04-28 12:35:44,-739.2,-3702.1,12.9,232,locked_premises,,"premises locked, nobody home; actual house behind PDS Shop, 2 lanes ahead",f49b0dc3db4d
+VS001769,AC002350,AD003026,FA002,2026-04-29,2026-04-29 11:10:21,2026-04-29 11:25:31,2843.2,-2492.5,20.6,592,met_family,,avara appa jothe maataadide,6e9f0b411130
+VS001775,AC000168,AD000209,FA003,2026-04-29,2026-04-29 09:57:49,2026-04-29 10:11:09,2337.2,983.5,4.5,73,address_not_traceable,,address sikkilla,91ab1b01fe74
+VS001785,AC001901,AD002458,FA004,2026-04-29,2026-04-29 12:24:30,2026-04-29 12:37:28,1031.5,-3112.6,4.6,308,met_borrower,PTP001387,"customer mila, bola 03/05 tak karega",a4282ff12f57
+VS001787,AC001646,AD002123,FA006,2026-04-29,2026-04-29 10:23:24,2026-04-29 10:25:36,1135.0,183.4,36.8,593,met_family,,"ghar pe beta tha, customer bahar",2b5b804ff48f
+VS001812,AC002223,AD002866,FA009,2026-04-29,2026-04-29 10:55:23,2026-04-29 11:10:18,2346.9,-744.5,10.5,117,address_not_traceable,,mane lock agide,1eb98f8ad0ee
+VS001822,AC001327,AD001722,FA008,2026-04-29,2026-04-29 11:30:06,2026-04-29 11:31:23,-2243.5,1292.8,10.8,1332,met_borrower,,customer dukaan pe mila,14726769e642
+VS001824,AC000286,AD000359,FA001,2026-04-30,2026-04-30 10:17:07,2026-04-30 10:29:07,-2470.0,-2648.2,7.6,605,met_borrower,,met customer at shop,5f761a671057
+VS001840,AC000972,AD001257,FA002,2026-04-30,2026-04-30 12:28:07,2026-04-30 12:43:06,2318.6,1449.6,6.2,549,met_family,,avara appa jothe maataadide,beca1d97009f
+VS001848,AC001598,AD002060,FA003,2026-04-30,2026-04-30 12:07:29,2026-04-30 12:12:07,760.6,-342.2,10.9,826,met_borrower,PTP001438,customer maneli sikkidru,be64c774683f
+VS001855,AC000595,AD000768,FA004,2026-04-30,2026-04-30 11:01:45,2026-04-30 11:09:55,2676.8,-1229.5,6.3,102,address_not_traceable,,is address pe ghar nahi mila,92edef2240a8
+VS001865,AC001117,AD001450,FA006,2026-04-30,2026-04-30 12:14:58,2026-04-30 12:20:36,2501.9,-973.1,5.2,220,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",d8608ee741b4
+VS001879,AC000859,AD001109,FA009,2026-04-30,2026-04-30 13:53:27,2026-04-30 14:09:01,-3743.7,-768.7,6.7,109,address_not_traceable,,lock laga hai,ph0080
+VS001883,AC001430,AD001846,FA007,2026-04-30,2026-04-30 10:37:26,2026-04-30 11:17:41,-3626.5,-786.9,18.9,73,address_not_traceable,,"address sikkilla, tumba hudukide",5726697fa9f6
+VS001896,AC000887,AD001146,FA008,2026-04-30,2026-04-30 12:11:06,2026-04-30 13:05:36,379.5,-425.8,6.9,108,address_not_traceable,,"address trace nahi hua, kaafi dhunda",461da882f469
+VS001903,AC000608,AD000785,FA003,2026-05-01,2026-05-01 11:58:47,2026-05-01 12:00:25,2446.0,-2317.7,6.5,1288,met_borrower,PTP001481,customer angadi nalli sikkidru,9e37cc3f4ac0
+VS001904,AC000442,AD000569,FA003,2026-05-01,2026-05-01 12:24:16,2026-05-01 12:36:49,2824.7,-2148.7,9.9,206,locked_premises,,"mane lock agide; nija mane Samudaya Bhavana hinde ide, 2 cross munde",7d4336b52d18
+VS001905,AC001091,AD001416,FA003,2026-05-01,2026-05-01 12:45:09,2026-05-01 12:47:15,2601.3,-1652.5,7.8,974,met_borrower,PTP001482,"customer sikkidru, 02/05 olage kodtini andru",fc0e968ceb9d
+VS001915,AC000413,AD000529,FA001,2026-05-01,2026-05-01 14:21:10,2026-05-01 14:27:06,2816.5,-2095.5,8.8,226,locked_premises,,house locked; house is on the road opposite Pharmacy,89ab887e3f22
+VS001935,AC001637,AD002112,FA006,2026-05-01,2026-05-01 10:30:21,2026-05-01 10:37:25,-358.9,3274.8,8.1,571,met_family,,"wife mili, bola kaam pe gaye hain",7d6197134876
+VS001939,AC000879,AD001135,FA006,2026-05-01,2026-05-01 11:48:44,2026-05-01 11:57:56,-732.6,2999.1,7.7,502,cash_collected,,"customer ne cash diya, receipt di",dc01f0bcce77
+VS001950,AC001612,AD002077,FA007,2026-05-01,2026-05-01 12:34:03,2026-05-01 13:01:33,1717.7,-2203.2,8.3,45,address_not_traceable,,"address sikkilla, tumba hudukide",2d158adb70a0
+VS001965,AC001739,AD002247,FA001,2026-05-02,2026-05-02 10:56:24,2026-05-02 11:21:10,1672.6,-566.7,4.0,101,address_not_traceable,,could not trace address after search,c7b4d9e7e8a3
+VS001969,AC002267,AD002920,FA001,2026-05-02,2026-05-02 12:39:46,2026-05-02 12:40:45,2743.2,-2544.0,14.8,965,met_borrower,,met customer at shop,a50936eebb49
+VS001970,AC000287,AD000360,FA001,2026-05-02,2026-05-02 13:00:00,2026-05-02 13:14:53,3269.9,-2386.4,4.1,863,met_borrower,,"met customer, promised by ",dff00a5b084a
+VS001974,AC000857,AD001105,FA002,2026-05-02,2026-05-02 10:07:18,2026-05-02 10:25:43,2818.6,-2258.0,19.3,567,met_family,,avara appa jothe maataadide,d0cec94d52b5
+VS001999,AC002229,AD002872,FA004,2026-05-02,2026-05-02 11:55:39,2026-05-02 12:12:55,3430.3,285.8,9.2,67,locked_premises,,lock laga hai; ghar Doodh Dairy ke saamne wali gali mein hai,1581096c5afd
+VS002010,AC001621,AD002091,FA005,2026-05-02,2026-05-02 12:29:55,2026-05-02 12:38:37,1834.8,-2219.8,12.8,249,met_family,,"ghar pe beta tha, customer bahar",1cb93ace7ed2
+VS002012,AC001731,AD002237,FA005,2026-05-02,2026-05-02 12:54:20,2026-05-02 13:33:34,1609.5,-2350.9,4.0,402,met_family,,"ghar pe beta tha, customer bahar",f132a79896b6
+VS002028,AC000937,AD001212,FA008,2026-05-02,2026-05-02 11:35:49,2026-05-02 11:45:42,-3127.8,1341.6,10.1,329,met_borrower,PTP001535,customer ghar pe mila,759d6e9ffa7c
+VS002029,AC000381,AD000484,FA008,2026-05-02,2026-05-02 11:50:32,2026-05-02 12:06:07,-2001.1,1671.8,6.3,172,locked_premises,,lock laga hai,7a49a59644bb
+VS002032,AC000838,AD001080,FA009,2026-05-02,2026-05-02 10:31:39,2026-05-02 10:51:24,-2313.1,-118.6,10.8,1278,met_borrower,,met customer at home,e4f5352ca8b4
+VS002041,AC001792,AD002311,FA007,2026-05-02,2026-05-02 11:57:10,2026-05-02 12:48:53,2843.6,-1981.1,5.8,106,address_not_traceable,,address sikkilla,e8dcd8318b57
+VS002044,AC000517,AD000667,FA001,2026-05-04,2026-05-04 10:43:49,2026-05-04 10:56:38,3038.7,-2117.8,7.7,73,address_not_traceable,,could not trace address after search,d7098794eaf7
+VS002060,AC000246,AD000309,FA003,2026-05-04,2026-05-04 10:59:11,2026-05-04 11:11:11,2841.9,-1644.6,9.0,470,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",39bfee49ed8b
+VS002062,AC000484,AD000622,FA003,2026-05-04,2026-05-04 11:28:24,2026-05-04 11:31:02,2483.7,-2499.3,4.8,222,locked_premises,,"yaaru illa, beega haakide",31a14a6229d5
+VS002071,AC001421,AD001833,FA006,2026-05-04,2026-05-04 11:52:13,2026-05-04 12:02:19,1526.9,-2386.5,9.1,342,neighbour_says_shifted,,"padosi ne bola shift ho gaye; blue gate wala ghar, Medical Store se right side",7d421fd71b5b
+VS002072,AC001068,AD001380,FA006,2026-05-04,2026-05-04 12:14:48,2026-05-04 12:22:56,1405.5,-1891.1,6.0,201,met_family,,"wife mili, bola kaam pe gaye hain",cc9f36855964
+VS002075,AC002343,AD003015,FA004,2026-05-04,2026-05-04 09:57:33,2026-05-04 10:10:54,1181.4,2821.0,11.5,56,address_not_traceable,,is address pe ghar nahi mila,3a9cb324fe35
+VS002090,AC002278,AD002932,FA008,2026-05-04,2026-05-04 10:32:40,2026-05-04 10:45:28,-127.2,-3642.3,8.7,83,address_not_traceable,,is address pe ghar nahi mila,5a626feef6cf
+VS002096,AC000020,AD000023,FA007,2026-05-04,2026-05-04 10:51:51,2026-05-04 11:04:30,-2953.6,-25.9,5.4,195,met_family,,avara appa jothe maataadide,4f3d3dd1e208
+VS002102,AC001941,AD002509,FA007,2026-05-04,2026-05-04 13:08:02,2026-05-04 13:09:24,-2435.6,-614.5,8.5,428,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",1e71e9cc956f
+VS002103,AC001029,AD001330,FA007,2026-05-04,2026-05-04 13:23:07,2026-05-04 13:46:45,-3812.7,-802.1,4.0,39,address_not_traceable,,address sikkilla,2db622771810
+VS002107,AC002243,AD002889,FA009,2026-05-04,2026-05-04 11:17:29,2026-05-04 11:28:39,4088.0,110.3,8.6,291,neighbour_says_shifted,,house vacated 2 months ago,798be51bb7ae
+VS002122,AC001630,AD002103,FA003,2026-05-05,2026-05-05 13:40:52,2026-05-05 14:04:54,189.1,-2827.1,6.7,1182,cash_collected,,"cash collect maadide, receipt kottide",484a9227160b
+VS002129,AC001139,AD001479,FA002,2026-05-05,2026-05-05 12:24:11,2026-05-05 12:30:11,2974.6,-2510.1,20.3,190,locked_premises,,mane lock agide,08bc4256763f
+VS002133,AC001232,AD001596,FA001,2026-05-05,2026-05-05 11:05:59,2026-05-05 11:14:44,741.0,-3242.6,37.0,233,locked_premises,,"premises locked, nobody home",f398a4f4187b
+VS002138,AC001812,AD002339,FA006,2026-05-05,2026-05-05 10:42:48,2026-05-05 10:55:30,1087.1,2978.4,11.1,467,met_family,,"ghar pe beta tha, customer bahar; ghar Ganesh Mandir ke saamne wali gali mein hai",fc384e2aeb33
+VS002151,AC001221,AD001584,FA005,2026-05-05,2026-05-05 12:31:01,2026-05-05 12:32:53,1341.5,-1965.7,24.8,244,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",67472e0829d0
+VS002156,AC001500,AD001937,FA004,2026-05-05,2026-05-05 11:12:15,2026-05-05 11:14:11,738.4,3065.8,12.0,106,locked_premises,,"koi nahi mila, taala laga tha",f2b523bbda34
+VS002159,AC000117,AD000147,FA004,2026-05-05,2026-05-05 11:56:24,2026-05-05 12:40:35,1159.4,1107.5,9.8,76,address_not_traceable,,is address pe ghar nahi mila,f6eda6eb5c8e
+VS002182,AC001692,AD002188,FA008,2026-05-05,2026-05-05 10:43:22,2026-05-05 10:57:37,-240.7,-3321.4,4.7,1085,met_borrower,PTP001665,"customer se mila, baat hui",a60e5a29cb33
+VS002185,AC002139,AD002761,FA008,2026-05-05,2026-05-05 12:15:30,2026-05-05 12:43:25,-3623.7,-815.8,10.3,91,no_such_person,,ghar wale bole yeh insaan yahan nahi rehta,5f83c7bf45a7
+VS002192,AC000134,AD000169,FA001,2026-05-06,2026-05-06 13:21:01,2026-05-06 13:41:47,3000.0,-2106.0,4.0,47,address_not_traceable,,address not traceable,ac0f2961fe89
+VS002193,AC001737,AD002245,FA001,2026-05-06,2026-05-06 13:45:43,2026-05-06 13:51:21,2774.2,-1915.2,26.6,417,met_family,,"met spouse, customer at work",c6d9794ec1c0
+VS002196,AC000050,AD000062,FA003,2026-05-06,2026-05-06 10:28:34,2026-05-06 10:42:24,580.1,-3096.0,7.7,459,met_family,,avara appa jothe maataadide,1f21adbaad50
+VS002214,AC000339,AD000430,FA005,2026-05-06,2026-05-06 11:17:38,2026-05-06 11:48:29,1621.4,-2264.3,18.7,1162,met_borrower,,"customer se mila, baat hui; blue gate wala ghar, Church se right side",dfedb4accb7a
+VS002216,AC001304,AD001694,FA005,2026-05-06,2026-05-06 12:11:12,2026-05-06 12:26:44,1757.5,-2215.3,16.7,1039,met_borrower,,"customer se mila, baat hui; asli ghar Dawai ki Dukaan ke peeche hai, 2 gali aage",d77fb587919d
+VS002226,AC000880,AD001136,FA004,2026-05-06,2026-05-06 11:17:44,2026-05-06 11:18:42,834.0,-264.2,14.0,231,locked_premises,,"koi nahi mila, taala laga tha",c21dde6552d7
+VS002228,AC001958,AD002531,FA004,2026-05-06,2026-05-06 11:37:07,2026-05-06 12:09:41,876.0,157.7,18.8,256,met_family,,"wife mili, bola kaam pe gaye hain",0220f3200c0d
+VS002229,AC001826,AD002357,FA004,2026-05-06,2026-05-06 12:16:20,2026-05-06 12:17:31,1031.3,309.6,4.4,92,locked_premises,,"koi nahi mila, taala laga tha",928b40df3859
+VS002231,AC000892,AD001152,FA004,2026-05-06,2026-05-06 12:33:26,2026-05-06 12:36:12,1417.1,355.7,23.7,242,met_family,,"wife mili, bola kaam pe gaye hain",8b723eaf0f0e
+VS002237,AC001682,AD002175,FA009,2026-05-06,2026-05-06 11:25:21,2026-05-06 11:40:30,758.6,-767.4,11.1,72,address_not_traceable,,could not trace address after search,ba508dc57ced
+VS002247,AC001140,AD001480,FA008,2026-05-06,2026-05-06 11:27:24,2026-05-06 11:46:01,2905.1,-1731.6,7.7,88,address_not_traceable,,"address trace nahi hua, kaafi dhunda",c4cd62183395
+VS002249,AC001684,AD002178,FA008,2026-05-06,2026-05-06 12:21:12,2026-05-06 12:24:17,2956.4,-2421.9,10.8,331,met_family,PTP001719,"father se baat hui, message de denge",d35d1a7689a4
+VS002252,AC002053,AD002652,FA007,2026-05-06,2026-05-06 10:13:28,2026-05-06 10:32:28,-1077.8,-787.6,4.9,32,address_not_traceable,,"address sikkilla, tumba hudukide",bdf413047c55
+VS002254,AC000574,AD000741,FA007,2026-05-06,2026-05-06 11:11:42,2026-05-06 11:20:07,-633.8,2732.5,8.7,1483,met_borrower,PTP001721,customer maneli sikkidru,7eb10ec96b69
+VS002255,AC001252,AD001621,FA007,2026-05-06,2026-05-06 11:51:11,2026-05-06 12:09:14,-502.2,3349.4,7.8,35,address_not_traceable,,"address sikkilla, tumba hudukide",ca1ba677fda1
+VS002260,AC000819,AD001054,FA007,2026-05-06,2026-05-06 13:26:16,2026-05-06 13:35:09,-133.5,2765.2,9.5,287,met_family,,avara appa jothe maataadide,efa7e45a04cb
+VS002263,AC000458,AD000589,FA003,2026-05-07,2026-05-07 10:54:10,2026-05-07 10:55:22,2674.6,-1858.7,5.8,1153,met_borrower,,"customer sikkidru, maataadide",a1c71deacb18
+VS002277,AC002362,AD003041,FA001,2026-05-07,2026-05-07 12:26:19,2026-05-07 12:31:37,722.6,-237.3,15.8,980,met_borrower,PTP001764,met customer at home,98519ba6ab5b
+VS002280,AC000576,AD000743,FA002,2026-05-07,2026-05-07 09:40:09,2026-05-07 10:19:02,-1992.6,-2241.7,7.4,98,address_not_traceable,,address sikkilla,466e060bee6f
+VS002283,AC001715,AD002217,FA002,2026-05-07,2026-05-07 10:58:44,2026-05-07 11:01:38,-873.5,-3085.4,9.4,66,locked_premises,,mane lock agide,74291b82089a
+VS002290,AC001571,AD002027,FA004,2026-05-07,2026-05-07 11:07:41,2026-05-07 11:09:23,-449.2,-600.8,29.2,156,locked_premises,,ghar band tha,7ea8b51852b3
+VS002294,AC001295,AD001682,FA004,2026-05-07,2026-05-07 11:48:46,2026-05-07 11:55:08,-545.4,-64.0,10.7,121,locked_premises,,lock laga hai,1d5e262bd169
+VS002296,AC000084,AD000105,FA004,2026-05-07,2026-05-07 12:16:13,2026-05-07 12:29:12,-408.2,-720.2,7.5,44,address_not_traceable,,"address trace nahi hua, kaafi dhunda",117aff066073
+VS002297,AC001256,AD001627,FA005,2026-05-07,2026-05-07 09:37:46,2026-05-07 09:50:30,1310.9,-1996.0,6.7,1404,met_borrower,,"customer se mila, baat hui",bf8102fcd649
+VS002306,AC002167,AD002796,FA006,2026-05-07,2026-05-07 10:21:45,2026-05-07 10:40:55,961.7,3115.4,17.4,30,address_not_traceable,,is address pe ghar nahi mila,39bc9c4d8661
+VS002313,AC000868,AD001121,FA007,2026-05-07,2026-05-07 10:48:16,2026-05-07 10:54:56,3732.9,673.9,10.9,628,met_borrower,,customer angadi nalli sikkidru,ca6f42d17d1d
+VS002318,AC001404,AD001812,FA007,2026-05-07,2026-05-07 12:18:00,2026-05-07 12:31:09,3859.5,582.3,8.6,516,met_borrower,,"customer maneli sikkidru; address tappu, mane Bus Nildana hattira ide",d79bd7bad88a
+VS002326,AC000122,AD000154,FA009,2026-05-07,2026-05-07 12:10:45,2026-05-07 12:21:45,3507.9,-2260.0,11.5,424,met_borrower,,"met customer at home; actual house behind Park, 2 lanes ahead",918359c98ca6
+VS002331,AC001653,AD002134,FA008,2026-05-07,2026-05-07 10:59:01,2026-05-07 11:04:26,3121.6,-1912.9,9.8,241,met_family,,"wife mili, bola kaam pe gaye hain",9929b0244dc2
+VS002333,AC001846,AD002380,FA008,2026-05-07,2026-05-07 11:37:39,2026-05-07 11:44:33,3086.2,-2423.8,13.8,198,locked_premises,,"ghar band tha; address galat likha hai, ghar Doodh Dairy ke paas hai",739f6c81250d
+VS002338,AC000568,AD000733,FA002,2026-05-08,2026-05-08 10:19:53,2026-05-08 10:46:28,2801.7,-2241.2,6.8,409,met_borrower,,"customer sikkidru,  olage kodtini andru; nija mane Anjaneya Gudi hinde ide, 2 cross munde",40f55f26262f
+VS002348,AC000893,AD001154,FA003,2026-05-08,2026-05-08 10:41:56,2026-05-08 11:05:42,-2578.9,1707.1,7.8,391,met_family,,"avara appa jothe maataadide; address tappu, mane Petrol Bunk hattira ide",e510e4f2aa51
+VS002365,AC000633,AD000817,FA006,2026-05-08,2026-05-08 10:24:59,2026-05-08 10:40:02,1750.8,-2136.7,32.0,102,address_not_traceable,,is address pe ghar nahi mila,af0a663d07d3
+VS002381,AC001902,AD002459,FA004,2026-05-08,2026-05-08 14:27:49,2026-05-08 14:42:12,1807.9,-2216.6,11.2,305,met_family,,"ghar pe beta tha, customer bahar; ghar Medical Store ke saamne wali gali mein hai",48ba135bc1f5
+VS002386,AC000146,AD000182,FA005,2026-05-08,2026-05-08 11:41:15,2026-05-08 11:57:15,639.6,2628.3,10.1,45,address_not_traceable,,"address trace nahi hua, kaafi dhunda",b0af6a623abf
+VS002392,AC002103,AD002712,FA008,2026-05-08,2026-05-08 10:47:58,2026-05-08 10:59:47,-735.2,-3798.2,12.7,220,locked_premises,,lock laga hai,29a2d3f0aa0e
+VS002400,AC000638,AD000824,FA009,2026-05-08,2026-05-08 10:36:37,2026-05-08 11:03:37,1993.3,-2194.1,11.4,48,address_not_traceable,,could not trace address after search,8de1239b313e
+VS002411,AC000516,AD000666,FA007,2026-05-08,2026-05-08 13:40:25,2026-05-08 13:46:05,-2654.0,-490.1,4.9,174,locked_premises,,"yaaru illa, beega haakide",cda916a0bef0
+VS002413,AC001969,AD002544,FA003,2026-05-09,2026-05-09 10:44:22,2026-05-09 10:53:46,805.9,-2658.2,19.2,310,met_family,,avara appa jothe maataadide,5c5a41307de5
+VS002427,AC002344,AD003016,FA002,2026-05-09,2026-05-09 12:44:09,2026-05-09 13:06:17,2267.2,607.1,6.5,1039,met_borrower,PTP001868,"customer sikkidru, 16/05 olage kodtini andru",1613fa7d7308
+VS002429,AC002129,AD002744,FA002,2026-05-09,2026-05-09 13:51:14,2026-05-09 14:05:02,2688.0,1270.1,21.5,97,address_not_traceable,,"address sikkilla, tumba hudukide",f461da283f5e
+VS002431,AC002350,AD003026,FA001,2026-05-09,2026-05-09 09:54:43,2026-05-09 10:14:13,2903.1,-2454.9,12.7,1078,met_borrower,,met customer,649358297e07
+VS002438,AC000951,AD001231,FA001,2026-05-09,2026-05-09 13:41:58,2026-05-09 13:55:05,2699.3,-2477.6,11.6,73,address_not_traceable,,address not traceable,191cb80824cf
+VS002459,AC001299,AD001689,FA005,2026-05-09,2026-05-09 10:31:45,2026-05-09 10:39:27,-318.5,-737.9,8.7,724,met_borrower,,"customer mila, bola  tak karega; asli ghar Girja Ghar ke peeche hai, 2 gali aage",95e8ea303fe5
+VS002460,AC002158,AD002784,FA005,2026-05-09,2026-05-09 10:54:13,2026-05-09 11:08:05,-507.0,-430.7,4.0,101,address_not_traceable,,is address pe ghar nahi mila,c290f4df3702
+VS002461,AC001643,AD002120,FA005,2026-05-09,2026-05-09 11:16:36,2026-05-09 11:27:26,755.7,2775.5,14.1,797,met_borrower,PTP001874,"customer se mila, baat hui",4b82eda63a0e
+VS002466,AC000560,AD000722,FA007,2026-05-09,2026-05-09 11:29:27,2026-05-09 11:33:04,4004.6,105.5,5.2,861,met_borrower,PTP001876,"customer sikkidru, 17/05 olage kodtini andru",595aadc68bad
+VS002471,AC001327,AD001722,FA008,2026-05-09,2026-05-09 10:27:45,2026-05-09 10:37:23,-2334.9,1405.8,12.4,95,address_not_traceable,,address nahi mila,c4d9eb639ef5
+VS002486,AC000661,AD000852,FA009,2026-05-09,2026-05-09 13:12:34,2026-05-09 13:29:46,2337.0,-792.4,5.9,115,address_not_traceable,,house locked,ph0083
+VS002487,AC000953,AD001233,FA003,2026-05-11,2026-05-11 09:31:52,2026-05-11 10:02:39,2384.4,-2151.3,4.0,927,cash_collected,,"cash collect maadide, receipt kottide",6aee39af471d
+VS002492,AC000442,AD000569,FA003,2026-05-11,2026-05-11 11:35:15,2026-05-11 11:44:40,2973.1,-2339.9,4.2,49,address_not_traceable,,"address sikkilla, tumba hudukide",822d5c6527ec
+VS002499,AC000972,AD001257,FA001,2026-05-11,2026-05-11 12:00:49,2026-05-11 12:17:24,2403.0,849.9,15.7,45,address_not_traceable,,could not trace address after search,079da6b7e2a2
+VS002501,AC000608,AD000785,FA002,2026-05-11,2026-05-11 10:15:20,2026-05-11 10:45:05,1615.3,-1547.3,4.9,116,address_not_traceable,,address sikkilla,e338dc3ce3e4
+VS002512,AC000595,AD000768,FA004,2026-05-11,2026-05-11 11:17:25,2026-05-11 11:28:00,2661.6,-1596.4,4.7,415,met_family,,"ghar pe beta tha, customer bahar; address galat likha hai, ghar Ration ki Dukaan ke paas hai",3d811dd48876
+VS002535,AC001430,AD001846,FA007,2026-05-11,2026-05-11 09:40:33,2026-05-11 10:16:43,-3799.9,-751.1,17.9,57,address_not_traceable,,"address sikkilla, tumba hudukide",8a25a0ba133f
+VS002549,AC002223,AD002866,FA008,2026-05-11,2026-05-11 10:25:59,2026-05-11 10:46:25,4012.4,652.7,6.7,175,neighbour_says_shifted,,"neighbour bola 2 mahine pehle ghar khali kar diya; blue gate wala ghar, Hanuman Mandir se right side",9ac9728c6aff
+VS002560,AC000227,AD000287,FA001,2026-05-12,2026-05-12 10:54:19,2026-05-12 10:54:52,2745.2,-2386.0,7.5,906,met_borrower,,"met customer, promised by ",2ff034f92894
+VS002561,AC001739,AD002247,FA001,2026-05-12,2026-05-12 11:12:29,2026-05-12 11:47:10,1478.0,-726.8,26.6,99,address_not_traceable,,could not trace address after search,de761ba9b6d7
+VS002562,AC002033,AD002623,FA001,2026-05-12,2026-05-12 11:51:28,2026-05-12 12:16:02,1688.3,-1182.6,6.2,84,address_not_traceable,,could not trace address after search,086e83bd714e
+VS002573,AC000413,AD000529,FA003,2026-05-12,2026-05-12 10:29:47,2026-05-12 10:40:47,2804.2,-2111.3,9.0,800,met_borrower,PTP001963,customer maneli sikkidru,0d5a62600e55
+VS002586,AC002229,AD002872,FA006,2026-05-12,2026-05-12 11:43:07,2026-05-12 12:02:40,3097.1,256.8,9.3,293,met_family,,"father se baat hui, message de denge",5b30ee10d1ee
+VS002594,AC001117,AD001450,FA004,2026-05-12,2026-05-12 11:58:39,2026-05-12 12:02:45,2485.5,-1062.8,13.6,288,no_such_person,,is naam ka koi nahi rehta,9669f5c57d6e
+VS002600,AC001621,AD002091,FA005,2026-05-12,2026-05-12 11:41:34,2026-05-12 11:44:34,1759.7,-2251.6,8.3,214,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",a5d23b72b8ba
+VS002606,AC000838,AD001079,FA009,2026-05-12,2026-05-12 10:26:33,2026-05-12 10:34:01,2327.9,-757.4,7.1,90,locked_premises,,mane lock agide,ph0084
+VS002627,AC000887,AD001146,FA007,2026-05-12,2026-05-12 13:27:45,2026-05-12 14:23:45,235.8,-834.1,7.9,62,address_not_traceable,,"address sikkilla, tumba hudukide",c5a7fc105845
+VS002638,AC000226,AD000286,FA003,2026-05-13,2026-05-13 11:01:41,2026-05-13 11:20:10,612.8,-3452.7,5.9,223,locked_premises,,"yaaru illa, beega haakide",c22fcd046215
+VS002661,AC001637,AD002112,FA006,2026-05-13,2026-05-13 10:08:34,2026-05-13 10:18:02,-382.8,3027.1,12.2,222,locked_premises,,ghar band tha,ba50683a6e55
+VS002665,AC000527,AD000680,FA006,2026-05-13,2026-05-13 11:09:17,2026-05-13 11:18:28,-681.7,2823.9,9.4,538,met_family,PTP002021,"father se baat hui, message de denge; address galat likha hai, ghar Ganesh Mandir ke paas hai",e831f5d70156
+VS002666,AC000879,AD001135,FA006,2026-05-13,2026-05-13 11:30:23,2026-05-13 11:55:07,-884.2,2954.2,8.9,1168,met_borrower,,"customer se mila, baat hui",f12577212969
+VS002670,AC002114,AD002725,FA004,2026-05-13,2026-05-13 11:36:25,2026-05-13 11:48:16,842.8,2516.9,9.9,81,address_not_traceable,,address nahi mila,b56a10ade7a1
+VS002688,AC001030,AD001331,FA009,2026-05-13,2026-05-13 11:51:58,2026-05-13 12:18:03,-2948.6,-20.5,16.1,572,met_family,PTP002023,"met father, will pass message",750c4e438b26
+VS002696,AC000937,AD001212,FA007,2026-05-13,2026-05-13 11:45:51,2026-05-13 12:28:56,-1026.5,1018.9,4.0,77,address_not_traceable,,address sikkilla,6717871c28c4
+VS002701,AC000517,AD000667,FA003,2026-05-14,2026-05-14 10:42:29,2026-05-14 10:50:26,2081.1,-2429.2,35.3,202,locked_premises,,mane lock agide,448430026055
+VS002715,AC000944,AD001223,FA002,2026-05-14,2026-05-14 12:01:08,2026-05-14 12:05:45,713.4,-3009.9,7.2,568,met_family,PTP002069,"avara hendathi sikkidru, kelsakke hogidaare antharu",0b443e01ac5b
+VS002724,AC000484,AD000622,FA001,2026-05-14,2026-05-14 11:14:35,2026-05-14 11:21:41,2532.3,-2512.6,16.6,96,locked_premises,,house locked,f58da51118a3
+VS002725,AC000246,AD000309,FA001,2026-05-14,2026-05-14 11:25:33,2026-05-14 11:39:01,2947.9,-1725.2,13.4,134,locked_premises,,"premises locked, nobody home",821bbde36510
+VS002732,AC001421,AD001833,FA004,2026-05-14,2026-05-14 11:38:05,2026-05-14 11:48:09,1932.8,-2279.1,5.5,114,address_not_traceable,,address nahi mila,6ccdf0ba674e
+VS002737,AC001068,AD001380,FA005,2026-05-14,2026-05-14 11:21:57,2026-05-14 11:23:53,1395.7,-1882.9,8.3,238,locked_premises,,ghar band tha,c425ff73035e
+VS002755,AC001792,AD002311,FA008,2026-05-14,2026-05-14 10:46:49,2026-05-14 11:32:49,2743.1,-1820.5,7.5,91,address_not_traceable,,"address trace nahi hua, kaafi dhunda",e48c049dcdd5
+VS002760,AC002243,AD002889,FA008,2026-05-14,2026-05-14 13:06:03,2026-05-14 13:16:52,4086.9,111.0,6.2,256,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,24f228fd55fc
+VS002762,AC002278,AD002932,FA009,2026-05-14,2026-05-14 09:58:29,2026-05-14 10:26:51,-528.8,-3439.2,12.6,84,address_not_traceable,,could not trace address after search,ab4a49466395
+VS002774,AC000020,AD000023,FA007,2026-05-14,2026-05-14 10:42:14,2026-05-14 10:44:02,-2928.6,-58.4,25.1,402,met_family,,avara appa jothe maataadide,cf6c24b5d6e6
+VS002777,AC001029,AD001330,FA007,2026-05-14,2026-05-14 11:41:27,2026-05-14 12:15:39,-2362.7,-538.5,15.0,190,neighbour_says_shifted,,pakkadavaru shift aagidaare antharu,92373470b1e7
+VS002789,AC001232,AD001596,FA001,2026-05-15,2026-05-15 11:05:58,2026-05-15 11:11:58,746.9,-3203.9,7.4,278,neighbour_says_shifted,,neighbour says shifted,0a77f4834ba5
+VS002791,AC001630,AD002103,FA001,2026-05-15,2026-05-15 11:31:41,2026-05-15 11:47:07,292.0,-2746.7,8.8,228,locked_premises,,house locked,8f3778669d6f
+VS002802,AC001598,AD002060,FA003,2026-05-15,2026-05-15 11:41:59,2026-05-15 11:43:55,699.4,-365.4,21.4,475,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",73a74deb5cf3
+VS002804,AC002343,AD003015,FA006,2026-05-15,2026-05-15 10:21:48,2026-05-15 10:30:18,981.3,2511.1,6.2,176,locked_premises,,lock laga hai,5ca471be7a79
+VS002811,AC001812,AD002339,FA006,2026-05-15,2026-05-15 12:42:34,2026-05-15 12:44:04,1030.4,2997.1,12.2,652,met_borrower,PTP002119,customer dukaan pe mila,4cf575cc5105
+VS002819,AC001500,AD001937,FA004,2026-05-15,2026-05-15 11:27:58,2026-05-15 11:28:43,733.9,3094.0,14.3,239,locked_premises,,lock laga hai,5b088aff875f
+VS002835,AC000064,AD000079,FA008,2026-05-15,2026-05-15 10:25:37,2026-05-15 10:31:48,1006.2,-1203.7,5.6,1398,met_borrower,,"customer mila, bola  tak karega",d54b136522ee
+VS002861,AC001139,AD001479,FA002,2026-05-16,2026-05-16 11:17:11,2026-05-16 11:35:11,2987.0,-2499.9,11.2,1339,met_borrower,,customer maneli sikkidru,9754aa241a12
+VS002863,AC000857,AD001105,FA002,2026-05-16,2026-05-16 12:31:11,2026-05-16 12:32:51,2828.8,-2273.7,20.2,1266,met_borrower,,"customer sikkidru,  olage kodtini andru",11e597430251
+VS002864,AC001737,AD002245,FA002,2026-05-16,2026-05-16 12:57:26,2026-05-16 13:17:09,2873.9,-2070.2,7.7,738,met_borrower,PTP002163,"customer maneli sikkidru; nija mane Ganapathi Gudi hinde ide, 2 cross munde",ccee12ec63e9
+VS002867,AC000287,AD000360,FA002,2026-05-16,2026-05-16 14:07:15,2026-05-16 14:08:51,3075.0,-2379.9,12.6,1484,met_borrower,PTP002164,"customer sikkidru, 17/05 olage kodtini andru",93745be68c24
+VS002868,AC000168,AD000209,FA001,2026-05-16,2026-05-16 09:44:14,2026-05-16 10:05:29,2734.9,903.0,7.5,71,address_not_traceable,,address not traceable,92ee54621a27
+VS002877,AC001826,AD002357,FA004,2026-05-16,2026-05-16 10:08:24,2026-05-16 10:14:46,1010.3,387.5,7.2,259,met_family,,"father se baat hui, message de denge",2829f2767a37
+VS002878,AC001958,AD002531,FA004,2026-05-16,2026-05-16 10:23:19,2026-05-16 10:24:31,1169.2,208.3,17.6,184,locked_premises,,"koi nahi mila, taala laga tha",a799665ddaf0
+VS002879,AC000880,AD001136,FA004,2026-05-16,2026-05-16 10:31:30,2026-05-16 10:41:35,750.4,-216.9,21.3,380,met_family,,"father se baat hui, message de denge",5ce2fb86e341
+VS002882,AC000873,AD001127,FA005,2026-05-16,2026-05-16 09:45:28,2026-05-16 09:58:38,680.7,-3347.9,11.3,1412,met_borrower,,customer ghar pe mila,d347f363c7c6
+VS002885,AC001921,AD002483,FA005,2026-05-16,2026-05-16 11:43:12,2026-05-16 11:48:26,884.8,1166.9,16.4,104,locked_premises,,house locked,81c0a61d98fd
+VS002888,AC001901,AD002458,FA005,2026-05-16,2026-05-16 13:07:50,2026-05-16 13:20:44,1055.4,-3105.4,6.1,1211,met_borrower,,customer ghar pe mila,075ffa01dfba
+VS002901,AC000625,AD000808,FA008,2026-05-16,2026-05-16 10:01:23,2026-05-16 10:02:29,-720.8,3387.8,8.9,1249,met_borrower,,"customer mila, bola  tak karega",e1d5de6648a1
+VS002903,AC000574,AD000741,FA008,2026-05-16,2026-05-16 11:17:40,2026-05-16 11:26:31,-656.0,2897.0,14.7,249,met_family,,"ghar pe beta tha, customer bahar",07a152bd8d1c
+VS002904,AC002053,AD002651,FA008,2026-05-16,2026-05-16 11:29:45,2026-05-16 11:39:38,-552.9,3135.1,8.8,47,address_not_traceable,,"address trace nahi hua, kaafi dhunda",bd7a1f616616
+VS002908,AC001252,AD001621,FA008,2026-05-16,2026-05-16 12:52:40,2026-05-16 13:05:04,-568.8,3121.5,7.7,44,address_not_traceable,,address nahi mila,adb739ae7ed7
+VS002913,AC000316,AD000397,FA009,2026-05-16,2026-05-16 11:10:00,2026-05-16 11:14:38,3097.7,-1979.3,14.0,147,locked_premises,,house locked,87384cdb2849
+VS002915,AC001140,AD001480,FA009,2026-05-16,2026-05-16 11:32:02,2026-05-16 11:51:32,3410.6,-1664.0,4.3,97,address_not_traceable,,could not trace address after search,fb2821a43578
+VS002921,AC002055,AD002654,FA007,2026-05-16,2026-05-16 11:46:49,2026-05-16 12:06:04,3812.5,195.3,4.0,302,met_family,,avara appa jothe maataadide,1b7c09de195b
+VS002923,AC002320,AD002986,FA007,2026-05-16,2026-05-16 12:37:18,2026-05-16 12:54:32,3868.6,78.8,9.9,282,met_family,,"avara appa jothe maataadide; address tappu, mane Bus Nildana hattira ide",f1b30b9484c4
+VS002929,AC000458,AD000589,FA002,2026-05-18,2026-05-18 11:13:58,2026-05-18 11:16:28,2699.9,-1880.6,15.4,702,met_borrower,,customer angadi nalli sikkidru,479d1fa10984
+VS002932,AC000568,AD000733,FA002,2026-05-18,2026-05-18 12:03:50,2026-05-18 12:09:37,3025.3,-2220.9,20.4,103,locked_premises,,mane lock agide,c3c647275ea4
+VS002935,AC000576,AD000743,FA001,2026-05-18,2026-05-18 10:19:50,2026-05-18 11:02:50,-2180.5,-2312.2,21.4,111,address_not_traceable,,address not traceable,2513d3aa43e7
+VS002938,AC001715,AD002217,FA001,2026-05-18,2026-05-18 11:53:15,2026-05-18 12:01:51,-867.1,-3076.6,6.3,935,met_borrower,,"met customer; actual house behind Water Tank, 2 lanes ahead",f1a9676af653
+VS002940,AC000876,AD001130,FA001,2026-05-18,2026-05-18 12:39:51,2026-05-18 12:47:51,-781.8,-3321.3,6.9,220,locked_premises,,house locked,f8bc8e6c6326
+VS002963,AC000633,AD000817,FA005,2026-05-18,2026-05-18 12:35:50,2026-05-18 12:37:48,1302.5,-1940.7,5.3,722,cash_collected,,"13,950 cash collect kiya",a0a36db2a063
+VS002968,AC002167,AD002796,FA006,2026-05-18,2026-05-18 11:13:38,2026-05-18 11:17:48,885.4,3109.0,18.9,490,met_borrower,,"customer mila, bola  tak karega",21b027769d21
+VS002974,AC000122,AD000154,FA007,2026-05-18,2026-05-18 10:09:24,2026-05-18 10:33:59,3575.3,-2276.7,13.8,119,locked_premises,,"mane lock agide; address tappu, mane Park hattira ide",862341434448
+VS002982,AC001653,AD002134,FA009,2026-05-18,2026-05-18 11:00:50,2026-05-18 11:01:56,3147.5,-1878.6,5.1,362,met_borrower,PTP002232,"met customer, promised by 25/05",7e6fd0256681
+VS002984,AC001846,AD002380,FA009,2026-05-18,2026-05-18 11:51:03,2026-05-18 11:56:01,3060.7,-2420.3,6.2,73,locked_premises,,house locked,176972d7b406
+VS002989,AC000516,AD000666,FA008,2026-05-18,2026-05-18 10:43:04,2026-05-18 10:50:16,-2656.6,-496.9,14.4,238,locked_premises,,lock laga hai; ghar Girja Ghar ke saamne wali gali mein hai,610bc1bda2a1
+VS002990,AC001941,AD002509,FA008,2026-05-18,2026-05-18 10:59:14,2026-05-18 11:00:27,-2420.5,-630.9,6.6,519,met_family,,"wife mili, bola kaam pe gaye hain",80f0e0d7deb2
+VS002993,AC000460,AD000592,FA008,2026-05-18,2026-05-18 12:05:07,2026-05-18 12:25:28,-3716.9,-746.2,5.2,40,address_not_traceable,,is address pe ghar nahi mila,c006ffc1f8a0
+VS002996,AC001969,AD002545,FA002,2026-05-19,2026-05-19 10:17:36,2026-05-19 10:48:31,-1543.5,975.9,6.7,105,address_not_traceable,,address sikkilla,c06d74cabdb7
+VS003001,AC000050,AD000062,FA002,2026-05-19,2026-05-19 12:49:23,2026-05-19 12:57:05,669.1,-3103.8,7.4,473,met_borrower,,"customer angadi nalli sikkidru; nija mane Bus Stop hinde ide, 2 cross munde",41fbad510714
+VS003005,AC002350,AD003026,FA001,2026-05-19,2026-05-19 09:30:58,2026-05-19 09:43:28,2916.8,-2479.2,9.4,216,locked_premises,,"premises locked, nobody home",006145d04f0b
+VS003018,AC002344,AD003016,FA003,2026-05-19,2026-05-19 10:40:16,2026-05-19 10:41:38,2449.6,633.3,9.1,216,met_family,,avara appa jothe maataadide,60ce40657e20
+VS003021,AC001571,AD002027,FA006,2026-05-19,2026-05-19 10:43:25,2026-05-19 10:50:29,-389.4,-603.9,16.4,81,locked_premises,,lock laga hai,6200ea5d2c01
+VS003026,AC001295,AD001682,FA006,2026-05-19,2026-05-19 12:30:50,2026-05-19 12:38:41,-628.7,-285.4,23.0,192,no_such_person,,ghar wale bole yeh insaan yahan nahi rehta,0c5724ca7ea7
+VS003028,AC001221,AD001584,FA005,2026-05-19,2026-05-19 10:05:55,2026-05-19 10:09:20,1211.9,-1998.0,4.7,316,neighbour_says_shifted,,padosi ne bola shift ho gaye,ba2cc0ca5e75
+VS003035,AC000084,AD000105,FA004,2026-05-19,2026-05-19 09:54:39,2026-05-19 10:15:23,-668.3,-73.8,8.3,633,met_borrower,,customer ghar pe mila,65ddbed21642
+VS003037,AC001299,AD001689,FA004,2026-05-19,2026-05-19 10:42:07,2026-05-19 10:47:25,-302.4,-810.2,10.6,1072,met_borrower,,customer ghar pe mila,72b0e6e99571
+VS003039,AC000485,AD000624,FA004,2026-05-19,2026-05-19 11:15:39,2026-05-19 11:46:45,137.1,-474.5,9.0,1383,met_borrower,,"customer mila, bola  tak karega",9211cb384068
+VS003041,AC002158,AD002784,FA004,2026-05-19,2026-05-19 12:09:06,2026-05-19 12:26:34,-620.1,-745.8,5.5,288,no_such_person,,ghar wale bole yeh insaan yahan nahi rehta,8e01cadaa1ea
+VS003042,AC002202,AD002842,FA004,2026-05-19,2026-05-19 12:34:21,2026-05-19 12:43:57,-897.0,27.2,6.4,570,met_family,,"ghar pe beta tha, customer bahar",a24bb2464107
+VS003044,AC000868,AD001121,FA007,2026-05-19,2026-05-19 10:16:55,2026-05-19 10:18:33,3733.5,642.4,8.4,469,met_borrower,PTP002280,"customer sikkidru, 25/05 olage kodtini andru",a035bb40a306
+VS003052,AC000560,AD000722,FA007,2026-05-19,2026-05-19 12:33:12,2026-05-19 12:34:48,4057.7,313.2,28.5,562,met_family,,avara appa jothe maataadide,c09d8bfdc386
+VS003056,AC001327,AD001722,FA009,2026-05-19,2026-05-19 11:45:00,2026-05-19 12:35:07,-2214.2,1019.3,7.4,428,met_family,,"met father, will pass message",6c3235c2e17e
+VS003072,AC001475,AD001903,FA003,2026-05-20,2026-05-20 11:53:51,2026-05-20 12:52:36,1530.8,1998.9,11.7,119,address_not_traceable,,address sikkilla,d1fdf1206304
+VS003091,AC000892,AD001152,FA006,2026-05-20,2026-05-20 10:40:51,2026-05-20 10:48:03,1488.4,356.7,8.5,419,met_family,PTP002326,"ghar pe beta tha, customer bahar",6c2001c8a4f4
+VS003093,AC001646,AD002123,FA006,2026-05-20,2026-05-20 11:12:20,2026-05-20 11:14:50,1121.1,166.1,10.9,561,met_family,,"father se baat hui, message de denge",61a6abf835e7
+VS003099,AC000146,AD000182,FA004,2026-05-20,2026-05-20 11:31:28,2026-05-20 11:46:06,868.4,2746.5,19.7,76,address_not_traceable,,"address trace nahi hua, kaafi dhunda",d2a4e1956ff8
+VS003111,AC000661,AD000852,FA007,2026-05-20,2026-05-20 10:21:30,2026-05-20 11:00:08,-2726.0,11.6,15.0,495,met_family,,"avara appa jothe maataadide; address tappu, mane Neerina Tank hattira ide",8d9bbb1fc8a0
+VS003117,AC001480,AD001908,FA007,2026-05-20,2026-05-20 12:54:59,2026-05-20 13:14:27,-2472.5,-37.9,25.2,35,address_not_traceable,,"address sikkilla, tumba hudukide",1a402b4faad2
+VS003125,AC000638,AD000824,FA009,2026-05-20,2026-05-20 09:41:00,2026-05-20 10:02:38,1652.8,-2156.9,26.5,70,address_not_traceable,,address not traceable,17cb4739f705
+VS003129,AC002397,AD003086,FA009,2026-05-20,2026-05-20 11:14:22,2026-05-20 11:22:44,703.2,-867.4,21.9,368,met_family,PTP002329,"met spouse, customer at work",521ca92838ba
+VS003136,AC000608,AD000785,FA002,2026-05-21,2026-05-21 11:23:51,2026-05-21 11:42:21,1399.0,-1977.5,6.3,83,address_not_traceable,,"address sikkilla, tumba hudukide",f7aadd518d74
+VS003138,AC000442,AD000569,FA002,2026-05-21,2026-05-21 12:11:24,2026-05-21 12:22:05,2630.8,-2388.3,11.2,58,address_not_traceable,,"address sikkilla, tumba hudukide",bf13ec71b4b8
+VS003149,AC000972,AD001257,FA001,2026-05-21,2026-05-21 11:55:57,2026-05-21 12:06:37,2319.9,1438.9,6.1,526,met_family,,"met father, will pass message",ee9c6b8fd927
+VS003150,AC002129,AD002744,FA001,2026-05-21,2026-05-21 12:19:48,2026-05-21 12:35:44,2155.6,890.5,7.0,1463,met_borrower,,"met customer, promised by ",4d1ded10fd08
+VS003158,AC001647,AD002124,FA003,2026-05-21,2026-05-21 13:22:55,2026-05-21 13:33:11,2358.8,-2342.8,7.5,504,met_family,,"avara appa jothe maataadide; address tappu, mane Masidi hattira ide",8c68a4e49c20
+VS003170,AC000595,AD000768,FA004,2026-05-21,2026-05-21 11:31:12,2026-05-21 11:38:12,2661.7,-1608.6,9.0,1357,met_borrower,PTP002363,"customer mila, bola 30/05 tak karega",5b28b751f181
+VS003187,AC001430,AD001845,FA009,2026-05-21,2026-05-21 09:37:56,2026-05-21 09:43:25,-3727.9,-764.3,9.0,153,locked_premises,,lock laga hai,ph0084
+VS003191,AC001404,AD001812,FA009,2026-05-21,2026-05-21 11:51:29,2026-05-21 11:52:42,3837.1,597.9,10.5,178,locked_premises,,house locked,d906153255ad
+VS003198,AC001536,AD001977,FA007,2026-05-21,2026-05-21 10:40:22,2026-05-21 10:49:08,3708.4,474.0,18.8,401,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",bc60ef75ce56
+VS003213,AC000227,AD000287,FA001,2026-05-22,2026-05-22 10:23:26,2026-05-22 10:24:10,2779.3,-2405.5,5.4,94,locked_premises,,"premises locked, nobody home",acebacb81b5b
+VS003214,AC000413,AD000529,FA001,2026-05-22,2026-05-22 10:32:35,2026-05-22 10:33:59,2816.5,-2100.7,9.6,584,met_family,,"met spouse, customer at work",2be1f0a2674c
+VS003215,AC001739,AD002247,FA001,2026-05-22,2026-05-22 10:48:38,2026-05-22 11:26:38,1977.6,-553.0,9.0,57,address_not_traceable,,could not trace address after search,16372f2d0eb7
+VS003226,AC001992,AD002571,FA003,2026-05-22,2026-05-22 12:46:11,2026-05-22 12:47:43,-2132.8,-2396.2,20.6,502,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",ad70d514abe8
+VS003227,AC001688,AD002183,FA003,2026-05-22,2026-05-22 12:59:59,2026-05-22 13:17:09,-2328.4,-2415.5,13.4,73,address_not_traceable,,"address sikkilla, tumba hudukide",391fff5fc8b3
+VS003228,AC001336,AD001732,FA003,2026-05-22,2026-05-22 13:22:48,2026-05-22 13:30:06,-2019.8,-2742.0,6.4,503,met_family,,"avara appa jothe maataadide; nija mane Nyayabele Angadi hinde ide, 2 cross munde",bca53c078cf8
+VS003235,AC002225,AD003094,FA002,2026-05-22,2026-05-22 12:37:22,2026-05-22 12:42:31,890.9,-178.9,6.1,1067,cash_collected,,"14,800 cash collect; nija mane Ganapathi Gudi hinde ide, 2 cross munde",d121c30062b6
+VS003236,AC002362,AD003042,FA002,2026-05-22,2026-05-22 13:03:02,2026-05-22 13:48:42,1389.8,32.6,10.9,101,address_not_traceable,,"address sikkilla, tumba hudukide",35b80fc0d0f7
+VS003241,AC001621,AD002091,FA005,2026-05-22,2026-05-22 10:10:13,2026-05-22 10:20:32,1767.7,-2196.3,4.0,183,no_such_person,,is naam ka koi nahi rehta,847ea7f88751
+VS003250,AC002229,AD002872,FA006,2026-05-22,2026-05-22 11:04:01,2026-05-22 11:06:10,3254.0,284.6,14.8,445,met_family,,"ghar pe beta tha, customer bahar",b39c285f3991
+VS003257,AC001117,AD001450,FA004,2026-05-22,2026-05-22 11:31:14,2026-05-22 11:32:31,2483.3,-1042.6,20.1,156,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",2f3607dd4608
+VS003270,AC000838,AD001079,FA009,2026-05-22,2026-05-22 10:24:04,2026-05-22 10:25:18,-2454.9,-94.7,7.5,407,met_family,,"met father, will pass message",2f4dc2557154
+VS003288,AC002033,AD002623,FA003,2026-05-23,2026-05-23 11:14:48,2026-05-23 11:48:36,1435.0,-794.2,7.9,43,address_not_traceable,,"address sikkilla, tumba hudukide",99345a101295
+VS003305,AC001116,AD001449,FA001,2026-05-23,2026-05-23 11:24:19,2026-05-23 12:01:26,1162.5,-1493.2,4.0,43,address_not_traceable,,address not traceable,6dbd2bed0bb9
+VS003326,AC001147,AD001489,FA005,2026-05-23,2026-05-23 12:04:37,2026-05-23 12:13:15,1272.8,-1767.9,7.4,373,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,33243a37e364
+VS003328,AC001637,AD002112,FA006,2026-05-23,2026-05-23 09:41:18,2026-05-23 09:53:48,-365.5,3278.7,16.1,320,met_family,,"wife mili, bola kaam pe gaye hain",3c53e8a81f7d
+VS003336,AC000937,AD001212,FA009,2026-05-23,2026-05-23 10:44:05,2026-05-23 11:03:16,2322.8,-772.6,4.0,129,locked_premises,,lock laga hai,ph0080
+VS003347,AC001950,AD002522,FA007,2026-05-23,2026-05-23 12:02:19,2026-05-23 12:05:24,-2405.5,-92.9,11.3,289,no_such_person,,ee hesarina yaaru illa illi,f5103d6af34e
+VS003348,AC000731,AD000943,FA007,2026-05-23,2026-05-23 12:13:03,2026-05-23 12:26:19,-2594.8,-473.2,8.7,219,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu; address tappu, mane Church hattira ide",8be96cac1a03
+VS003353,AC000381,AD000484,FA008,2026-05-23,2026-05-23 10:53:55,2026-05-23 10:55:51,-2033.2,1682.4,14.1,216,locked_premises,,ghar band tha,6c8aff1a8aef
+VS003360,AC000953,AD001233,FA001,2026-05-25,2026-05-25 10:01:11,2026-05-25 10:17:29,3156.8,-2461.5,14.2,68,address_not_traceable,,address not traceable,4002bead6486
+VS003362,AC000517,AD000667,FA001,2026-05-25,2026-05-25 10:32:53,2026-05-25 10:50:33,2857.6,-2148.6,8.2,45,address_not_traceable,,address not traceable,40f329842215
+VS003376,AC000484,AD000623,FA003,2026-05-25,2026-05-25 10:17:39,2026-05-25 10:26:55,2240.0,1218.3,11.6,168,locked_premises,,"yaaru illa, beega haakide; nija mane Bus Nildana hinde ide, 2 cross munde",74c8880d0176
+VS003379,AC000246,AD000309,FA003,2026-05-25,2026-05-25 11:14:56,2026-05-25 11:16:02,2764.5,-1793.2,12.8,1264,met_borrower,PTP002508,customer maneli sikkidru,8a233b44ef1e
+VS003390,AC001421,AD001833,FA004,2026-05-25,2026-05-25 11:37:19,2026-05-25 11:49:23,1535.9,-2430.1,14.2,133,locked_premises,,lock laga hai,dc8447d34059
+VS003394,AC002343,AD003015,FA005,2026-05-25,2026-05-25 10:23:43,2026-05-25 10:37:58,957.2,2461.3,6.4,109,locked_premises,,ghar band tha,86266afde7aa
+VS003401,AC001812,AD002339,FA005,2026-05-25,2026-05-25 13:21:31,2026-05-25 13:34:17,1088.4,2967.4,12.6,566,met_family,,"wife mili, bola kaam pe gaye hain; blue gate wala ghar, Ganesh Mandir se right side",601a6cd26d54
+VS003409,AC002278,AD002932,FA007,2026-05-25,2026-05-25 10:12:35,2026-05-25 10:31:50,-619.4,-3434.1,5.6,178,no_such_person,,ee hesarina yaaru illa illi,1d93ff47b75c
+VS003421,AC000064,AD000079,FA009,2026-05-25,2026-05-25 11:22:37,2026-05-25 11:30:36,2313.3,-786.6,25.0,124,address_not_traceable,,address nahi mila,ph0080
+VS003430,AC001792,AD002311,FA008,2026-05-25,2026-05-25 10:39:26,2026-05-25 11:14:10,3372.3,-1972.1,4.8,99,address_not_traceable,,address nahi mila,6d049ac2a581
+VS003434,AC002243,AD002889,FA008,2026-05-25,2026-05-25 12:30:05,2026-05-25 12:36:35,3975.4,142.1,10.4,174,locked_premises,,"koi nahi mila, taala laga tha",6ee5a57cfd1e
+VS003441,AC001139,AD001479,FA002,2026-05-26,2026-05-26 11:37:35,2026-05-26 11:41:00,2938.2,-2652.1,10.3,416,met_borrower,,customer angadi nalli sikkidru,5b9aeaec39e6
+VS003444,AC000987,AD001276,FA002,2026-05-26,2026-05-26 13:32:37,2026-05-26 14:04:01,1937.4,-1573.3,12.6,102,address_not_traceable,,"address sikkilla, tumba hudukide",70499d7a198a
+VS003448,AC001232,AD001596,FA001,2026-05-26,2026-05-26 11:28:46,2026-05-26 11:30:52,747.8,-3225.4,25.1,270,neighbour_says_shifted,,house vacated 2 months ago,2907e3227849
+VS003451,AC001630,AD002103,FA001,2026-05-26,2026-05-26 12:13:07,2026-05-26 12:14:45,308.5,-2740.2,5.2,225,met_family,,"met spouse, customer at work",7a0322ddd52b
+VS003453,AC000944,AD001223,FA001,2026-05-26,2026-05-26 12:41:43,2026-05-26 12:46:07,727.0,-2999.6,6.8,1070,met_borrower,,met customer at home,25f8d368f3f6
+VS003458,AC002143,AD002766,FA003,2026-05-26,2026-05-26 11:08:28,2026-05-26 11:18:30,2778.0,-1911.2,8.3,239,locked_premises,,"yaaru illa, beega haakide",c07cf0bcf369
+VS003461,AC000287,AD000360,FA003,2026-05-26,2026-05-26 12:28:24,2026-05-26 12:37:16,3065.6,-2374.5,6.9,603,met_borrower,,customer angadi nalli sikkidru; mane Nyayabele Angadi eduru road nalli ide,1edcb7dd1611
+VS003474,AC001068,AD001380,FA005,2026-05-26,2026-05-26 11:03:54,2026-05-26 11:05:04,1403.2,-1874.9,7.6,214,locked_premises,,lock laga hai,3fdb267251c4
+VS003480,AC001500,AD001937,FA006,2026-05-26,2026-05-26 10:49:13,2026-05-26 10:50:36,762.6,3092.9,14.6,131,locked_premises,,lock laga hai,5c3f793cdee5
+VS003482,AC000117,AD000147,FA006,2026-05-26,2026-05-26 11:12:15,2026-05-26 11:39:15,833.2,836.7,7.6,104,address_not_traceable,,is address pe ghar nahi mila,c580479f636f
+VS003487,AC002053,AD002651,FA009,2026-05-26,2026-05-26 10:57:48,2026-05-26 11:15:09,2329.5,-786.5,6.9,108,locked_premises,,lock laga hai,894328f6a14d
+VS003488,AC000574,AD000741,FA009,2026-05-26,2026-05-26 11:19:07,2026-05-26 11:38:12,-796.7,2868.7,11.6,132,locked_premises,,house locked,69788704da5e
+VS003507,AC002103,AD002712,FA008,2026-05-26,2026-05-26 12:14:02,2026-05-26 12:16:11,-751.8,-3724.1,4.0,341,met_family,,"father se baat hui, message de denge",e93d7be932ef
+VS003509,AC000168,AD000209,FA001,2026-05-27,2026-05-27 09:44:13,2026-05-27 10:11:28,2394.8,1012.4,5.3,61,address_not_traceable,,could not trace address after search,0b12918f58d4
+VS003512,AC001786,AD002305,FA001,2026-05-27,2026-05-27 10:57:37,2026-05-27 11:15:56,2198.1,936.3,13.9,196,met_family,,"met father, will pass message",08f64a607c57
+VS003534,AC000231,AD000292,FA003,2026-05-27,2026-05-27 13:32:14,2026-05-27 13:38:52,433.6,2325.6,19.7,223,neighbour_says_shifted,,"mane khaali maadidaare; address tappu, mane Ganapathi Gudi hattira ide",5c5ffef009ef
+VS003539,AC000339,AD000430,FA004,2026-05-27,2026-05-27 11:03:24,2026-05-27 11:10:27,1703.9,-1995.0,18.9,708,met_borrower,PTP002596,"customer dukaan pe mila; address galat likha hai, ghar Girja Ghar ke paas hai",09c2da9d3f20
+VS003541,AC001902,AD002459,FA004,2026-05-27,2026-05-27 11:52:12,2026-05-27 12:04:14,1691.5,-1965.6,9.9,64,address_not_traceable,,is address pe ghar nahi mila,c2d18fd27723
+VS003550,AC000873,AD001127,FA006,2026-05-27,2026-05-27 09:42:09,2026-05-27 10:09:39,394.6,-3354.8,14.8,45,address_not_traceable,,address nahi mila,233bbd7b0b99
+VS003553,AC001921,AD002483,FA006,2026-05-27,2026-05-27 11:32:27,2026-05-27 11:54:45,949.9,-2855.0,4.0,150,no_such_person,,is naam ka koi nahi rehta; ghar Community Hall ke saamne wali gali mein hai,8daa1bbf244b
+VS003577,AC000020,AD000023,FA008,2026-05-27,2026-05-27 10:46:55,2026-05-27 10:49:41,-2953.3,-22.1,5.0,1083,met_borrower,PTP002600,"customer se mila, baat hui",8803305ffeaa
+VS003579,AC001029,AD001330,FA008,2026-05-27,2026-05-27 11:32:06,2026-05-27 12:03:36,-3701.3,-1043.7,17.1,117,address_not_traceable,,is address pe ghar nahi mila,6acbb620c1d4
+VS003587,AC000458,AD000589,FA003,2026-05-28,2026-05-28 10:44:00,2026-05-28 10:50:24,2901.1,-1723.9,18.7,1472,met_borrower,,customer angadi nalli sikkidru,9b8128ae73db
+VS003590,AC000568,AD000733,FA003,2026-05-28,2026-05-28 11:55:34,2026-05-28 12:03:18,2845.6,-2276.0,11.7,528,met_family,,"avara appa jothe maataadide; nija mane Anjaneya Swamy Temple hinde ide, 2 cross munde",e1f9e78378e3
+VS003593,AC001715,AD002217,FA001,2026-05-28,2026-05-28 10:03:08,2026-05-28 10:14:08,-905.4,-3094.0,15.0,98,locked_premises,,"premises locked, nobody home",e6d480ff419f
+VS003594,AC000876,AD001130,FA001,2026-05-28,2026-05-28 10:19:50,2026-05-28 10:21:08,-766.4,-3307.8,12.0,1205,met_borrower,,"met customer, promised by ",4ef8767d54ea
+VS003610,AC000633,AD000817,FA006,2026-05-28,2026-05-28 11:00:30,2026-05-28 11:08:38,1292.4,-1932.1,6.9,1487,met_borrower,,"customer se mila, baat hui",5394a64c4bc4
+VS003619,AC002167,AD002796,FA004,2026-05-28,2026-05-28 10:59:03,2026-05-28 11:50:15,868.4,172.1,8.2,111,address_not_traceable,,"address trace nahi hua, kaafi dhunda",0bb0f9e8efbf
+VS003634,AC000122,AD000153,FA009,2026-05-28,2026-05-28 11:38:11,2026-05-28 11:42:39,-2351.2,-129.7,4.1,485,met_family,,"met father, will pass message",9fb2e4cd86a4
+VS003640,AC000316,AD000397,FA007,2026-05-28,2026-05-28 11:03:41,2026-05-28 11:05:47,3093.9,-1979.9,28.9,287,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",fd5a1cfbe6ad
+VS003641,AC001140,AD001480,FA007,2026-05-28,2026-05-28 11:14:07,2026-05-28 11:22:52,3691.2,-2076.2,5.6,253,no_such_person,,ee hesarina yaaru illa illi,169daa9d9fdf
+VS003646,AC001941,AD002509,FA008,2026-05-28,2026-05-28 10:29:32,2026-05-28 10:32:06,-2412.8,-613.3,9.1,354,met_family,,"father se baat hui, message de denge",71ad32f19c80
+VS003654,AC000516,AD000666,FA008,2026-05-28,2026-05-28 13:24:55,2026-05-28 13:27:31,-2650.5,-531.9,9.2,1036,met_borrower,,customer ghar pe mila,4bad84686f9f
+VS003664,AC000050,AD000062,FA001,2026-05-29,2026-05-29 10:55:36,2026-05-29 10:57:12,612.5,-3094.5,9.7,78,locked_premises,,house locked,7ae92e17bd33
+VS003671,AC002350,AD003026,FA003,2026-05-29,2026-05-29 10:09:10,2026-05-29 10:29:40,2891.6,-2437.3,22.2,80,locked_premises,,mane lock agide,3387d3f2345f
+VS003674,AC000134,AD000169,FA003,2026-05-29,2026-05-29 11:12:55,2026-05-29 11:36:55,3296.6,-2155.0,6.9,545,met_family,,avara appa jothe maataadide,e5ffe8a46952
+VS003681,AC001571,AD002027,FA006,2026-05-29,2026-05-29 10:40:18,2026-05-29 10:53:34,-538.9,-703.4,9.2,545,met_family,,"ghar pe beta tha, customer bahar",8b0396068f38
+VS003684,AC001295,AD001682,FA006,2026-05-29,2026-05-29 11:23:15,2026-05-29 11:24:25,-644.9,-310.4,5.0,82,locked_premises,,"koi nahi mila, taala laga tha",4d8bfd2935e2
+VS003686,AC001299,AD001689,FA005,2026-05-29,2026-05-29 10:12:16,2026-05-29 10:20:16,-284.2,-690.2,7.6,194,locked_premises,,"koi nahi mila, taala laga tha",abcf2c859754
+VS003687,AC002158,AD002784,FA005,2026-05-29,2026-05-29 10:29:10,2026-05-29 10:44:00,-484.2,-360.3,9.7,101,no_such_person,,is naam ka koi nahi rehta,86c6ecd460bb
+VS003689,AC000084,AD000105,FA005,2026-05-29,2026-05-29 11:12:24,2026-05-29 11:14:54,-680.7,-57.7,15.1,85,locked_premises,,"koi nahi mila, taala laga tha",c2e905eeaf54
+VS003695,AC001958,AD002531,FA004,2026-05-29,2026-05-29 10:24:51,2026-05-29 10:36:26,1363.8,99.1,8.8,82,locked_premises,,lock laga hai,166063fcdd0e
+VS003696,AC001826,AD002357,FA004,2026-05-29,2026-05-29 10:41:10,2026-05-29 10:42:52,999.1,313.3,14.9,490,met_borrower,,customer dukaan pe mila,9d98ae20a520
+VS003702,AC001327,AD001722,FA009,2026-05-29,2026-05-29 11:13:38,2026-05-29 11:14:58,-2241.3,1294.3,11.7,502,met_family,,"met father, will pass message",942ebeb9bd04
+VS003714,AC000560,AD000722,FA007,2026-05-29,2026-05-29 10:58:28,2026-05-29 11:01:10,4045.7,356.2,20.3,507,met_borrower,PTP002660,customer maneli sikkidru,7a9e617a2ea3
+VS003723,AC000893,AD001154,FA002,2026-05-30,2026-05-30 09:47:00,2026-05-30 09:50:15,-2607.3,1708.7,17.5,237,locked_premises,,"yaaru illa, beega haakide",c0028740628d
+VS003746,AC000146,AD000182,FA006,2026-05-30,2026-05-30 10:23:52,2026-05-30 10:36:06,919.2,2586.6,5.9,293,no_such_person,,ghar wale bole yeh insaan yahan nahi rehta,ba5835e70fba
+VS003754,AC000892,AD001153,FA004,2026-05-30,2026-05-30 10:27:14,2026-05-30 10:56:39,-366.9,2177.6,23.4,35,address_not_traceable,,address nahi mila,5c62983e43ed
+VS003756,AC001646,AD002123,FA004,2026-05-30,2026-05-30 11:30:26,2026-05-30 11:44:28,1126.5,547.2,6.1,736,met_borrower,PTP002697,"customer ghar pe mila; blue gate wala ghar, Church se right side",87e8aabad3ad
+VS003777,AC000460,AD000592,FA008,2026-05-30,2026-05-30 11:34:48,2026-05-30 11:56:28,-4100.8,-921.5,8.0,52,address_not_traceable,,"address trace nahi hua, kaafi dhunda",f481ca9f136a
+VS003791,AC000442,AD000569,FA003,2026-06-01,2026-06-01 10:33:20,2026-06-01 10:39:00,2881.0,-2123.8,17.4,186,locked_premises,,"yaaru illa, beega haakide",cbe448013184
+VS003793,AC000608,AD000785,FA003,2026-06-01,2026-06-01 10:53:30,2026-06-01 10:54:26,2448.8,-2245.3,10.7,113,locked_premises,,mane lock agide,d3b17c6c2993
+VS003798,AC000227,AD000287,FA003,2026-06-01,2026-06-01 13:40:17,2026-06-01 13:54:52,2800.9,-2425.6,20.7,131,locked_premises,,"yaaru illa, beega haakide",fbb7b2bca0ab
+VS003801,AC000413,AD000530,FA002,2026-06-01,2026-06-01 10:18:24,2026-06-01 10:30:24,-1081.4,-3122.2,24.5,337,met_borrower,,"customer sikkidru,  olage kodtini andru",577605bfac4e
+VS003805,AC001739,AD002247,FA002,2026-06-01,2026-06-01 11:50:45,2026-06-01 12:12:54,1745.1,-290.3,13.4,45,address_not_traceable,,"address sikkilla, tumba hudukide",2f5ec8d8c104
+VS003810,AC000857,AD001105,FA001,2026-06-01,2026-06-01 10:29:43,2026-06-01 10:42:26,2515.9,-1952.6,6.0,111,address_not_traceable,,address not traceable,de878a3608a1
+VS003826,AC000595,AD000768,FA004,2026-06-01,2026-06-01 10:56:02,2026-06-01 10:58:02,2654.4,-1637.5,21.2,1385,met_borrower,,customer dukaan pe mila,d6c3569520a5
+VS003840,AC001430,AD001845,FA009,2026-06-01,2026-06-01 10:39:38,2026-06-01 10:44:32,3594.5,25.5,5.8,378,met_family,PTP002747,"met spouse, customer at work",85b78750104f
+VS003857,AC000638,AD000824,FA008,2026-06-01,2026-06-01 13:39:55,2026-06-01 13:57:41,1552.2,-1738.7,11.8,36,address_not_traceable,,"address trace nahi hua, kaafi dhunda",4ceea307fb79
+VS003861,AC001653,AD002134,FA007,2026-06-01,2026-06-01 11:02:29,2026-06-01 11:03:14,3114.5,-1893.8,15.0,254,met_family,,avara appa jothe maataadide,db0f550e33c7
+VS003869,AC001969,AD002544,FA001,2026-06-02,2026-06-02 10:49:18,2026-06-02 11:14:48,617.6,-2924.9,12.3,1015,met_borrower,PTP002792,"met customer, promised by 07/06",bb93d65d02d7
+VS003873,AC000226,AD000286,FA001,2026-06-02,2026-06-02 12:25:37,2026-06-02 12:37:12,396.7,-3331.4,9.8,1253,met_borrower,,"met customer; actual house behind Church, 2 lanes ahead",b4cc2167c891
+VS003879,AC002033,AD002623,FA003,2026-06-02,2026-06-02 11:21:54,2026-06-02 11:59:15,2905.4,-1803.3,11.0,185,neighbour_says_shifted,,"mane khaali maadidaare; address tappu, mane Ganapathi Gudi hattira ide",97e6af7ef559
+VS003887,AC001475,AD001903,FA002,2026-06-02,2026-06-02 10:51:33,2026-06-02 11:50:43,1752.5,1520.5,7.5,103,address_not_traceable,,address sikkilla,afd1dc03631d
+VS003904,AC001122,AD001457,FA005,2026-06-02,2026-06-02 12:49:55,2026-06-02 12:56:41,1030.4,2568.0,17.5,155,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi; blue gate wala ghar, Sarkari School se right side",da880e95a172
+VS003911,AC001117,AD001450,FA004,2026-06-02,2026-06-02 10:59:30,2026-06-02 11:08:00,2503.4,-918.2,17.7,296,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,197d66bfe564
+VS003917,AC000838,AD001079,FA008,2026-06-02,2026-06-02 09:52:58,2026-06-02 10:14:40,-2570.4,-31.3,5.3,480,met_family,,"father se baat hui, message de denge",ed7297dc2289
+VS003935,AC000937,AD001212,FA007,2026-06-02,2026-06-02 13:00:12,2026-06-02 13:39:58,-2988.0,1340.5,24.6,232,neighbour_says_shifted,,mane khaali maadidaare,d936a702ac33
+VS003938,AC001404,AD001812,FA009,2026-06-02,2026-06-02 11:41:57,2026-06-02 11:56:18,3574.5,468.6,7.2,869,met_borrower,PTP002802,"met customer, promised by 27/06",1c4e4fdd63d3
+VS003944,AC000916,AD001183,FA009,2026-06-02,2026-06-02 14:19:08,2026-06-02 14:32:48,-3768.2,-756.6,25.3,65,address_not_traceable,,address nahi mila,f85fbcfdaec3
+VS003959,AC001665,AD002151,FA001,2026-06-03,2026-06-03 11:32:09,2026-06-03 11:47:13,1395.9,-2921.4,4.1,332,met_borrower,,"met customer, promised by ; house is on the road opposite Ganesh Temple",b7424e76acb8
+VS003964,AC000909,AD001174,FA003,2026-06-03,2026-06-03 10:23:09,2026-06-03 10:33:39,2592.6,-1920.3,6.8,281,neighbour_says_shifted,,mane khaali maadidaare,8b0bb06f4922
+VS003980,AC001221,AD001584,FA006,2026-06-03,2026-06-03 12:50:15,2026-06-03 13:06:40,1382.3,-1870.2,4.2,224,neighbour_says_shifted,,padosi ne bola shift ho gaye,a1dd6a2457a4
+VS003983,AC001637,AD002112,FA004,2026-06-03,2026-06-03 09:45:06,2026-06-03 09:58:46,-350.6,3285.7,8.0,52,address_not_traceable,,address nahi mila,13e3d947048f
+VS003987,AC000879,AD001135,FA004,2026-06-03,2026-06-03 11:29:26,2026-06-03 11:31:50,-941.1,2965.7,9.9,107,locked_premises,,ghar band tha,7a2f7f476869
+VS004001,AC001846,AD002380,FA007,2026-06-03,2026-06-03 11:31:00,2026-06-03 11:58:30,3155.8,-2409.1,9.5,72,address_not_traceable,,"address sikkilla, tumba hudukide",5b140afc59c8
+VS004006,AC000887,AD001146,FA007,2026-06-03,2026-06-03 14:27:08,2026-06-03 15:18:08,557.1,275.9,5.7,86,address_not_traceable,,"address sikkilla, tumba hudukide",5f4edf0ca573
+VS004015,AC001480,AD001908,FA009,2026-06-03,2026-06-03 12:34:12,2026-06-03 12:43:59,2333.4,-764.9,6.7,149,locked_premises,,address nahi mila,ph0084
+VS004027,AC000953,AD001233,FA001,2026-06-04,2026-06-04 10:16:45,2026-06-04 10:38:15,2532.0,-2365.4,10.0,1364,met_borrower,,"met customer at shop; address wrong, house near Masjid",a8913a2f42a5
+VS004029,AC000517,AD000667,FA001,2026-06-04,2026-06-04 11:13:15,2026-06-04 11:34:43,2265.3,-2342.6,7.0,1028,met_borrower,PTP002887,met customer,d181ff84090f
+VS004036,AC000484,AD000622,FA002,2026-06-04,2026-06-04 11:37:39,2026-06-04 11:39:48,2475.8,-2536.3,23.4,523,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",2d6c103f4821
+VS004048,AC000844,AD001088,FA003,2026-06-04,2026-06-04 12:18:25,2026-06-04 12:26:35,1327.7,-221.4,14.5,1108,cash_collected,,"cash collect maadide, receipt kottide",7c4a099ae149
+VS004051,AC001421,AD001833,FA006,2026-06-04,2026-06-04 10:32:56,2026-06-04 10:44:56,1524.9,-2395.6,15.6,199,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,4496652842ef
+VS004059,AC002343,AD003015,FA004,2026-06-04,2026-06-04 10:14:32,2026-06-04 10:28:53,969.8,2448.6,21.1,300,met_borrower,PTP002889,"customer se mila, baat hui",6321fd9eb140
+VS004075,AC000064,AD000079,FA007,2026-06-04,2026-06-04 09:39:32,2026-06-04 10:04:23,935.3,-1082.6,9.9,117,address_not_traceable,,"address sikkilla, tumba hudukide",2a24c69b4ca6
+VS004082,AC001792,AD002311,FA008,2026-06-04,2026-06-04 10:49:50,2026-06-04 11:27:05,3163.4,-1501.6,6.8,78,address_not_traceable,,"address trace nahi hua, kaafi dhunda",d61e47e30c41
+VS004085,AC002243,AD002889,FA008,2026-06-04,2026-06-04 12:06:21,2026-06-04 12:08:19,4055.9,81.9,10.3,181,neighbour_says_shifted,,padosi ne bola shift ho gaye,1c72e587ae79
+VS004087,AC001536,AD001977,FA008,2026-06-04,2026-06-04 12:46:44,2026-06-04 13:01:58,3613.1,268.2,8.2,109,address_not_traceable,,address nahi mila,2f27298175c5
+VS004097,AC001139,AD001479,FA002,2026-06-05,2026-06-05 10:52:40,2026-06-05 10:54:34,2974.9,-2507.2,14.2,72,locked_premises,,"yaaru illa, beega haakide",aebc4773e043
+VS004108,AC001232,AD003102,FA003,2026-06-05,2026-06-05 13:11:14,2026-06-05 13:23:47,1002.8,-3180.2,5.6,178,locked_premises,,mane lock agide; mane Ganapathi Gudi eduru road nalli ide,ba871ed38479
+VS004117,AC001068,AD001380,FA004,2026-06-05,2026-06-05 10:19:18,2026-06-05 10:30:48,1394.8,-1880.4,6.2,548,met_family,,"ghar pe beta tha, customer bahar",dfeb2a87ff90
+VS004133,AC001500,AD001937,FA005,2026-06-05,2026-06-05 10:41:59,2026-06-05 10:43:59,749.9,3125.7,4.2,527,met_family,,"ghar pe beta tha, customer bahar",587b486b2409
+VS004137,AC000117,AD000147,FA005,2026-06-05,2026-06-05 11:49:20,2026-06-05 12:38:10,1011.1,2871.0,4.8,213,locked_premises,,"koi nahi mila, taala laga tha",2aaadce47995
+VS004140,AC002278,AD002932,FA008,2026-06-05,2026-06-05 10:17:04,2026-06-05 10:28:40,-614.0,-3438.4,7.5,386,neighbour_says_shifted,,padosi ne bola shift ho gaye; ghar Hanuman Mandir ke saamne wali gali mein hai,0eada7c553e1
+VS004148,AC000625,AD000808,FA009,2026-06-05,2026-06-05 10:21:35,2026-06-05 10:45:45,-162.8,3381.9,5.7,112,address_not_traceable,,could not trace address after search,0ff267099213
+VS004152,AC000574,AD000741,FA009,2026-06-05,2026-06-05 12:03:46,2026-06-05 12:35:43,-985.6,2713.2,18.3,878,met_borrower,,met customer at home,19ee740b21ec
+VS004153,AC002053,AD002651,FA009,2026-06-05,2026-06-05 12:38:35,2026-06-05 12:47:50,-921.3,3394.4,5.7,278,no_such_person,,no such person at this address,1b5a912bd26b
+VS004162,AC000168,AD000209,FA003,2026-06-06,2026-06-06 09:57:26,2026-06-06 10:13:51,2439.9,1068.6,12.1,90,address_not_traceable,,"address sikkilla, tumba hudukide",f8d4ca83bb7f
+VS004165,AC002344,AD003016,FA003,2026-06-06,2026-06-06 10:58:03,2026-06-06 10:59:51,2495.6,691.6,11.6,759,met_borrower,,customer angadi nalli sikkidru,f6a7a695922f
+VS004167,AC000972,AD001258,FA003,2026-06-06,2026-06-06 11:44:09,2026-06-06 12:11:39,551.3,2438.7,10.9,47,address_not_traceable,,"address sikkilla, tumba hudukide",8c2bb548dd49
+VS004168,AC002129,AD002744,FA003,2026-06-06,2026-06-06 12:18:00,2026-06-06 12:36:30,2633.4,1148.4,11.0,95,address_not_traceable,,"address sikkilla, tumba hudukide",af075a3f7682
+VS004178,AC000987,AD001276,FA002,2026-06-06,2026-06-06 11:14:28,2026-06-06 11:47:36,1636.9,-1491.0,5.0,115,address_not_traceable,,address sikkilla,97d1177b552f
+VS004179,AC002143,AD002766,FA002,2026-06-06,2026-06-06 11:55:41,2026-06-06 12:09:59,2785.7,-1840.7,11.3,391,neighbour_says_shifted,,"mane khaali maadidaare; address tappu, mane Ganapathi Gudi hattira ide",6a6511244c23
+VS004184,AC000873,AD001127,FA006,2026-06-06,2026-06-06 10:26:46,2026-06-06 10:29:20,648.6,-3321.4,5.9,64,locked_premises,,ghar band tha,12543b3f52d5
+VS004193,AC001147,AD001489,FA004,2026-06-06,2026-06-06 11:26:43,2026-06-06 11:33:01,1275.0,-1769.7,5.1,68,locked_premises,,ghar band tha,0d510ebabd2a
+VS004194,AC001902,AD002459,FA004,2026-06-06,2026-06-06 11:38:24,2026-06-06 11:40:27,1671.9,-2148.2,6.8,106,locked_premises,,ghar band tha,b3569587d52d
+VS004222,AC002103,AD002712,FA008,2026-06-06,2026-06-06 11:17:13,2026-06-06 11:38:33,-762.6,-3741.1,14.7,565,met_family,,"ghar pe beta tha, customer bahar",202e7996e07a
+VS004228,AC000568,AD000733,FA001,2026-06-08,2026-06-08 11:05:37,2026-06-08 11:07:23,2868.9,-2263.7,12.1,399,met_family,,"met father, will pass message",dc118d079a07
+VS004240,AC000050,AD000062,FA003,2026-06-08,2026-06-08 09:32:02,2026-06-08 09:45:27,620.2,-3085.0,7.7,187,met_family,,avara appa jothe maataadide,de4e3cd91225
+VS004249,AC000633,AD000817,FA005,2026-06-08,2026-06-08 10:21:02,2026-06-08 10:22:07,1301.5,-1939.1,20.7,179,locked_premises,,"koi nahi mila, taala laga tha",672c31c5b076
+VS004257,AC000992,AD001281,FA006,2026-06-08,2026-06-08 11:31:57,2026-06-08 11:36:45,1559.5,-2338.1,7.1,569,met_family,PTP003020,"father se baat hui, message de denge",9ffea1ac4544
+VS004259,AC000445,AD000573,FA006,2026-06-08,2026-06-08 12:07:43,2026-06-08 12:22:41,1653.2,-1695.8,11.6,156,locked_premises,,"lock laga hai; address galat likha hai, ghar Ganesh Mandir ke paas hai",3829d4f2628f
+VS004262,AC001571,AD002027,FA004,2026-06-08,2026-06-08 11:24:26,2026-06-08 11:35:36,-602.0,-529.0,11.7,424,met_family,,"father se baat hui, message de denge",32416aad1087
+VS004264,AC001295,AD001682,FA004,2026-06-08,2026-06-08 11:58:28,2026-06-08 12:00:04,-651.7,-315.0,26.6,379,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",c6345c5504a2
+VS004271,AC000122,AD000153,FA008,2026-06-08,2026-06-08 11:12:14,2026-06-08 11:14:29,-2342.4,-116.3,11.6,1200,met_borrower,PTP003022,customer dukaan pe mila,2b2ccc23358e
+VS004285,AC000560,AD000722,FA007,2026-06-08,2026-06-08 11:10:02,2026-06-08 11:37:07,4010.6,386.9,13.8,1164,met_borrower,PTP003027,customer maneli sikkidru,eabba9e8e8c4
+VS004291,AC000458,AD000589,FA003,2026-06-09,2026-06-09 10:09:47,2026-06-09 10:20:06,2666.2,-1867.0,20.6,596,met_borrower,,customer maneli sikkidru,7339249d2b5a
+VS004295,AC001647,AD002124,FA003,2026-06-09,2026-06-09 11:21:45,2026-06-09 11:24:03,2357.1,-2278.0,10.0,64,locked_premises,,mane lock agide,bf5dc8464fd6
+VS004298,AC000893,AD001154,FA001,2026-06-09,2026-06-09 10:10:24,2026-06-09 10:19:41,-2607.9,1709.9,23.7,228,locked_premises,,house locked,115f2bc47ca7
+VS004308,AC001630,AD002103,FA002,2026-06-09,2026-06-09 10:51:16,2026-06-09 11:04:22,287.5,-2732.3,13.3,97,locked_premises,,mane lock agide,546a88f0ba9b
+VS004312,AC001116,AD001449,FA002,2026-06-09,2026-06-09 12:12:58,2026-06-09 12:48:14,1441.4,-1703.6,8.7,58,address_not_traceable,,"address sikkilla, tumba hudukide",0fe36490e77a
+VS004316,AC001812,AD002339,FA005,2026-06-09,2026-06-09 10:38:00,2026-06-09 10:40:38,1093.3,2982.1,8.7,689,met_borrower,PTP003068,customer ghar pe mila,943708e76635
+VS004317,AC000146,AD000182,FA005,2026-06-09,2026-06-09 10:54:43,2026-06-09 11:11:53,1046.3,2907.2,22.0,50,address_not_traceable,,"address trace nahi hua, kaafi dhunda",4830e89ad239
+VS004325,AC001826,AD002357,FA006,2026-06-09,2026-06-09 10:02:52,2026-06-09 10:16:52,1013.7,285.1,20.2,1458,met_borrower,,"customer mila, bola  tak karega; blue gate wala ghar, Post Office se right side",2ba02649836a
+VS004326,AC001958,AD002531,FA006,2026-06-09,2026-06-09 10:44:08,2026-06-09 11:08:33,1080.3,189.7,13.8,143,locked_premises,,"koi nahi mila, taala laga tha",b2b99a4050ac
+VS004329,AC000892,AD001152,FA006,2026-06-09,2026-06-09 11:55:15,2026-06-09 11:56:36,1471.0,357.7,8.5,364,met_family,,"wife mili, bola kaam pe gaye hain",3155ae6f9c39
+VS004342,AC001941,AD002509,FA009,2026-06-09,2026-06-09 11:21:47,2026-06-09 11:38:52,-2509.1,-561.8,10.5,64,address_not_traceable,,address not traceable,5ce4444c13f8
+VS004352,AC000833,AD001073,FA007,2026-06-09,2026-06-09 12:27:28,2026-06-09 12:44:52,861.4,-801.0,9.5,109,address_not_traceable,,address sikkilla,ea0a3697cb44
+VS004359,AC001029,AD001330,FA008,2026-06-09,2026-06-09 10:49:36,2026-06-09 11:31:51,-2528.9,-558.5,6.0,260,neighbour_says_shifted,,"neighbour bola 2 mahine pehle ghar khali kar diya; blue gate wala ghar, Post Office se right side",9bec9daf1e4d
+VS004362,AC001950,AD002522,FA008,2026-06-09,2026-06-09 12:10:50,2026-06-09 12:22:53,-2467.5,-174.7,8.4,110,address_not_traceable,,"address trace nahi hua, kaafi dhunda",6b362000fbaf
+VS004363,AC000460,AD000592,FA008,2026-06-09,2026-06-09 12:29:34,2026-06-09 12:52:28,-3733.4,-784.0,6.5,85,address_not_traceable,,"address trace nahi hua, kaafi dhunda",a3b9154559c5
+VS004374,AC000576,AD000743,FA001,2026-06-10,2026-06-10 09:35:51,2026-06-10 10:04:21,-1963.2,-2270.0,15.8,50,address_not_traceable,,could not trace address after search,b4e3dff0334f
+VS004377,AC001715,AD002217,FA001,2026-06-10,2026-06-10 10:59:15,2026-06-10 11:10:45,-866.5,-3092.4,7.2,180,locked_premises,,house locked,6d6882dbd6b4
+VS004388,AC002362,AD003041,FA003,2026-06-10,2026-06-10 13:08:12,2026-06-10 13:18:22,731.9,-224.8,12.9,144,locked_premises,,"yaaru illa, beega haakide",55535409a126
+VS004393,AC001304,AD001694,FA005,2026-06-10,2026-06-10 10:51:30,2026-06-10 10:53:42,1781.1,-2218.7,19.5,731,met_borrower,,"customer se mila, baat hui",f79ab26c5543
+VS004401,AC001921,AD002483,FA004,2026-06-10,2026-06-10 13:16:19,2026-06-10 13:17:11,795.5,-2773.1,7.6,323,neighbour_says_shifted,,padosi ne bola shift ho gaye,e297d1b06ba6
+VS004405,AC002160,AD002788,FA004,2026-06-10,2026-06-10 14:04:54,2026-06-10 14:40:19,578.8,2597.4,18.0,157,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi; address galat likha hai, ghar Community Hall ke paas hai",b70a8a8d8b2c
+VS004407,AC000084,AD000105,FA006,2026-06-10,2026-06-10 10:43:02,2026-06-10 10:59:47,-316.3,-362.4,7.2,54,address_not_traceable,,address nahi mila,76b7c39e64b1
+VS004409,AC002158,AD002784,FA006,2026-06-10,2026-06-10 11:24:07,2026-06-10 11:38:05,-418.1,-414.8,5.5,108,address_not_traceable,,address nahi mila,1738502de815
+VS004410,AC001299,AD001689,FA006,2026-06-10,2026-06-10 11:43:23,2026-06-10 11:49:40,-313.8,-806.7,9.6,453,met_borrower,PTP003112,"customer mila, bola 11/06 tak karega; blue gate wala ghar, Church se right side",44c19ccc8110
+VS004412,AC001042,AD001346,FA006,2026-06-10,2026-06-10 12:26:13,2026-06-10 12:37:35,-797.5,-721.5,24.2,248,met_family,,"wife mili, bola kaam pe gaye hain",474f58046acf
+VS004413,AC002202,AD002842,FA006,2026-06-10,2026-06-10 12:48:15,2026-06-10 13:01:24,-670.0,-73.5,7.7,78,address_not_traceable,,"address trace nahi hua, kaafi dhunda",e3a5af97675e
+VS004429,AC000381,AD000484,FA009,2026-06-10,2026-06-10 10:14:07,2026-06-10 10:19:33,-3746.9,-768.6,10.1,238,met_family,,lock laga hai,ad5aa20c1df1
+VS004435,AC000608,AD000785,FA001,2026-06-11,2026-06-11 10:51:13,2026-06-11 11:11:13,1346.3,-2028.8,8.2,114,address_not_traceable,,could not trace address after search,8338d2396fc7
+VS004436,AC000442,AD000569,FA001,2026-06-11,2026-06-11 11:20:04,2026-06-11 11:25:13,2816.8,-2118.3,15.2,1017,met_borrower,,met customer at home,68a8ead48b60
+VS004438,AC000227,AD000287,FA001,2026-06-11,2026-06-11 12:05:15,2026-06-11 12:16:43,2698.4,-2511.8,13.9,533,met_borrower,,met customer,a423f79db11e
+VS004443,AC000413,AD000530,FA003,2026-06-11,2026-06-11 09:40:24,2026-06-11 10:02:49,-1144.4,-3092.6,9.9,909,met_borrower,,"customer sikkidru,  olage kodtini andru; nija mane Neerina Tank hinde ide, 2 cross munde",11e45ecee881
+VS004453,AC000857,AD001105,FA002,2026-06-11,2026-06-11 10:29:55,2026-06-11 10:48:20,2822.3,-2276.8,10.9,509,met_borrower,PTP003152,customer maneli sikkidru,2920562694ad
+VS004458,AC000134,AD000169,FA002,2026-06-11,2026-06-11 13:11:59,2026-06-11 13:21:28,3345.0,-2311.7,26.6,215,locked_premises,,"yaaru illa, beega haakide",4dc1e0b1bad9
+VS004459,AC000951,AD001231,FA002,2026-06-11,2026-06-11 13:23:47,2026-06-11 13:33:38,2951.7,-2139.4,10.8,278,neighbour_says_shifted,,mane khaali maadidaare,6270b40ee8d5
+VS004476,AC002229,AD002872,FA004,2026-06-11,2026-06-11 12:04:27,2026-06-11 12:06:36,3278.2,292.7,10.6,289,met_family,PTP003156,"ghar pe beta tha, customer bahar",7fc45b3cc6cb
+VS004482,AC001621,AD002091,FA006,2026-06-11,2026-06-11 10:18:23,2026-06-11 10:26:14,1765.7,-2195.6,7.0,233,locked_premises,,lock laga hai,1667b43bf5d3
+VS004500,AC001430,AD001845,FA007,2026-06-11,2026-06-11 11:04:14,2026-06-11 11:21:56,4026.5,447.1,4.1,64,address_not_traceable,,"address sikkilla, tumba hudukide",8b2556591722
+VS004524,AC002033,AD002623,FA002,2026-06-12,2026-06-12 12:19:20,2026-06-12 12:56:20,2936.6,-1831.9,9.0,168,neighbour_says_shifted,,mane khaali maadidaare; mane Ganapathi Gudi eduru road nalli ide,b38b0048fa15
+VS004532,AC000226,AD000286,FA003,2026-06-12,2026-06-12 10:49:51,2026-06-12 10:51:34,444.4,-3341.8,4.0,1247,met_borrower,PTP003186,customer maneli sikkidru,c7934ec477fb
+VS004537,AC000433,AD000557,FA003,2026-06-12,2026-06-12 12:34:53,2026-06-12 12:49:05,708.5,-2944.1,6.5,294,no_such_person,,ee hesarina yaaru illa illi,e23705f1a7d9
+VS004541,AC000595,AD000768,FA004,2026-06-12,2026-06-12 10:53:50,2026-06-12 10:55:53,2653.4,-1571.4,11.6,81,locked_premises,,lock laga hai,b9742b1b752d
+VS004563,AC001646,AD002123,FA006,2026-06-12,2026-06-12 12:04:36,2026-06-12 12:10:26,1142.2,545.3,7.4,827,met_borrower,,customer ghar pe mila,90ed7a46cd41
+VS004565,AC000838,AD001080,FA008,2026-06-12,2026-06-12 10:02:12,2026-06-12 10:19:42,-2306.2,-188.3,4.0,545,met_borrower,PTP003189,"customer mila, bola 07/07 tak karega",d49e1a3adac5
+VS004578,AC000937,AD001212,FA009,2026-06-12,2026-06-12 10:44:38,2026-06-12 10:51:05,2314.8,-773.7,12.5,144,locked_premises,,address nahi mila,29f7005e8973
+VS004593,AC000287,AD000360,FA003,2026-06-13,2026-06-13 09:47:43,2026-06-13 09:50:01,3070.1,-2388.3,16.1,477,met_family,,avara appa jothe maataadide,9d216cd5015c
+VS004595,AC001739,AD002247,FA003,2026-06-13,2026-06-13 10:13:31,2026-06-13 10:46:31,2668.7,-1779.4,5.5,318,met_family,,"avara appa jothe maataadide; address tappu, mane Ganapathi Gudi hattira ide",cdc025e552e0
+VS004597,AC000909,AD001174,FA003,2026-06-13,2026-06-13 11:08:37,2026-06-13 11:10:03,2604.1,-1926.1,8.4,209,neighbour_says_shifted,,mane khaali maadidaare,15594ae5f51a
+VS004598,AC000856,AD001103,FA003,2026-06-13,2026-06-13 11:17:22,2026-06-13 12:10:52,745.1,-89.6,4.0,64,address_not_traceable,,"address sikkilla, tumba hudukide",005158df6c03
+VS004603,AC000876,AD001130,FA002,2026-06-13,2026-06-13 10:17:54,2026-06-13 10:26:06,-896.8,-3306.1,21.3,328,met_family,,avara appa jothe maataadide,a38469ee3fa0
+VS004609,AC001637,AD002112,FA004,2026-06-13,2026-06-13 10:23:08,2026-06-13 10:30:13,-362.8,3280.8,12.9,458,met_family,,"ghar pe beta tha, customer bahar",fd3a87840dcd
+VS004611,AC000879,AD001135,FA004,2026-06-13,2026-06-13 10:51:50,2026-06-13 10:52:35,-883.8,2980.1,11.0,539,met_family,,"wife mili, bola kaam pe gaye hain",2bcfe6b50ab7
+VS004620,AC001221,AD001584,FA006,2026-06-13,2026-06-13 10:41:04,2026-06-13 10:50:27,1252.3,-1748.6,19.0,231,locked_premises,,"koi nahi mila, taala laga tha",9a1516fa1de5
+VS004629,AC001122,AD001457,FA005,2026-06-13,2026-06-13 12:24:43,2026-06-13 12:39:23,1029.4,2593.8,6.5,260,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",b77c9efdac47
+VS004633,AC001846,AD002380,FA007,2026-06-13,2026-06-13 10:48:22,2026-06-13 10:58:16,2835.3,-2526.6,5.5,97,address_not_traceable,,"address sikkilla, tumba hudukide",6bfada34ee7b
+VS004656,AC000953,AD001233,FA001,2026-06-15,2026-06-15 11:53:22,2026-06-15 11:56:12,2519.5,-2359.3,5.9,639,met_borrower,PTP003271,"met customer, promised by 09/07",f7ed6f1deded
+VS004673,AC000484,AD000622,FA003,2026-06-15,2026-06-15 12:48:30,2026-06-15 12:51:35,2471.3,-2517.5,19.3,302,met_family,,avara appa jothe maataadide,b16cf19919a0
+VS004675,AC001139,AD001479,FA003,2026-06-15,2026-06-15 13:08:44,2026-06-15 13:25:20,2995.3,-2492.2,7.5,404,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu; nija mane Milk Dairy hinde ide, 2 cross munde",9265786439bd
+VS004679,AC001421,AD001833,FA006,2026-06-15,2026-06-15 10:54:14,2026-06-15 10:56:48,1539.2,-2400.5,9.6,83,locked_premises,,lock laga hai,754b946aadc2
+VS004680,AC001068,AD001380,FA006,2026-06-15,2026-06-15 11:02:58,2026-06-15 11:05:01,1398.7,-1890.6,6.1,417,met_family,,"ghar pe beta tha, customer bahar",331d6b1c7882
+VS004686,AC002343,AD003015,FA005,2026-06-15,2026-06-15 10:53:56,2026-06-15 11:02:56,1032.2,2430.6,10.0,1282,met_borrower,,"customer mila, bola  tak karega",65ea67a9fe5b
+VS004691,AC001500,AD001937,FA005,2026-06-15,2026-06-15 13:05:22,2026-06-15 13:06:06,743.3,3096.0,7.5,66,locked_premises,,"koi nahi mila, taala laga tha",5dbc4d89e05b
+VS004702,AC000339,AD000430,FA004,2026-06-15,2026-06-15 13:12:10,2026-06-15 13:13:52,1743.8,-1971.1,4.6,519,met_family,,"wife mili, bola kaam pe gaye hain",1706c890ad5f
+VS004705,AC001792,AD002311,FA009,2026-06-15,2026-06-15 10:27:20,2026-06-15 10:39:05,-3728.3,-788.6,6.3,69,met_borrower,PTP003276,address nahi mila,ph0085
+VS004708,AC002243,AD002890,FA009,2026-06-15,2026-06-15 11:39:51,2026-06-15 12:36:26,-2375.0,1242.0,17.3,200,neighbour_says_shifted,,neighbour says shifted,a9df2778ff06
+VS004711,AC002278,AD002932,FA008,2026-06-15,2026-06-15 10:08:19,2026-06-15 10:22:09,-628.6,-3460.1,5.9,107,locked_premises,,"koi nahi mila, taala laga tha",e696303540b1
+VS004718,AC000064,AD000080,FA007,2026-06-15,2026-06-15 10:15:27,2026-06-15 10:27:57,4274.4,293.2,5.1,95,address_not_traceable,,"address sikkilla, tumba hudukide",682102291da3
+VS004730,AC000437,AD000563,FA001,2026-06-16,2026-06-16 11:21:48,2026-06-16 11:38:04,3004.2,-2521.5,10.4,163,locked_premises,,"premises locked, nobody home",947bf9ef16ad
+VS004738,AC002225,AD003094,FA003,2026-06-16,2026-06-16 10:48:00,2026-06-16 11:17:07,1137.6,-22.3,7.7,1237,met_borrower,PTP003309,customer maneli sikkidru,973e42b3da32
+VS004742,AC000168,AD000209,FA002,2026-06-16,2026-06-16 09:36:04,2026-06-16 09:58:04,2505.4,1042.2,25.8,96,address_not_traceable,,"address sikkilla, tumba hudukide",ffa46d1a51da
+VS004745,AC002129,AD002744,FA002,2026-06-16,2026-06-16 10:35:27,2026-06-16 10:50:03,2468.0,1115.5,12.5,116,address_not_traceable,,address sikkilla,50c05c3cde7c
+VS004747,AC000972,AD001258,FA002,2026-06-16,2026-06-16 11:11:30,2026-06-16 11:39:46,127.4,1822.5,5.0,368,met_borrower,PTP003311,"customer maneli sikkidru; nija mane Haalina Dairy hinde ide, 2 cross munde",919449126b42
+VS004748,AC001449,AD001870,FA002,2026-06-16,2026-06-16 11:49:37,2026-06-16 12:12:51,1135.1,1639.4,7.3,78,address_not_traceable,,address sikkilla,5dfe6093b49f
+VS004769,AC001117,AD001450,FA005,2026-06-16,2026-06-16 10:44:57,2026-06-16 10:46:12,2483.5,-1054.9,9.7,289,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,a70e654dae0b
+VS004781,AC002103,AD002712,FA008,2026-06-16,2026-06-16 10:42:53,2026-06-16 10:44:59,-814.4,-3722.3,8.1,334,met_family,PTP003316,"father se baat hui, message de denge",9b56116b206d
+VS004795,AC001232,AD003102,FA003,2026-06-17,2026-06-17 11:15:13,2026-06-17 11:16:55,1026.2,-3061.4,14.3,325,met_borrower,,customer angadi nalli sikkidru,c5da343b82d0
+VS004827,AC001902,AD002459,FA006,2026-06-17,2026-06-17 11:53:42,2026-06-17 12:11:36,1385.1,-2220.8,5.9,394,met_family,,"ghar pe beta tha, customer bahar; address galat likha hai, ghar Medical Store ke paas hai",1d975da172ee
+VS004837,AC000873,AD001127,FA004,2026-06-17,2026-06-17 10:55:59,2026-06-17 11:05:27,626.8,-3388.2,4.7,1465,met_borrower,PTP003344,"customer mila, bola 22/06 tak karega",79a28a68a525
+VS004845,AC000574,AD000741,FA007,2026-06-17,2026-06-17 11:22:03,2026-06-17 11:23:43,-847.1,2847.6,9.1,248,neighbour_says_shifted,,pakkadavaru shift aagidaare antharu,652e5f515d0f
+VS004846,AC002053,AD002652,FA007,2026-06-17,2026-06-17 11:31:44,2026-06-17 11:49:36,-972.7,-857.0,6.9,748,met_borrower,,customer maneli sikkidru,108e47631b63
+VS004847,AC000516,AD000666,FA008,2026-06-17,2026-06-17 09:57:48,2026-06-17 10:10:42,-2645.7,-482.5,4.0,559,met_borrower,,customer dukaan pe mila,7bee8b4ea065
+VS004855,AC001480,AD001908,FA008,2026-06-17,2026-06-17 12:56:58,2026-06-17 13:14:01,-2357.7,54.5,5.2,54,address_not_traceable,,is address pe ghar nahi mila,48b5e5d73604
+VS004862,AC001536,AD001977,FA009,2026-06-17,2026-06-17 12:27:37,2026-06-17 12:33:50,3718.9,488.2,4.7,1183,met_borrower,PTP003346,met customer at home,c8ce4cbecb3e
+VS004891,AC000633,AD000817,FA005,2026-06-18,2026-06-18 11:22:37,2026-06-18 11:24:43,1302.7,-1915.6,10.0,84,locked_premises,,"koi nahi mila, taala laga tha",36bbd7884e9e
+VS004897,AC000117,AD000147,FA004,2026-06-18,2026-06-18 10:47:31,2026-06-18 11:21:01,719.2,1010.4,5.1,63,address_not_traceable,,"address trace nahi hua, kaafi dhunda",d1f6c810a1c5
+VS004901,AC002132,AD002750,FA004,2026-06-18,2026-06-18 12:23:20,2026-06-18 12:37:18,603.1,2900.1,6.4,241,met_family,,"wife mili, bola kaam pe gaye hain; address galat likha hai, ghar Girja Ghar ke paas hai",84762fddfb00
+VS004918,AC000560,AD000722,FA009,2026-06-18,2026-06-18 12:33:45,2026-06-18 12:44:42,4006.4,322.1,19.7,456,met_borrower,PTP003388,met customer; house is on the road opposite Hanuman Temple,58dc170dffdd
+VS004928,AC000122,AD000154,FA007,2026-06-18,2026-06-18 10:13:40,2026-06-18 10:32:30,3574.3,-2265.2,12.9,737,met_borrower,PTP003390,"customer sikkidru, maataadide",649654e1594d
+VS004932,AC000020,AD000023,FA007,2026-06-18,2026-06-18 11:58:27,2026-06-18 12:03:57,-2922.4,-283.8,8.9,1403,met_borrower,,"customer sikkidru, maataadide",b61c52bd2c12
+VS004936,AC001630,AD002103,FA002,2026-06-19,2026-06-19 10:42:45,2026-06-19 10:58:15,304.2,-2741.1,7.8,207,locked_premises,,"yaaru illa, beega haakide",af76d477bfde
+VS004940,AC001116,AD001449,FA002,2026-06-19,2026-06-19 12:06:04,2026-06-19 12:34:52,1357.2,-1427.5,6.8,43,address_not_traceable,,"address sikkilla, tumba hudukide",d0f1d9568bc8
+VS004958,AC000146,AD000182,FA004,2026-06-19,2026-06-19 10:03:41,2026-06-19 10:24:09,800.2,2780.7,9.0,245,no_such_person,,is naam ka koi nahi rehta,19bcbad22fb3
+VS004976,AC000445,AD000573,FA005,2026-06-19,2026-06-19 11:24:02,2026-06-19 11:37:59,1694.2,-1690.3,7.5,284,neighbour_says_shifted,,"padosi ne bola shift ho gaye; asli ghar Ganesh Mandir ke peeche hai, 2 gali aage",8399bd166fb0
+VS004982,AC001941,AD002509,FA007,2026-06-19,2026-06-19 11:23:58,2026-06-19 11:31:42,-2506.8,-696.9,7.9,246,met_family,,avara appa jothe maataadide,33dea54d28f1
+VS004984,AC001029,AD001330,FA007,2026-06-19,2026-06-19 12:18:09,2026-06-19 12:22:47,-2296.6,-506.9,10.6,176,neighbour_says_shifted,,mane khaali maadidaare,4fd7acc58ebc
+VS004995,AC000316,AD000397,FA008,2026-06-19,2026-06-19 10:04:07,2026-06-19 10:22:37,3115.3,-1898.1,15.3,83,locked_premises,,"koi nahi mila, taala laga tha",cb65362052e3
+VS004996,AC001140,AD001480,FA008,2026-06-19,2026-06-19 10:27:55,2026-06-19 10:46:24,3711.2,-2217.6,22.9,224,neighbour_says_shifted,,padosi ne bola shift ho gaye,06a90d35af61
+VS005005,AC002344,AD003016,FA001,2026-06-20,2026-06-20 11:35:22,2026-06-20 11:52:28,2443.0,635.4,8.6,1187,met_borrower,,met customer; house is on the road opposite Post Office,98dd8d32821e
+VS005013,AC000844,AD001088,FA003,2026-06-20,2026-06-20 11:59:31,2026-06-20 12:08:48,1276.3,-209.3,12.9,481,met_family,,avara appa jothe maataadide,abdb054cd0ca
+VS005014,AC002362,AD003041,FA003,2026-06-20,2026-06-20 12:23:04,2026-06-20 12:25:13,783.6,-216.0,8.5,223,locked_premises,,mane lock agide,03122b9708e2
+VS005018,AC000576,AD000743,FA002,2026-06-20,2026-06-20 09:36:19,2026-06-20 10:19:42,-1986.3,-2239.4,5.8,112,address_not_traceable,,address sikkilla,f0cd5c064678
+VS005021,AC001715,AD002217,FA002,2026-06-20,2026-06-20 10:45:27,2026-06-20 10:46:31,-856.8,-3079.7,11.8,112,locked_premises,,mane lock agide,db99d63a66ba
+VS005025,AC001571,AD002027,FA004,2026-06-20,2026-06-20 10:43:17,2026-06-20 10:44:51,-383.8,-622.1,8.2,195,locked_premises,,lock laga hai,fd0dd70e7823
+VS005029,AC000084,AD000105,FA004,2026-06-20,2026-06-20 11:39:21,2026-06-20 11:50:21,-678.1,-58.7,15.4,217,met_family,,"father se baat hui, message de denge",c261df6d5f97
+VS005033,AC001958,AD002531,FA005,2026-06-20,2026-06-20 10:03:47,2026-06-20 10:44:46,1110.1,48.3,11.2,437,met_family,,"ghar pe beta tha, customer bahar; blue gate wala ghar, Girja Ghar se right side",29d2429146f5
+VS005034,AC001826,AD002357,FA005,2026-06-20,2026-06-20 10:51:19,2026-06-20 10:52:40,1036.6,330.0,9.3,511,met_family,,"ghar pe beta tha, customer bahar",0c7c26e30ed7
+VS005036,AC000892,AD001152,FA005,2026-06-20,2026-06-20 11:14:10,2026-06-20 11:16:22,1443.9,388.0,25.5,141,locked_premises,,lock laga hai,c62efb22d59c
+VS005038,AC000880,AD001136,FA005,2026-06-20,2026-06-20 11:46:24,2026-06-20 12:01:15,812.2,-240.4,13.6,176,locked_premises,,"ghar band tha; asli ghar Park ke peeche hai, 2 gali aage",b99d42e13914
+VS005042,AC001921,AD002483,FA006,2026-06-20,2026-06-20 11:14:14,2026-06-20 11:16:38,781.6,-2754.7,32.1,266,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",ba7dede51af1
+VS005044,AC001901,AD002458,FA006,2026-06-20,2026-06-20 11:41:57,2026-06-20 11:56:46,529.3,-3279.4,14.5,88,address_not_traceable,,is address pe ghar nahi mila,a4cd05edf8e8
+VS005067,AC000608,AD000785,FA003,2026-06-22,2026-06-22 10:15:54,2026-06-22 10:26:54,2449.3,-2260.5,7.1,238,neighbour_says_shifted,,mane khaali maadidaare,30a522ed5414
+VS005070,AC000227,AD000287,FA003,2026-06-22,2026-06-22 11:26:48,2026-06-22 11:31:25,2780.6,-2380.6,9.2,729,met_borrower,,"customer sikkidru,  olage kodtini andru",cd3e099084ed
+VS005072,AC000413,AD000529,FA003,2026-06-22,2026-06-22 12:11:41,2026-06-22 12:13:33,2800.5,-2099.8,10.0,83,locked_premises,,mane lock agide,f9362ff58a18
+VS005073,AC000458,AD000589,FA003,2026-06-22,2026-06-22 12:18:43,2026-06-22 12:35:57,1536.6,1204.7,7.5,106,met_borrower,PTP003490,mane lock agide,ph0024
+VS005074,AC000568,AD000733,FA002,2026-06-22,2026-06-22 09:54:45,2026-06-22 10:13:10,2826.8,-2290.5,39.8,117,locked_premises,,mane lock agide,3a98c80b98be
+VS005082,AC002033,AD002623,FA002,2026-06-22,2026-06-22 13:13:18,2026-06-22 13:13:59,2912.9,-1791.4,9.0,297,neighbour_says_shifted,,pakkadavaru shift aagidaare antharu,a30e9a264fe3
+VS005109,AC001304,AD001694,FA006,2026-06-22,2026-06-22 10:49:12,2026-06-22 11:02:21,1733.9,-2212.5,10.7,292,met_family,,"ghar pe beta tha, customer bahar",7f3bf8d3f629
+VS005116,AC001430,AD001845,FA007,2026-06-22,2026-06-22 10:31:46,2026-06-22 10:46:04,3760.8,361.5,4.0,67,address_not_traceable,,"address sikkilla, tumba hudukide",4e412700da6c
+VS005137,AC000442,AD000569,FA001,2026-06-23,2026-06-23 09:39:36,2026-06-23 09:57:17,2670.1,-2052.7,4.0,182,locked_premises,,house locked,52902d582b14
+VS005141,AC000951,AD001231,FA001,2026-06-23,2026-06-23 10:34:49,2026-06-23 10:48:49,2914.5,-2195.6,10.4,215,neighbour_says_shifted,,"house vacated 2 months ago; address wrong, house near Ration Shop",5267235526a4
+VS005143,AC001647,AD002125,FA001,2026-06-23,2026-06-23 11:06:34,2026-06-23 11:26:34,1211.1,-251.7,8.3,957,met_borrower,,"met customer, promised by ; house is on the road opposite Church",ee7ced67f10e
+VS005144,AC000856,AD001104,FA001,2026-06-23,2026-06-23 11:48:22,2026-06-23 12:19:22,2057.5,1489.6,6.5,101,address_not_traceable,,could not trace address after search,9b3215f226a6
+VS005146,AC000134,AD000169,FA001,2026-06-23,2026-06-23 13:11:55,2026-06-23 13:27:47,2736.2,-1863.7,5.9,84,address_not_traceable,,could not trace address after search,5dbd678f76bf
+VS005148,AC000050,AD000062,FA002,2026-06-23,2026-06-23 10:56:47,2026-06-23 11:08:03,431.8,-3012.0,5.8,85,address_not_traceable,,"address sikkilla, tumba hudukide",9d13ef870947
+VS005151,AC000226,AD000286,FA002,2026-06-23,2026-06-23 11:57:50,2026-06-23 11:59:48,409.3,-3322.0,4.0,1252,met_borrower,PTP003526,customer angadi nalli sikkidru,f127f931b641
+VS005158,AC001739,AD002247,FA003,2026-06-23,2026-06-23 10:27:09,2026-06-23 10:28:01,2684.3,-1830.9,12.3,542,met_family,,avara appa jothe maataadide,44fd1aa557e3
+VS005165,AC001637,AD002112,FA005,2026-06-23,2026-06-23 10:10:11,2026-06-23 10:12:49,-358.9,3297.1,9.8,243,met_family,,"ghar pe beta tha, customer bahar",f80e0c17f317
+VS005169,AC000879,AD001135,FA005,2026-06-23,2026-06-23 11:04:26,2026-06-23 11:08:18,-743.6,2926.0,23.1,682,met_borrower,PTP003529,customer ghar pe mila,6bec3492e4b2
+VS005183,AC001221,AD001584,FA006,2026-06-23,2026-06-23 09:45:41,2026-06-23 09:51:41,1265.8,-1979.6,18.5,125,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,4e23e567f6c6
+VS005208,AC000937,AD001212,FA007,2026-06-23,2026-06-23 10:42:54,2026-06-23 10:45:59,-2962.3,1333.3,10.2,287,neighbour_says_shifted,,mane khaali maadidaare,84e7469f5d2b
+VS005221,AC000876,AD001130,FA003,2026-06-24,2026-06-24 09:38:45,2026-06-24 09:54:15,-754.0,-3319.2,14.5,292,met_family,,avara appa jothe maataadide,07cc2f6cfefc
+VS005237,AC002347,AD003020,FA002,2026-06-24,2026-06-24 13:37:28,2026-06-24 14:14:43,-381.5,-1444.3,7.0,80,address_not_traceable,,"address sikkilla, tumba hudukide",d950b7899a7e
+VS005248,AC000595,AD000768,FA004,2026-06-24,2026-06-24 09:56:21,2026-06-24 10:14:46,2699.0,-1620.9,11.0,139,neighbour_says_shifted,,"shift ho gaye, naya address pata nahi",e910dbbea4a7
+VS005274,AC000460,AD000592,FA007,2026-06-24,2026-06-24 10:38:48,2026-06-24 11:06:25,-3899.7,-650.6,9.5,34,address_not_traceable,,"address sikkilla, tumba hudukide",a620d5b79f38
+VS005284,AC001846,AD002380,FA008,2026-06-24,2026-06-24 11:56:53,2026-06-24 11:59:14,3084.3,-2430.3,12.6,577,met_borrower,,"customer se mila, baat hui",195e6884786d
+VS005289,AC001908,AD002467,FA008,2026-06-24,2026-06-24 13:10:48,2026-06-24 13:22:17,2974.3,-2037.7,5.3,530,met_family,,"father se baat hui, message de denge",d8ab35e5f5c3
+VS005295,AC000484,AD000623,FA001,2026-06-25,2026-06-25 11:31:48,2026-06-25 11:50:48,2219.0,1241.0,12.9,192,locked_premises,,"premises locked, nobody home",97843cbc94eb
+VS005296,AC001139,AD001479,FA001,2026-06-25,2026-06-25 11:57:08,2026-06-25 12:25:57,2920.1,-2493.8,9.7,912,met_borrower,,"met customer, promised by ",6e98700d7f13
+VS005311,AC000857,AD001105,FA002,2026-06-25,2026-06-25 11:25:08,2026-06-25 11:26:08,2809.5,-2276.8,17.3,1362,met_borrower,,"customer sikkidru, maataadide",fcd09d87ab8f
+VS005317,AC002343,AD003015,FA004,2026-06-25,2026-06-25 11:14:58,2026-06-25 11:35:32,968.7,2674.4,14.9,564,met_family,,"father se baat hui, message de denge",d9048646687f
+VS005328,AC001421,AD001833,FA006,2026-06-25,2026-06-25 11:50:07,2026-06-25 11:50:50,1418.9,-2360.7,32.5,190,locked_premises,,"koi nahi mila, taala laga tha",62f694938f6c
+VS005329,AC001068,AD001380,FA006,2026-06-25,2026-06-25 11:59:54,2026-06-25 12:01:52,1424.6,-1911.3,17.0,1043,met_borrower,,"customer mila, bola  tak karega",3810ed2d7786
+VS005332,AC001500,AD001937,FA005,2026-06-25,2026-06-25 10:19:38,2026-06-25 10:22:02,730.4,3079.0,5.7,368,met_family,,"father se baat hui, message de denge",12ef0f8f8408
+VS005338,AC000064,AD000079,FA009,2026-06-25,2026-06-25 10:19:04,2026-06-25 10:34:06,-3729.3,-757.5,10.2,207,address_not_traceable,,address nahi mila,ph0082
+VS005351,AC001792,AD002311,FA007,2026-06-25,2026-06-25 11:08:02,2026-06-25 11:58:12,2543.3,-1438.5,14.4,33,address_not_traceable,,"address sikkilla, tumba hudukide",2b25f3c649d7
+VS005359,AC002278,AD002932,FA008,2026-06-25,2026-06-25 10:29:00,2026-06-25 10:30:19,-598.4,-3446.3,10.4,308,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,058a7c05df67
+VS005374,AC000987,AD001276,FA003,2026-06-26,2026-06-26 13:01:56,2026-06-26 13:40:26,2377.4,-2214.7,15.1,492,met_family,,"avara hendathi sikkidru, kelsakke hogidaare antharu",8113f483f815
+VS005376,AC000437,AD000563,FA003,2026-06-26,2026-06-26 14:15:57,2026-06-26 14:30:01,2533.3,-2085.6,12.5,53,address_not_traceable,,"address sikkilla, tumba hudukide",4d332d74ab52
+VS005380,AC002129,AD002744,FA002,2026-06-26,2026-06-26 11:06:10,2026-06-26 11:19:46,2132.9,802.8,14.5,206,locked_premises,,"yaaru illa, beega haakide",c3d2aa5f8548
+VS005381,AC001449,AD001870,FA002,2026-06-26,2026-06-26 11:25:57,2026-06-26 11:43:27,1488.9,1571.1,13.4,99,address_not_traceable,,"address sikkilla, tumba hudukide",d11c464c1d83
+VS005412,AC001884,AD002431,FA004,2026-06-26,2026-06-26 11:31:41,2026-06-26 11:45:12,2853.8,-1207.7,13.0,157,neighbour_says_shifted,,padosi ne bola shift ho gaye,2153562d4266
+VS005415,AC001117,AD001450,FA004,2026-06-26,2026-06-26 12:31:19,2026-06-26 12:40:22,2345.8,-1143.1,8.2,322,neighbour_says_shifted,,padosi ne bola shift ho gaye,261211943a33
+VS005424,AC000453,AD000584,FA009,2026-06-26,2026-06-26 09:56:51,2026-06-26 10:14:22,2329.7,-792.4,4.9,199,address_not_traceable,,address nahi mila,de378e61b66d
+VS005425,AC000819,AD001054,FA009,2026-06-26,2026-06-26 10:24:27,2026-06-26 10:58:07,-353.0,2879.4,7.7,115,address_not_traceable,,could not trace address after search,620f009a8a60
+VS005428,AC001252,AD001621,FA009,2026-06-26,2026-06-26 11:41:01,2026-06-26 11:53:58,-6.9,3267.9,7.0,466,met_family,,"met spouse, customer at work",e3ac65b13e30
+VS005430,AC002243,AD002889,FA007,2026-06-26,2026-06-26 10:02:16,2026-06-26 10:18:10,4105.4,81.7,19.1,302,neighbour_says_shifted,,mane khaali maadidaare,1a65717bbf83
+VS005446,AC001232,AD003102,FA003,2026-06-27,2026-06-27 11:18:42,2026-06-27 11:19:56,1020.5,-3064.4,5.9,198,locked_premises,,mane lock agide,d9666115d450
+VS005453,AC000909,AD001174,FA002,2026-06-27,2026-06-27 10:47:07,2026-06-27 10:49:31,2570.8,-1957.2,10.2,180,locked_premises,,mane lock agide,ab2f0dc7c077
+VS005455,AC000287,AD000360,FA002,2026-06-27,2026-06-27 11:16:17,2026-06-27 11:17:59,3068.2,-2369.4,10.6,385,met_family,,avara appa jothe maataadide,5122a7b8df86
+VS005472,AC000873,AD001127,FA004,2026-06-27,2026-06-27 11:28:10,2026-06-27 11:49:45,175.8,-3728.6,8.9,818,met_borrower,,customer ghar pe mila,c34d58f8f079
+VS005476,AC002023,AD002613,FA004,2026-06-27,2026-06-27 13:14:04,2026-06-27 13:28:56,723.9,-3568.6,4.0,214,locked_premises,,lock laga hai,9287b021afb5
+VS005480,AC000783,AD001009,FA005,2026-06-27,2026-06-27 10:14:36,2026-06-27 10:50:18,1639.0,-2308.5,17.8,480,met_family,,"father se baat hui, message de denge",4644e46e4395
+VS005490,AC000574,AD000741,FA009,2026-06-27,2026-06-27 11:06:25,2026-06-27 11:20:40,-830.9,2870.9,13.5,127,no_such_person,,no such person at this address,2f90b3bbc12a
+VS005491,AC002053,AD002651,FA009,2026-06-27,2026-06-27 11:28:00,2026-06-27 11:45:26,2330.5,-758.2,11.3,83,met_borrower,PTP003663,mane lock agide,ph0083
+VS005493,AC000401,AD000511,FA009,2026-06-27,2026-06-27 12:44:00,2026-06-27 13:05:27,-448.2,3627.0,6.0,79,address_not_traceable,,could not trace address after search,5e23ea4df7cd
+VS005500,AC002240,AD002884,FA007,2026-06-27,2026-06-27 12:24:01,2026-06-27 12:25:06,-328.9,-3349.3,8.6,392,neighbour_says_shifted,,mane khaali maadidaare,cb9ee60e56ad
+VS005513,AC001630,AD002103,FA002,2026-06-29,2026-06-29 10:50:53,2026-06-29 10:53:35,285.7,-2736.1,9.9,173,locked_premises,,mane lock agide,ba903f2c28fe
+VS005521,AC000781,AD001007,FA003,2026-06-29,2026-06-29 11:49:22,2026-06-29 12:05:33,-2812.1,1059.0,16.2,72,address_not_traceable,,address sikkilla,811900244f43
+VS005526,AC002350,AD003026,FA001,2026-06-29,2026-06-29 10:31:58,2026-06-29 10:32:40,2858.5,-2459.3,12.2,514,met_family,,"met spouse, customer at work",3973b8dc8a49
+VS005531,AC000146,AD000182,FA004,2026-06-29,2026-06-29 10:38:54,2026-06-29 10:48:00,901.4,2805.3,4.8,103,address_not_traceable,,"address trace nahi hua, kaafi dhunda",4e9f9a574c86
+VS005547,AC000117,AD000147,FA005,2026-06-29,2026-06-29 10:22:26,2026-06-29 10:23:35,1003.0,2866.1,14.2,558,met_family,,"ghar pe beta tha, customer bahar",b330d1060fa3
+VS005553,AC000799,AD001029,FA005,2026-06-29,2026-06-29 12:11:49,2026-06-29 12:22:08,1010.9,2701.5,4.0,74,address_not_traceable,,is address pe ghar nahi mila,01697e2b614b
+VS005556,AC000122,AD000153,FA008,2026-06-29,2026-06-29 10:14:17,2026-06-29 10:15:43,-2376.6,-79.5,14.1,228,locked_premises,,lock laga hai,ca9fa6001ae7
+VS005557,AC001029,AD001330,FA008,2026-06-29,2026-06-29 10:24:48,2026-06-29 10:26:40,-2352.7,-521.6,7.4,272,neighbour_says_shifted,,neighbour bola 2 mahine pehle ghar khali kar diya,bd5a32f803b7
+VS005558,AC001941,AD002509,FA008,2026-06-29,2026-06-29 10:35:08,2026-06-29 10:36:28,-2464.6,-629.2,11.8,1317,met_borrower,,customer ghar pe mila,743820d31398
+VS005568,AC000516,AD000666,FA007,2026-06-29,2026-06-29 13:03:01,2026-06-29 13:03:34,-2640.1,-481.5,7.9,1400,cash_collected,,"58,400 cash collect",35c4a32ccb8e
+VS005569,AC000020,AD000023,FA007,2026-06-29,2026-06-29 13:31:35,2026-06-29 13:33:44,-2955.0,-18.0,8.0,703,met_borrower,,"customer sikkidru, maataadide",3ce7967d46f8
+VS005575,AC000833,AD001073,FA009,2026-06-29,2026-06-29 10:50:17,2026-06-29 11:10:03,892.3,-702.2,13.2,87,address_not_traceable,,address not traceable,cde4bc62d4c0
