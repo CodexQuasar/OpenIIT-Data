@@ -8,25 +8,16 @@ import MapView from './pages/MapView'
 import FieldAgentView from './pages/FieldAgentView'
 import Analytics from './pages/Analytics'
 import ModelBenchmark from './pages/ModelBenchmark'
-import Login from './pages/Login'
 import Admin from './pages/Admin'
 
 function App() {
-  const [authenticated, setAuthenticated] = useState(() => Boolean(localStorage.getItem('access_token')))
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', localStorage.getItem('theme') === 'dark')
-    const onAuthenticated = () => setAuthenticated(true)
-    const onExpired = () => setAuthenticated(false)
-    window.addEventListener('authenticated', onAuthenticated)
-    window.addEventListener('auth-expired', onExpired)
-    return () => {
-      window.removeEventListener('authenticated', onAuthenticated)
-      window.removeEventListener('auth-expired', onExpired)
-    }
-  }, [])
+    document.documentElement.classList.toggle('dark', darkMode)
+  }, [darkMode])
 
-  if (!authenticated) return <Login />
+  document.documentElement.classList.toggle('dark', localStorage.getItem('theme') === 'dark')
 
   return (
     <Routes>

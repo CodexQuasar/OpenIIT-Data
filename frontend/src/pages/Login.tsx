@@ -1,5 +1,4 @@
 import { FormEvent, useEffect, useState } from 'react'
-import { login, register } from '../services/api'
 
 export default function Login() {
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
@@ -20,16 +19,7 @@ export default function Login() {
     event.preventDefault()
     setError(null)
     setBusy(true)
-    try {
-      if (isRegistering) {
-        await register(username, password, fullName, email)
-      }
-      await login(username, password)
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Authentication failed')
-    } finally {
-      setBusy(false)
-    }
+    setBusy(false)
   }
 
   return (
@@ -46,40 +36,9 @@ export default function Login() {
         <div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Field Geocoder</h1>
           <p className="text-gray-600 dark:text-gray-400 mt-1">
-            {isRegistering ? 'Create a field-agent account' : 'Sign in to continue'}
+            Welcome to Field Geocoder
           </p>
         </div>
-        {isRegistering && (
-          <>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Full name
-              <input className="input mt-1" value={fullName} onChange={(event) => setFullName(event.target.value)} />
-            </label>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Email
-              <input className="input mt-1" type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-            </label>
-          </>
-        )}
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-          Username
-          <input className="input mt-1" required minLength={3} value={username} onChange={(event) => setUsername(event.target.value)} />
-        </label>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-          Password
-          <input className="input mt-1" required minLength={8} type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
-        </label>
-        {error && <p className="text-sm text-red-600" role="alert">{error}</p>}
-        <button className="btn-primary w-full" disabled={busy} type="submit">
-          {busy ? 'Please wait...' : isRegistering ? 'Create account' : 'Sign in'}
-        </button>
-        <button
-          className="w-full text-sm text-primary-700 hover:underline"
-          type="button"
-          onClick={() => { setIsRegistering(!isRegistering); setError(null) }}
-        >
-          {isRegistering ? 'Already have an account? Sign in' : 'Need an account? Register'}
-        </button>
       </form>
     </main>
   )
