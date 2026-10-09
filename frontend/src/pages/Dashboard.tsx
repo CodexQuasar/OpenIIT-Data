@@ -44,11 +44,26 @@ export default function Dashboard() {
     { label: 'Total Accounts', value: accounts.length },
     { label: 'Towns', value: towns.length },
     { label: 'Surveyed Addresses', value: evaluation?.total_evaluated || 0 },
-    { label: 'Median Error', value: evaluation ? `${evaluation.median_error_m.toFixed(1)}m` : 'N/A' },
-    { label: 'P90 Error', value: evaluation ? `${evaluation.p90_error_m.toFixed(1)}m` : 'N/A' },
-    { label: 'Within 100m', value: evaluation ? `${(evaluation.within_100m * 100).toFixed(1)}%` : 'N/A' },
-    { label: 'Within 250m', value: evaluation ? `${(evaluation.within_250m * 100).toFixed(1)}%` : 'N/A' },
-    { label: 'Within 500m', value: evaluation ? `${(evaluation.within_500m * 100).toFixed(1)}%` : 'N/A' },
+    {
+      label: 'Median Error',
+      value: evaluation?.median_error_m != null ? `${evaluation.median_error_m.toFixed(1)}m` : 'N/A',
+    },
+    {
+      label: 'P90 Error',
+      value: evaluation?.p90_error_m != null ? `${evaluation.p90_error_m.toFixed(1)}m` : 'N/A',
+    },
+    {
+      label: 'Within 100m',
+      value: evaluation?.within_100m != null ? `${(evaluation.within_100m * 100).toFixed(1)}%` : 'N/A',
+    },
+    {
+      label: 'Within 250m',
+      value: evaluation?.within_250m != null ? `${(evaluation.within_250m * 100).toFixed(1)}%` : 'N/A',
+    },
+    {
+      label: 'Within 500m',
+      value: evaluation?.within_500m != null ? `${(evaluation.within_500m * 100).toFixed(1)}%` : 'N/A',
+    },
   ]
 
   return (
