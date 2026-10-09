@@ -1,7 +1,7 @@
 # Backend Dockerfile
 FROM python:3.11-slim
 
-WORKDIR /app
+WORKDIR /app/backend
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -12,13 +12,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements
-COPY requirements.txt .
+COPY backend/requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application
-COPY . .
+# Copy backend application and repository-level runtime data
+COPY backend/ .
+COPY Dataset/ /app/Dataset/
+COPY evaluation_artifacts/ /app/evaluation_artifacts/
 
 # Create data directory
 RUN mkdir -p data models
@@ -27,4 +29,4 @@ RUN mkdir -p data models
 EXPOSE 8000
 
 # Run application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
