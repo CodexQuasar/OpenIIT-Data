@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List, Optional
 import math
+import os
 
 from data.database import get_db
 from data.repositories import AccountRepository, VisitRepository, PredictionRepository
@@ -13,7 +14,22 @@ from app.schemas import MetricsResponse, VisitOutcome, RecommendedAction
 from geospatial.real_geocoder import RealDataGeocoder
 from data.real_data import get_dataset_loader
 
-router = APIRouter()
+# Configuration: skip full dataset loading in production for performance
+_DISABLE_DATASET_LOOKUPS = os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"
+
+
+def _get_dataset_loader_cached() -> "RealDatasetLoader":
+    """Get dataset loader, conditionally loading all data."""
+    loader = get_dataset_loader()
+    if not _DISABLE_DATASET_LOOKUPS:
+        if not loader.accounts:
+            loader.load_all("train")
+    else:
+        # When dataset lookups disabled, ensure loader exists without loading all data
+        if loader.accounts:
+            pass  # Already loaded; keep it lightweight
+    return loader
+
 
 # Cache for evaluation results
 _evaluation_cache = None
@@ -70,14 +86,15 @@ def _get_evaluation_results() -> dict:
     global _evaluation_cache
     if _evaluation_cache is None:
         try:
-            loader = get_dataset_loader()
-            if not loader.accounts:
-                loader.load_all("train")
+            loader = _get_dataset_loader_cached()
             geocoder = RealDataGeocoder(loader)
             _evaluation_cache = geocoder.evaluate_on_surveyed()
         except Exception:
             _evaluation_cache = {}
     return _evaluation_cache
+
+
+router = APIRouter()
 
 
 @router.get("/metrics", response_model=MetricsResponse)
@@ -185,29 +202,29 @@ async def get_territory_metrics(
                         VisitModel.outcome == VisitOutcome.ADDRESS_NOT_TRACEABLE
                     ).count() / max(1, db.query(VisitModel).count()),
                 })
-            return {"territory_type": territory_type, "metrics": metrics, "source": "operational_database"}
 
-        loader = get_dataset_loader()
-        if not loader.towns:
-            loader.load_all("train")
-        
-        # Run evaluation per town to get territory-level accuracy
-        geocoder = RealDataGeocoder(loader)
-        eval_results = geocoder.evaluate_on_surveyed()
-        
-        # Get per-town breakdown by evaluating each town separately
-        town_metrics = []
-        for town in loader.towns.values():
-            # Get surveyed addresses in this town
-            town_addresses = [a for a in loader.addresses.values() if a.town_id == town.town_id]
-            town_surveyed = [addr_id for addr_id in loader.surveyed_addresses if addr_id in [a.address_id for a in town_addresses]]
+        else:
+            loader = _get_dataset_loader_cached()
+            if not loader.towns:
+                loader.load_all("train")
             
-            if town_surveyed:
-                town_errors = []
-                for addr_id in town_surveyed:
-                    result = geocoder.geocode_address(addr_id)
-                    if result and result.error_m is not None:
-                        town_errors.append(result.error_m)
+            # Run evaluation per town to get territory-level accuracy
+            geocoder = RealDataGeocoder(loader)
+            eval_results = geocoder.evaluate_on_surveyed()
+            
+            # Get per-town breakdown by evaluating each town separately
+            town_metrics = []
+            for town in loader.towns.values():
+                # Get surveyed addresses in this town
+                town_addresses = [a for a in loader.addresses.values() if a.town_id == town.town_id]
+                town_surveyed = [addr_id for addr_id in loader.surveyed_addresses if addr_id in [a.address_id for a in town_addresses]]
+                
+                if town_surveyed:
+                    town_errors = []
+                    for addr_id in town_surveyed:
+                        result = geocoder.geocode_address(addr_id)
+                        if result and result.error_m is not None:
+                            town_errors.append(result.error_m)
                 
                 if town_errors:
                     town_errors.sort()
@@ -228,10 +245,9 @@ async def get_territory_metrics(
                     })
         
         return {
-            "territory_type": "town",
-            "metrics": town_metrics,
-            "overall": eval_results,
+            "territory_type": territory_type, "metrics": metrics, "source": "operational_database"
         }
+
     except Exception as e:
         return {
             "territory_type": territory_type,
@@ -272,7 +288,7 @@ async def get_confidence_calibration(db: Session = Depends(get_db)):
         database_results = _database_calibration(db)
         if database_results["sample_count"] > 0:
             return database_results
-        loader = get_dataset_loader()
+        loader = _get_dataset_loader_cached()
         if not loader.accounts:
             loader.load_all("train")
         geocoder = RealDataGeocoder(loader)
