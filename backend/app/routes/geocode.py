@@ -102,8 +102,8 @@ async def geocode_single(
         logger.warning(f"Geocoder failed: {e}")
         geocoder_results = []
     
-    # Generate candidates
-    candidate_config = {"disable_dataset_lookups": os.environ.get("TESTING") == "1"}
+    # Generate candidates - disable dataset lookups in production for performance
+    candidate_config = {"disable_dataset_lookups": os.environ.get("TESTING") == "1" or os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"}
     candidates = generate_candidates(
         normalized,
         historical_visits,
