@@ -3,6 +3,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
 from pathlib import Path
+import os
 
 from data.real_data import RealDatasetLoader, load_dataset, get_dataset_loader
 from geospatial.real_geocoder import RealDataGeocoder, GeocodingResult
@@ -10,14 +11,30 @@ from ml.address_normalizer import normalize_address
 from ml.entity_extractor import extract_entities
 from evaluation.ps3_experiments import run_ps3_experiments
 
-
 router = APIRouter()
+
+# Configuration: skip full dataset loading in production for performance
+_DISABLE_DATASET_LOOKUPS = os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"
+
+
+def get_dataset_loader_cached() -> RealDatasetLoader:
+    """Get dataset loader, conditionally loading all data."""
+    loader = get_dataset_loader()
+    if not _DISABLE_DATASET_LOOKUPS:
+        if not loader.accounts:
+            loader.load_all("train")
+    else:
+        # When dataset lookups disabled, ensure loader exists without loading all data
+        if loader.accounts:
+            pass  # Already loaded; keep it lightweight
+    return loader
 
 
 def get_geocoder() -> RealDataGeocoder:
     """Get geocoder with loaded dataset."""
-    loader = get_dataset_loader()
-    if not loader.accounts:
+    loader = get_dataset_loader_cached()
+    # Only load data if dataset lookups are enabled
+    if not _DISABLE_DATASET_LOOKUPS and not loader.accounts:
         loader.load_all("train")
     return RealDataGeocoder(loader)
 
@@ -29,10 +46,10 @@ async def list_real_accounts(
     search: Optional[str] = Query(None, max_length=128),
 ):
     """List real accounts."""
-    loader = get_dataset_loader()
-    if not loader.accounts:
-        loader.load_all("train")
-
+    loader = get_dataset_loader_cached()
+    if _DISABLE_DATASET_LOOKUPS and not loader.accounts:
+        # Return empty when dataset lookups disabled and data not loaded
+        return []
     accounts = list(loader.accounts.values())
     if search and search.strip():
         needle = search.strip().casefold()
@@ -63,9 +80,9 @@ async def list_real_accounts(
 @router.get("/real/accounts/{account_id}")
 async def get_real_account(account_id: str):
     """Get real account details."""
-    loader = get_dataset_loader()
-    if not loader.accounts:
-        loader.load_all("train")
+    loader = get_dataset_loader_cached()
+    if _DISABLE_DATASET_LOOKUPS and not loader.accounts:
+        raise HTTPException(status_code=404, detail="Account not found (dataset lookups disabled)")
 
     account = loader.accounts.get(account_id)
     if not account:
@@ -138,7 +155,7 @@ async def evaluate_ps3_experiments(
     split: str = Query("train", pattern="^(train|val|test)$"),
 ):
     """Run and persist the versioned PS3 evaluation artifact."""
-    loader = get_dataset_loader()
+    loader = get_dataset_loader_cached()
     output_dir = Path(__file__).resolve().parents[3] / "evaluation_artifacts"
     return run_ps3_experiments(loader.dataset_path, split=split, output_dir=output_dir)
 
@@ -146,7 +163,10 @@ async def evaluate_ps3_experiments(
 @router.get("/real/addresses/{address_id}")
 async def get_real_address(address_id: str):
     """Get real address details."""
-    loader = get_dataset_loader()
+    loader = get_dataset_loader_cached()
+    if _DISABLE_DATASET_LOOKUPS and not loader.addresses:
+        raise HTTPException(status_code=404, detail="Address not found (dataset lookups disabled)")
+
     if not loader.addresses:
         loader.load_all("train")
 
@@ -192,7 +212,10 @@ async def get_real_address(address_id: str):
 @router.get("/real/towns")
 async def list_towns():
     """List all towns."""
-    loader = get_dataset_loader()
+    loader = get_dataset_loader_cached()
+    if _DISABLE_DATASET_LOOKUPS and not loader.towns:
+        # Return empty or minimal when dataset lookups disabled
+        return []
     if not loader.towns:
         loader.load_all("train")
 
@@ -210,7 +233,9 @@ async def list_towns():
 @router.get("/real/landmarks")
 async def list_landmarks(town_id: Optional[str] = None):
     """List landmarks, optionally filtered by town."""
-    loader = get_dataset_loader()
+    loader = get_dataset_loader_cached()
+    if _DISABLE_DATASET_LOOKUPS and not loader.landmarks:
+        return []
     if not loader.landmarks:
         loader.load_all("train")
 
