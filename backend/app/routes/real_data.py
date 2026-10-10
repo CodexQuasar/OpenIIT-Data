@@ -33,7 +33,8 @@ def get_dataset_loader_cached() -> RealDatasetLoader:
 def get_geocoder() -> RealDataGeocoder:
     """Get geocoder with loaded dataset."""
     loader = get_dataset_loader_cached()
-    if not loader.accounts:
+    # Only load data if dataset lookups are enabled
+    if not _DISABLE_DATASET_LOOKUPS and not loader.accounts:
         loader.load_all("train")
     return RealDataGeocoder(loader)
 
