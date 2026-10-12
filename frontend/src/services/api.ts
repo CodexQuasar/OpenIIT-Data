@@ -20,7 +20,7 @@ export interface AuthResponse {
 }
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: 'https://openiit-data.onrender.com/api',
   timeout: 30000,
 })
 
