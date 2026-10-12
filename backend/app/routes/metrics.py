@@ -8,8 +8,8 @@ import math
 import os
 
 from data.database import get_db
-from data.repositories import AccountRepository, VisitRepository, PredictionRepository
-from data.models import AccountModel, VisitModel, PredictionModel
+from data.repositories import AccountRepository, VisitRepository, PredictionRepository, CacheRepository, GeocoderCacheRepository, EmbeddingCacheRepository
+from data.models import AccountModel, VisitModel, PredictionModel, CacheEntryModel, GeocoderCacheModel, EmbeddingCacheModel
 from app.schemas import MetricsResponse, VisitOutcome, RecommendedAction
 from geospatial.real_geocoder import RealDataGeocoder
 from data.real_data import get_dataset_loader
@@ -95,6 +95,51 @@ def _get_evaluation_results() -> dict:
 
 
 router = APIRouter()
+
+
+@router.get("/cache/cleanup")
+async def cleanup_cache_endpoint(db: Session = Depends(get_db)):
+    """Clean up expired cache entries from all cache tables."""
+    from datetime import datetime
+    
+    results = {}
+    
+    # Clean generic cache entries
+    cache_repo = CacheRepository(db)
+    expired_count = cache_repo.cleanup_expired()
+    results["cache_entries"] = expired_count
+    
+    # Clean geocoder cache entries
+    geocoder_repo = GeocoderCacheRepository(db)
+    geocoder_count = 0
+    entry = geocoder_repo.db.query(GeocoderCacheModel).filter(
+        GeocoderCacheModel.expires_at.is_not(None),
+        GeocoderCacheModel.expires_at < datetime.utcnow()
+    ).delete()
+    geocoder_count = entry.rowcount if entry else 0
+    results["geocoder_cache"] = geocoder_count
+    
+    # Clean embedding cache entries
+    embedding_repo = EmbeddingCacheRepository(db)
+    embedding_count = 0
+    entry = embedding_repo.db.query(EmbeddingCacheModel).filter(
+        EmbeddingCacheModel.expires_at.is_not(None),
+        EmbeddingCacheModel.expires_at < datetime.utcnow()
+    ).delete()
+    embedding_count = entry.rowcount if entry else 0
+    results["embedding_cache"] = embedding_count
+    
+    db.commit()
+    
+    return {
+        "status": "success",
+        "message": "Cache cleanup completed",
+        "details": results,
+        "timestamp": datetime.utcnow().isoformat()
+    }
+
+
+# Cache cleanup configuration
 
 
 @router.get("/metrics", response_model=MetricsResponse)

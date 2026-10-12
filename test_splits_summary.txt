@@ -1,0 +1,130 @@
+PS3 Geocoder Evaluation - Test Splits Summary
+==============================================
+
+Generated from evaluation artifacts in Dataset/PS_3 and evaluation_artifacts/
+
+SPLIT 1: ps3_eval_20261008T141650Z.json
+-----------------------------------------
+Run ID: 20261008T141650Z
+Split: train
+Coordinate system: projected_local_xy_m
+Artifact version: ps3-eval-v1
+
+BASELINES (n=66 surveyed addresses):
+- Commercial geocoder:
+  * Median error: 380.76 m
+  * P90 error: 745.59 m
+  * P95 error: 1176.86 m
+  * Within 50m: 4.55%
+  * Within 100m: 9.09%
+  * Within 250m: 28.79%
+  * Within 500m: 71.21%
+  * Coverage: 71.21%
+  * Calibration error: 0.5
+
+- Nearest reliable visit (n=23 candidates):
+  * Median error: 31.57 m
+  * P90 error: 162.46 m
+  * P95 error: 220.52 m
+  * Within 50m: 73.91%
+  * Within 100m: 78.26%
+  * Within 250m: 100%
+  * Within 500m: 100%
+  * Coverage: 91.30%
+  * Calibration error: 0.252
+
+- Weighted centroid (n=23):
+  * Median error: 29.35 m
+  * P90 error: 118.24 m
+  * P95 error: 182.06 m
+  * Within 50m: 69.57%
+  * Within 100m: 86.96%
+  * Within 250m: 95.65%
+  * Within 500m: 100%
+  * Coverage: 82.61%
+  * Calibration error: 0.208
+
+ABLATIONS:
+- address_only: same as commercial geocoder baseline (n=66)
+- address_plus_visits: same as nearest visit (n=23)
+- address_plus_visits_plus_integrity: same as weighted centroid (n=23)
+- address_plus_nearby: not_estimable (no independent nearby-account evidence)
+
+SPLITS ANALYSIS:
+- temporal_split:
+  * Cutoff: 2026-06-02T10:42:20
+  * Train visits: 2727
+  * Future visits: 1169
+  * Leakage rule: features before cutoff, outcomes after cutoff
+  * Pre-cutoff weighted centroid: median_error=24.90m, within_250m=95%, coverage=85%
+
+- geography_holdout:
+  * Holdout towns: T3
+  * Train towns: OUT, T1, T2
+  * Status: defined
+  * Note: Production-model retraining on train towns required before claiming generalization
+  * Holdout address-only metrics: same as commercial geocoder (n=66)
+
+SPLIT 2: ps3_eval_20261008T141748Z.json
+-----------------------------------------
+Run ID: 20261008T141748Z
+Split: train
+Coordinate system: projected_local_xy_m
+Artifact version: ps3-eval-v1
+
+(Identical baseline metrics to Split 1, with radar status: baseline_coverage)
+
+RADAR metrics:
+- accuracy: 0.2879
+- coverage: 1.0
+- calibration: 0.5
+- robustness: 0.9143
+- explainability: 1.0
+- latency: 3.03e-06 ms
+
+SPLIT 3: ps3_eval_20261008T142441Z.json
+-----------------------------------------
+Run ID: 20261008T142441Z
+Split: train
+Coordinate system: projected_local_xy_m
+Artifact version: ps3-eval-v1
+
+ADDITIONAL: account_level_split (new in this run)
+- Status: validated
+- Train account count: 1360
+- Evaluation account count: 320
+- Overlap count: 0
+- Assignment: deterministic account hash, 80/20 target
+- Rule: account IDs must be assigned to exactly one evaluation partition before fitting
+
+Temporal split future metrics:
+- Future address count: 651
+- Pre-cutoff weighted centroid: median_error=22.83m, within_250m=92.85%, coverage=85.71%, coverage_rate=66.67%
+
+SPLIT 4: latest_run.txt (most recent evaluation)
+-------------------------------------------------
+Run ID: 20261008T141748Z
+Split: train
+
+DATASET SUMMARY:
+- Total addresses: 2175
+- Total visits: 3896
+- Surveyed addresses: 66
+- Baseline matches: 66
+
+-----------------------------------------------
+KEY FINDINGS:
+1. Nearest reliable visit dramatically improves accuracy over commercial geocoder:
+   * 91.30% coverage vs 71.21%
+   * 73.91% within 50m vs 4.55%
+   * Median error: 31.57m vs 380.76m
+
+2. Integrity-weighted visits further improve: weighted centroid median error 29.35m
+
+3. Account-level 80/20 split is validated with zero account overlap
+
+4. Temporal split (cutoff June 2026) maintains good performance:
+   * Pre-cutoff weighted centroid: 24.90m median error, 95% within 250m
+
+5. Geography holdout (town T3) performs same as commercial geocoder without
+   town-specific model retraining - confirms need for retraining on train towns

@@ -32,6 +32,7 @@ class TaskType(str, Enum):
     SYNC_OFFLINE_VISITS = "sync_offline_visits"
     CLEANUP_RETENTION = "cleanup_retention"
     REEVALUATE_CALIBRATION = "reevaluate_calibration"
+    CLEANUP_CACHE = "cleanup_cache"
 
 
 @dataclass
@@ -268,7 +269,49 @@ class TaskManager:
 
 # Convenience function to create task logger
 def make_task_logger(db: Session) -> TaskLogger:
-    return TaskLogger(db)
+    return TaskLogger()
+
+
+def cleanup_cache(db: Session) -> Dict[str, int]:
+    """Clean up expired cache entries from all cache tables.
+    
+    Returns dict with counts of deleted entries per table.
+    """
+    from datetime import datetime
+    
+    results = {}
+    
+    # Clean generic cache entries
+    from data.repositories import CacheRepository
+    cache_repo = CacheRepository(db)
+    expired_count = cache_repo.cleanup_expired()
+    results["cache_entries"] = expired_count
+    
+    # Clean geocoder cache entries
+    from data.repositories import GeocoderCacheRepository
+    from sqlalchemy import delete as sa_delete
+    geocoder_repo = GeocoderCacheRepository(db)
+    stmt = sa_delete(GeocoderCacheModel).where(
+        GeocoderCacheModel.expires_at.is_not(None),
+        GeocoderCacheModel.expires_at < datetime.utcnow()
+    )
+    result = db.execute(stmt)
+    geocoder_count = result.rowcount if result else 0
+    results["geocoder_cache"] = geocoder_count
+    
+    # Clean embedding cache entries
+    from data.repositories import EmbeddingCacheRepository
+    embedding_repo = EmbeddingCacheRepository(db)
+    stmt = sa_delete(EmbeddingCacheModel).where(
+        EmbeddingCacheModel.expires_at.is_not(None),
+        EmbeddingCacheModel.expires_at < datetime.utcnow()
+    )
+    result = db.execute(stmt)
+    embedding_count = result.rowcount if result else 0
+    results["embedding_cache"] = embedding_count
+    
+    db.commit()
+    return results
 
 
 # Convenience function to create task manager
