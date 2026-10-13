@@ -3,12 +3,9 @@ FROM python:3.11-slim
 
 WORKDIR /app/backend
 
-# Install system dependencies
+# Install system dependencies (libgomp1 is required by lightgbm at runtime)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    g++ \
-    libgeos-dev \
-    libproj-dev \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements
