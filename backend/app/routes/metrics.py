@@ -22,17 +22,9 @@ def _get_dataset_loader_cached() -> "RealDatasetLoader":
     """Get dataset loader, conditionally loading all data."""
     loader = get_dataset_loader()
     if not _DISABLE_DATASET_LOOKUPS:
-        if not loader.accounts:
-            loader.load_all("train")
-    else:
-        # When dataset lookups disabled, ensure loader exists without loading all data
-        if loader.accounts:
-            pass  # Already loaded; keep it lightweight
+        loader.ensure_loaded("train")
     return loader
 
-
-# Cache for evaluation results
-_evaluation_cache = None
 
 
 def _distance_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -57,7 +49,9 @@ def _database_calibration(db: Session) -> dict:
         if visit is None:
             continue
         distance = _distance_m(prediction.latitude, prediction.longitude, visit.latitude, visit.longitude)
-        rows.append((prediction.confidence, distance <= prediction.confidence_radius_m, distance))
+        radius = prediction.confidence_radius_m
+        within_radius = distance <= radius if radius is not None else False
+        rows.append((prediction.confidence, within_radius, distance))
 
     if not rows:
         return {"bins": [], "overall_ece": None, "sample_count": 0}
@@ -82,16 +76,12 @@ def _database_calibration(db: Session) -> dict:
 
 
 def _get_evaluation_results() -> dict:
-    """Get or compute evaluation results on real dataset."""
-    global _evaluation_cache
-    if _evaluation_cache is None:
-        try:
-            loader = _get_dataset_loader_cached()
-            geocoder = RealDataGeocoder(loader)
-            _evaluation_cache = geocoder.evaluate_on_surveyed()
-        except Exception:
-            _evaluation_cache = {}
-    return _evaluation_cache
+    """Get evaluation results on real dataset (cached inside RealDataGeocoder)."""
+    try:
+        loader = _get_dataset_loader_cached()
+        return RealDataGeocoder(loader).evaluate_on_surveyed()
+    except Exception:
+        return {}
 
 
 router = APIRouter()
@@ -143,7 +133,7 @@ async def cleanup_cache_endpoint(db: Session = Depends(get_db)):
 
 
 @router.get("/metrics", response_model=MetricsResponse)
-async def get_metrics(db: Session = Depends(get_db)):
+def get_metrics(db: Session = Depends(get_db)):
     """Get system-wide metrics."""
     account_repo = AccountRepository(db)
     visit_repo = VisitRepository(db)
@@ -200,12 +190,14 @@ async def get_metrics(db: Session = Depends(get_db)):
 
 
 @router.get("/metrics/by-territory")
-async def get_territory_metrics(
+def get_territory_metrics(
     territory_type: str = "city",  # city, district, pincode, locality
     db: Session = Depends(get_db),
 ):
     """Get metrics broken down by territory."""
     try:
+        source = "operational_database"
+        metrics = []
         # Prefer persisted production evidence when available.
         grouped = {}
         predictions = db.query(PredictionModel).all()
@@ -227,11 +219,10 @@ async def get_territory_metrics(
             error = _distance_m(prediction.latitude, prediction.longitude, visit.latitude, visit.longitude)
             entry["errors"].append(error)
             entry["total"] += 1
-            entry["covered"] += int(error <= prediction.confidence_radius_m)
+            entry["covered"] += int(error <= prediction.confidence_radius_m if prediction.confidence_radius_m is not None else False)
             entry["account_ids"].add(account.account_id)
 
         if grouped:
-            metrics = []
             for territory, entry in grouped.items():
                 errors = sorted(entry["errors"])
                 n = len(errors)
@@ -249,48 +240,42 @@ async def get_territory_metrics(
                 })
 
         else:
+            source = "real_dataset"
             loader = _get_dataset_loader_cached()
-            if not loader.towns:
-                loader.load_all("train")
-            
-            # Run evaluation per town to get territory-level accuracy
-            geocoder = RealDataGeocoder(loader)
-            eval_results = geocoder.evaluate_on_surveyed()
-            
-            # Get per-town breakdown by evaluating each town separately
-            town_metrics = []
+
+            # Group the cached surveyed-address results by town
+            errors_by_town = {}
+            for result in RealDataGeocoder(loader).surveyed_results():
+                address = loader.addresses.get(result.address_id)
+                if address:
+                    errors_by_town.setdefault(address.town_id, []).append(result.error_m)
+
+            accounts_by_town = {}
+            for a in loader.accounts.values():
+                accounts_by_town[a.town_id] = accounts_by_town.get(a.town_id, 0) + 1
+
             for town in loader.towns.values():
-                # Get surveyed addresses in this town
-                town_addresses = [a for a in loader.addresses.values() if a.town_id == town.town_id]
-                town_surveyed = [addr_id for addr_id in loader.surveyed_addresses if addr_id in [a.address_id for a in town_addresses]]
-                
-                if town_surveyed:
-                    town_errors = []
-                    for addr_id in town_surveyed:
-                        result = geocoder.geocode_address(addr_id)
-                        if result and result.error_m is not None:
-                            town_errors.append(result.error_m)
-                
-                if town_errors:
-                    town_errors.sort()
-                    n = len(town_errors)
-                    town_metrics.append({
-                        "territory": town.town_name,
-                        "town_id": town.town_id,
-                        "accounts": len([a for a in loader.accounts.values() if a.town_id == town.town_id]),
-                        "surveyed_addresses": n,
-                        "accuracy": sum(1 for e in town_errors if e <= 250) / n,
-                        "median_error_m": town_errors[n // 2],
-                        "mean_error_m": sum(town_errors) / n,
-                        "p90_error_m": town_errors[int(n * 0.9)],
-                        "within_50m": sum(1 for e in town_errors if e <= 50) / n,
-                        "within_100m": sum(1 for e in town_errors if e <= 100) / n,
-                        "within_250m": sum(1 for e in town_errors if e <= 250) / n,
-                        "within_500m": sum(1 for e in town_errors if e <= 500) / n,
-                    })
-        
+                town_errors = sorted(errors_by_town.get(town.town_id, []))
+                if not town_errors:
+                    continue
+                n = len(town_errors)
+                metrics.append({
+                    "territory": town.town_name,
+                    "town_id": town.town_id,
+                    "accounts": accounts_by_town.get(town.town_id, 0),
+                    "surveyed_addresses": n,
+                    "accuracy": sum(1 for e in town_errors if e <= 250) / n,
+                    "median_error_m": town_errors[n // 2],
+                    "mean_error_m": sum(town_errors) / n,
+                    "p90_error_m": town_errors[min(n - 1, int(n * 0.9))],
+                    "within_50m": sum(1 for e in town_errors if e <= 50) / n,
+                    "within_100m": sum(1 for e in town_errors if e <= 100) / n,
+                    "within_250m": sum(1 for e in town_errors if e <= 250) / n,
+                    "within_500m": sum(1 for e in town_errors if e <= 500) / n,
+                })
+
         return {
-            "territory_type": territory_type, "metrics": metrics, "source": "operational_database"
+            "territory_type": territory_type, "metrics": metrics, "source": source
         }
 
     except Exception as e:
@@ -326,16 +311,16 @@ async def get_productivity_metrics(db: Session = Depends(get_db)):
         ),
         "source": "operational_database",
     }
+
+
 @router.get("/metrics/confidence-calibration")
-async def get_confidence_calibration(db: Session = Depends(get_db)):
+def get_confidence_calibration(db: Session = Depends(get_db)):
     """Get confidence calibration data for reliability diagram."""
     try:
         database_results = _database_calibration(db)
         if database_results["sample_count"] > 0:
             return database_results
         loader = _get_dataset_loader_cached()
-        if not loader.accounts:
-            loader.load_all("train")
         geocoder = RealDataGeocoder(loader)
         calibration_results = geocoder.evaluate_calibration()
         return calibration_results
@@ -344,7 +329,7 @@ async def get_confidence_calibration(db: Session = Depends(get_db)):
 
 
 @router.get("/metrics/error-distribution")
-async def get_error_distribution(db: Session = Depends(get_db)):
+def get_error_distribution(db: Session = Depends(get_db)):
     """Get error distribution for visualization."""
     eval_results = _get_evaluation_results()
     

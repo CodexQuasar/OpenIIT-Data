@@ -2,6 +2,7 @@
 
 import csv
 import math
+import threading
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -154,19 +155,29 @@ class RealDatasetLoader:
         self.localities: dict[str, RealLocality] = {}
         self.towns: dict[str, RealTown] = {}
         self.agents: dict[str, RealAgent] = {}
+        self._load_lock = threading.RLock()
+        self._loaded = False
+
+    def ensure_loaded(self, split: str = "train"):
+        """Load the dataset once; concurrent callers wait for the full load."""
+        with self._load_lock:
+            if not self._loaded:
+                self.load_all(split)
 
     def load_all(self, split: str = "train"):
         """Load all dataset files."""
-        self.load_towns(split)
-        self.load_localities(split)
-        self.load_landmarks(split)
-        self.load_accounts(split)
-        self.load_addresses(split)
-        self.load_field_visits(split)
-        self.load_visit_gps_points(split)
-        self.load_baseline_geocodes(split)
-        self.load_surveyed_addresses(split)
-        self.load_agents(split)
+        with self._load_lock:
+            self.load_towns(split)
+            self.load_localities(split)
+            self.load_landmarks(split)
+            self.load_accounts(split)
+            self.load_addresses(split)
+            self.load_field_visits(split)
+            self.load_visit_gps_points(split)
+            self.load_baseline_geocodes(split)
+            self.load_surveyed_addresses(split)
+            self.load_agents(split)
+            self._loaded = True
         print(f"Loaded {len(self.accounts)} accounts, {len(self.addresses)} addresses, "
               f"{len(self.field_visits)} field visits, {len(self.landmarks)} landmarks, "
               f"{len(self.surveyed_addresses)} surveyed addresses")

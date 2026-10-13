@@ -43,8 +43,7 @@ class CandidateGenerator:
         """Lazy load dataset loader."""
         if self._dataset_loader is None:
             self._dataset_loader = get_dataset_loader()
-            if not self._dataset_loader.landmarks:
-                self._dataset_loader.load_all("train")
+            self._dataset_loader.ensure_loaded("train")
         return self._dataset_loader
 
     def generate_candidates(self, context: CandidateGenerationContext) -> list[CandidateLocation]:

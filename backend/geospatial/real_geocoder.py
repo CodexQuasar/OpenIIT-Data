@@ -3,6 +3,8 @@
 from dataclasses import dataclass
 from typing import Optional, List
 from pathlib import Path
+import threading
+import weakref
 
 from data.real_data import RealDatasetLoader, RealSurveyedAddress, get_dataset_loader
 from geospatial.candidate_generator import generate_candidates, CandidateGenerationContext
@@ -38,6 +40,12 @@ class GeocodingResult:
     error_m: Optional[float]
 
 
+# Per-loader cache of surveyed-address results. The dataset is static, so the
+# full evaluation only needs to run once per process.
+_surveyed_results_cache: "weakref.WeakKeyDictionary[RealDatasetLoader, list]" = weakref.WeakKeyDictionary()
+_surveyed_results_lock = threading.Lock()
+
+
 class RealDataGeocoder:
     """Geocoder for real dataset evaluation using production pipeline."""
     
@@ -47,6 +55,23 @@ class RealDataGeocoder:
         self.ranker = CandidateRanker()
         self.calibrator = ConfidenceCalibrator()
         self.uncertainty = SpatialUncertaintyEstimator()
+        self._town_stats: Optional[dict[str, tuple[list[str], int]]] = None
+    
+    def _get_town_stats(self, town_id: str) -> tuple[list[str], int]:
+        """Return (account ids, field visit count) for a town, indexed once."""
+        if self._town_stats is None:
+            account_ids: dict[str, list[str]] = {}
+            for a in self.loader.accounts.values():
+                account_ids.setdefault(a.town_id, []).append(a.account_id)
+            visit_counts: dict[str, int] = {}
+            for v in self.loader.field_visits.values():
+                visit_account = self.loader.accounts.get(v.account_id)
+                if visit_account:
+                    visit_counts[visit_account.town_id] = visit_counts.get(visit_account.town_id, 0) + 1
+            self._town_stats = {
+                town: (ids, visit_counts.get(town, 0)) for town, ids in account_ids.items()
+            }
+        return self._town_stats.get(town_id, ([], 0))
     
     def geocode_address(self, address_id: str) -> Optional[GeocodingResult]:
         """Geocode a single address from the real dataset."""
@@ -89,19 +114,16 @@ class RealDataGeocoder:
         # Get place clusters - use locality centroids as place clusters
         place_clusters = []
         if account and account.town_id:
+            town_account_ids, town_visit_count = self._get_town_stats(account.town_id)
             for locality in self.loader.get_localities_for_town(account.town_id):
                 place_clusters.append(PlaceCluster(
                     cluster_id=locality.locality_id,
                     latitude=locality.centroid_x,
                     longitude=locality.centroid_y,
-                    account_ids=[a.account_id for a in self.loader.accounts.values() if a.town_id == account.town_id],
+                    account_ids=list(town_account_ids),
                     landmarks=[],
                     address_variants=[],
-                    visit_count=len([
-                        v for v in self.loader.field_visits.values()
-                        if self.loader.accounts.get(v.account_id)
-                        and self.loader.accounts[v.account_id].town_id == account.town_id
-                    ]),
+                    visit_count=town_visit_count,
                     confidence=0.5,
                 ))
         
@@ -185,16 +207,25 @@ class RealDataGeocoder:
             error_m=error_m,
         )
     
+    def surveyed_results(self) -> List[GeocodingResult]:
+        """Geocode every surveyed address with ground truth (cached per loader)."""
+        with _surveyed_results_lock:
+            results = _surveyed_results_cache.get(self.loader)
+            if results is None:
+                results = []
+                for address_id in self.loader.surveyed_addresses:
+                    result = self.geocode_address(address_id)
+                    if result and result.error_m is not None:
+                        results.append(result)
+                # Don't cache an empty run: the dataset may not be loaded yet.
+                if results:
+                    _surveyed_results_cache[self.loader] = results
+            return results
+    
     def evaluate_on_surveyed(self) -> dict:
         """Evaluate geocoder on all surveyed addresses."""
-        results = []
-        errors = []
-        
-        for address_id in self.loader.surveyed_addresses:
-            result = self.geocode_address(address_id)
-            if result and result.error_m is not None:
-                results.append(result)
-                errors.append(result.error_m)
+        results = self.surveyed_results()
+        errors = [r.error_m for r in results]
         
         if not errors:
             return {"total_evaluated": 0, "error": "No surveyed addresses with ground truth"}
