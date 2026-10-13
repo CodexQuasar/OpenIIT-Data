@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from typing import Optional, List
 from pathlib import Path
+import math
 import threading
 import weakref
 
@@ -14,6 +15,7 @@ from ml.calibration import ConfidenceCalibrator, recommend_action, SpatialUncert
 from ml.visit_evidence import score_visit
 from ml.address_normalizer import normalize_address
 from ml.entity_extractor import extract_entities
+from ml.evidence_geocoder import get_evidence_geocoder
 from geospatial.directions import generate_directions
 from app.schemas import (
     CandidateLocation, CandidateSource, NormalizedAddress, 
@@ -75,7 +77,49 @@ class RealDataGeocoder:
     
     def geocode_address(self, address_id: str) -> Optional[GeocodingResult]:
         """Geocode a single address from the real dataset."""
-        # Get address from dataset
+        address = self.loader.addresses.get(address_id)
+        if not address:
+            return None
+
+        # Primary path: fuse the address's own visits with what other
+        # addresses' visits have taught us about its locality.
+        estimate = get_evidence_geocoder(self.loader).predict(address_id)
+        if estimate is None:
+            return self._geocode_address_by_candidates(address_id)
+
+        surveyed = self.loader.surveyed_addresses.get(address_id)
+        ground_truth_x = surveyed.surveyed_x if surveyed else None
+        ground_truth_y = surveyed.surveyed_y if surveyed else None
+        error_m = None
+        if surveyed:
+            error_m = math.hypot(estimate.x - ground_truth_x, estimate.y - ground_truth_y)
+
+        visits = self.loader.get_visits_for_address(address_id)
+        evidence = PredictionEvidence(
+            historical_visits=len(visits),
+            reliable_visits=estimate.visits_used,
+            nearby_accounts=0,
+            geocoder_support=address_id in self.loader.baseline_geocodes,
+            main_landmark=estimate.landmark,
+            strongest_evidence=estimate.evidence,
+        )
+        return GeocodingResult(
+            address_id=address_id,
+            account_id=address.account_id,
+            predicted_x=estimate.x,
+            predicted_y=estimate.y,
+            confidence=estimate.confidence,
+            confidence_radius_m=estimate.radius_m,
+            recommended_action=recommend_action(estimate.confidence, estimate.radius_m),
+            prediction_method=estimate.method,
+            evidence=evidence.model_dump(),
+            ground_truth_x=ground_truth_x,
+            ground_truth_y=ground_truth_y,
+            error_m=error_m,
+        )
+
+    def _geocode_address_by_candidates(self, address_id: str) -> Optional[GeocodingResult]:
+        """Candidate generation and ranking, used when there is no usable evidence."""
         address = self.loader.addresses.get(address_id)
         if not address:
             return None
@@ -189,7 +233,6 @@ class RealDataGeocoder:
         # Calculate error if ground truth available
         error_m = None
         if ground_truth_x is not None and ground_truth_y is not None:
-            import math
             error_m = math.sqrt((best.latitude - ground_truth_x)**2 + (best.longitude - ground_truth_y)**2)
         
         return GeocodingResult(
