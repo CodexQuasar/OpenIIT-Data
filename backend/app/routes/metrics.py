@@ -5,7 +5,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List, Optional
 import math
-import os
 
 from data.database import get_db
 from data.repositories import AccountRepository, VisitRepository, PredictionRepository, CacheRepository, GeocoderCacheRepository, EmbeddingCacheRepository
@@ -14,15 +13,10 @@ from app.schemas import MetricsResponse, VisitOutcome, RecommendedAction
 from geospatial.real_geocoder import RealDataGeocoder
 from data.real_data import get_dataset_loader
 
-# Configuration: skip full dataset loading in production for performance
-_DISABLE_DATASET_LOOKUPS = os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"
-
-
 def _get_dataset_loader_cached() -> "RealDatasetLoader":
-    """Get dataset loader, conditionally loading all data."""
+    """Get dataset loader, loading all data once."""
     loader = get_dataset_loader()
-    if not _DISABLE_DATASET_LOOKUPS:
-        loader.ensure_loaded("train")
+    loader.ensure_loaded("train")
     return loader
 
 

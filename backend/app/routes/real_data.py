@@ -4,7 +4,6 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
 from pathlib import Path
 import logging
-import os
 import threading
 
 from data.real_data import RealDatasetLoader, load_dataset, get_dataset_loader
@@ -16,19 +15,15 @@ from evaluation.ps3_experiments import run_ps3_experiments
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
-# Configuration: skip full dataset loading in production for performance
-_DISABLE_DATASET_LOOKUPS = os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"
-
 # PS3 experiment results per split; the dataset is static so each runs once.
 _ps3_results: dict[str, dict] = {}
 _ps3_lock = threading.Lock()
 
 
 def get_cached_loader() -> RDLoader:
-    """Get the shared dataset loader, loading data once if lookups are enabled."""
+    """Get the shared dataset loader, loading data once."""
     loader = get_dataset_loader()
-    if not _DISABLE_DATASET_LOOKUPS:
-        loader.ensure_loaded("train")
+    loader.ensure_loaded("train")
     return loader
 
 
@@ -39,8 +34,6 @@ def get_geocoder() -> RealDataGeocoder:
 
 def warm_caches() -> None:
     """Load the dataset and cache the evaluation so first requests are fast."""
-    if _DISABLE_DATASET_LOOKUPS:
-        return
     try:
         get_geocoder().evaluate_on_surveyed()
     except Exception:
@@ -55,9 +48,6 @@ async def list_real_accounts(
 ):
     """List real accounts."""
     loader = get_cached_loader()
-    if _DISABLE_DATASET_LOOKUPS and not loader.accounts:
-        # Return empty when dataset lookups disabled and data not loaded
-        return []
     accounts = list(loader.accounts.values())
     if search and search.strip():
         needle = search.strip().casefold()
@@ -89,8 +79,6 @@ async def list_real_accounts(
 async def get_real_account(account_id: str):
     """Get real account details."""
     loader = get_cached_loader()
-    if _DISABLE_DATASET_LOOKUPS and not loader.accounts:
-        raise HTTPException(status_code=404, detail="Account not found (dataset lookups disabled)")
 
     account = loader.accounts.get(account_id)
     if not account:
@@ -175,8 +163,6 @@ def evaluate_ps3_experiments(
 async def get_real_address(address_id: str):
     """Get real address details."""
     loader = get_cached_loader()
-    if _DISABLE_DATASET_LOOKUPS and not loader.addresses:
-        raise HTTPException(status_code=404, detail="Address not found (dataset lookups disabled)")
 
     address = loader.addresses.get(address_id)
     if not address:
@@ -221,9 +207,6 @@ async def get_real_address(address_id: str):
 async def list_towns():
     """List all towns."""
     loader = get_cached_loader()
-    if _DISABLE_DATASET_LOOKUPS and not loader.towns:
-        # Return empty or minimal when dataset lookups disabled
-        return []
     return [
         {
             "town_id": t.town_id,
@@ -239,8 +222,6 @@ async def list_towns():
 async def list_landmarks(town_id: Optional[str] = None):
     """List landmarks, optionally filtered by town."""
     loader = get_cached_loader()
-    if _DISABLE_DATASET_LOOKUPS and not loader.landmarks:
-        return []
     landmarks = loader.landmarks.values()
     if town_id:
         landmarks = [l for l in landmarks if l.town_id == town_id]

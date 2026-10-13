@@ -1,5 +1,4 @@
-from app.routes.real_data import get_cached_loader, _DISABLE_DATASET_LOOKUPS
-print("DISABLE_DATASET_LOOKUPS:", _DISABLE_DATASET_LOOKUPS)
+from app.routes.real_data import get_cached_loader
 loader = get_cached_loader()
 print("Loader type:", type(loader))
 print("Accounts:", len(loader.accounts) if hasattr(loader, 'accounts') else 'N/A')

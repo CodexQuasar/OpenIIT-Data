@@ -1,5 +1,5 @@
 // Service Worker for Offline Support
-const CACHE_NAME = 'field-geocoder-v2';
+const CACHE_NAME = 'field-geocoder-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -62,6 +62,11 @@ async function handleApiRequest(request) {
       if (request.method === 'GET') {
         cache.put(request, networkResponse.clone());
       }
+      return networkResponse;
+    }
+
+    // Client errors (401, 404, ...) are real answers, not connectivity problems
+    if (networkResponse.status < 500) {
       return networkResponse;
     }
 
