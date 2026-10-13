@@ -60,6 +60,8 @@ class Settings(BaseSettings):
     cors_origins: str = Field(
         default="http://localhost:3000,http://localhost:5173", alias="CORS_ORIGINS"
     )
+    # Deployed frontend; always allowed in addition to CORS_ORIGINS
+    frontend_origin: str = Field(default="https://open-iit-data.vercel.app", alias="FRONTEND_ORIGIN")
 
     # Geocoding Pipeline
     candidate_count: int = Field(default=20, alias="CANDIDATE_COUNT")
