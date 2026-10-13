@@ -1,6 +1,7 @@
 """Main FastAPI application."""
 
 import os
+import threading
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -30,6 +31,8 @@ async def lifespan(app: FastAPI):
     # Startup - skip DB init in test mode (tests override get_db with their own DB)
     if not os.environ.get("TESTING"):
         init_db()
+        # Pre-compute the dataset evaluation off the request path
+        threading.Thread(target=real_data.warm_caches, daemon=True).start()
     yield
     # Shutdown
     pass

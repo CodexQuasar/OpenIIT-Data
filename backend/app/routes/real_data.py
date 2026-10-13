@@ -3,6 +3,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
 from pathlib import Path
+import logging
 import os
 import threading
 
@@ -13,6 +14,7 @@ from ml.entity_extractor import extract_entities
 from evaluation.ps3_experiments import run_ps3_experiments
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 # Configuration: skip full dataset loading in production for performance
 _DISABLE_DATASET_LOOKUPS = os.environ.get("DISABLE_DATASET_LOOKUPS") == "1"
@@ -33,6 +35,16 @@ def get_cached_loader() -> RDLoader:
 def get_geocoder() -> RealDataGeocoder:
     """Get geocoder with loaded dataset."""
     return RealDataGeocoder(get_cached_loader())
+
+
+def warm_caches() -> None:
+    """Load the dataset and cache the evaluation so first requests are fast."""
+    if _DISABLE_DATASET_LOOKUPS:
+        return
+    try:
+        get_geocoder().evaluate_on_surveyed()
+    except Exception:
+        logger.exception("Failed to warm real dataset caches")
 
 
 @router.get("/real/accounts")
